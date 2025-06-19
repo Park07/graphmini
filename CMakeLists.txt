@@ -78,6 +78,7 @@ file(MAKE_DIRECTORY ${PROJECT_PROFILE_DIR})
 add_subdirectory(dependency/GraphPi)
 add_subdirectory(src)
 
+<<<<<<< HEAD
 # Platform-specific linking
 if(APPLE)
     if(EXISTS "/usr/local/lib")
@@ -86,4 +87,11 @@ if(APPLE)
     if(EXISTS "/opt/homebrew/lib")
         link_directories(/opt/homebrew/lib)
     endif()
+=======
+# Install dependencies for macOS
+if(APPLE)
+    # Add Homebrew paths
+    include_directories(/opt/homebrew/include)
+    link_directories(/opt/homebrew/lib)
+>>>>>>> 71d7a3ba52b7504bc2f5f4e32a3d5c93a8472c73
 endif()
