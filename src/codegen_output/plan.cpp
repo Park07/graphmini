@@ -1,4 +1,7 @@
 #include "plan.h"
+#include <omp.h>
+#include <chrono>
+
 namespace minigraph {
 uint64_t pattern_size() { return 5; }
 static const Graph *graph;
@@ -15,10 +18,10 @@ private:
 public:
   Loop2(Context &_ctx, VertexSet &_s1, MiniGraphEager &_m1)
       : ctx{_ctx}, s1{_s1}, m1{_m1} {};
-  void operator()(const tbb::blocked_range<size_t> &r) const { // operator begin
-    const int worker_id = tbb::this_task_arena::current_thread_index();
+  void operator()(size_t start, size_t end) const {
+    const int worker_id = omp_get_thread_num();
     cc &counter = ctx.per_thread_result.at(worker_id);
-    for (size_t i2_idx = r.begin(); i2_idx < r.end(); i2_idx++) { // loop-2begin
+    for (size_t i2_idx = start; i2_idx < end; i2_idx++) {
       const IdType i2_id = s1[i2_idx];
       VertexSet m1_adj = m1.N(i2_idx);
       VertexSet s2 = m1_adj.bounded(i2_id);
