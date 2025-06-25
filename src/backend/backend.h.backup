@@ -8,10 +8,8 @@
 #include "graph.h"
 #include "minigraph.h"
 #include <omp.h>
-#include <chrono>
-
-// #include <oneapi/tbb/parallel_for.h>
-// #include <oneapi/tbb/tick_count.h>
+#include <oneapi/tbb/parallel_for.h>
+#include <oneapi/tbb/tick_count.h>
 namespace minigraph {
     struct cc {
         alignas(64) long long count{0};
@@ -29,11 +27,9 @@ namespace minigraph {
         std::vector<cc> per_thread_result;
         std::vector<cc> per_thread_handled;
         std::vector<double> per_thread_time; // omp
-        std::vector<std::chrono::steady_clock::time_point> per_thread_tick;
-
-        // std::vector<tbb::tick_count> per_thread_tick; // tbb
+        std::vector<tbb::tick_count> per_thread_tick; // tbb
         Context(int _num_threads): num_threads{_num_threads}{
-            tick_begin = std::chrono::steady_clock::now();
+            tick_begin = tbb::tick_count::now();
             per_thread_tick.resize(num_threads, tick_begin);
             per_thread_result.resize(num_threads);
             per_thread_time.resize(num_threads);
@@ -41,8 +37,7 @@ namespace minigraph {
         };
 
         double tick_time(size_t i) {
-            auto duration = per_thread_tick.at(i) - tick_begin;
-            return std::chrono::duration<double>(duration).count();
+            return (per_thread_tick.at(i) - tick_begin).seconds();
         }
 
         long long get_handled() {
