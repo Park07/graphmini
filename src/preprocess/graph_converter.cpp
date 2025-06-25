@@ -10,10 +10,13 @@
 #include "logging.h"
 #include <fstream>
 #include <algorithm>
-#include <oneapi/tbb/parallel_sort.h>
-#include <oneapi/tbb/parallel_for.h>
-#include <oneapi/tbb/parallel_reduce.h>
-#include <oneapi/tbb/parallel_scan.h>
+// #include <oneapi/tbb/parallel_sort.h>
+// #include <oneapi/tbb/parallel_for.h>
+// #include <oneapi/tbb/parallel_reduce.h>
+// #include <oneapi/tbb/parallel_scan.h>
+
+#include <omp.h>
+
 
 namespace minigraph {
     inline bool nextSNAPline(std::ifstream &infile, std::string &line, std::istringstream &iss,
@@ -39,48 +42,31 @@ namespace minigraph {
     }
 
     inline uint64_t parallel_max(const std::vector<uint64_t>& vec) {
-        return tbb::parallel_reduce(
-                tbb::blocked_range<uint64_t>(0, vec.size()),
-                uint64_t(0),
-                [&vec](const tbb::blocked_range<uint64_t>& r, uint64_t running_max){
-                    for (uint64_t i = r.begin(); i < r.end(); ++i) {
-                        running_max = std::max(vec[i], running_max);
-                    }
-                    return running_max;
-                }, [](uint64_t a, uint64_t b){return std::max(a, b);} );
+        uint64_t max_val = 0;
+        #pragma omp parallel for reduction(max:max_val)
+        for (size_t i = 0; i < vec.size(); ++i) {
+            max_val = std::max(max_val, vec[i]);
+        }
+        return max_val;
     }
 
     inline uint64_t parallel_sum(const std::vector<uint64_t>& vec) {
-        return tbb::parallel_reduce(
-                tbb::blocked_range<uint64_t>(0, vec.size()),
-                uint64_t(0),
-                [&vec](const tbb::blocked_range<uint64_t>& r, uint64_t running_total){
-                    for (uint64_t i = r.begin(); i < r.end(); ++i) {
-                        running_total += vec[i];
-                    }
-                    return running_total;
-                }, std::plus<uint64_t>() );
-    }
+        uint64_t total = 0;
+        #pragma omp parallel for reduction(+:total)
+        for (size_t i = 0; i < vec.size(); ++i) {
+            total += vec[i];
+        }
+        return total;
+    } 
 
     inline std::vector<uint64_t> parallel_prefix_sum(const std::vector<uint64_t>& vec) {
-        std::vector<uint64_t > res;
-        res.resize(vec.size() + 1);
-        tbb::parallel_scan(
-                tbb::blocked_range<uint64_t>(0, vec.size()),
-                        uint64_t (0),
-                        [&vec, &res](const tbb::blocked_range<uint64_t>& r, uint64_t sum, bool is_final_scan) -> uint64_t
-                {
-                    uint64_t temp = sum;
-                    for (uint64_t i = r.begin(); i < r.end(); i++){
-                        temp += vec.at(i);
-                        if (is_final_scan) res.at(i + 1) = temp;
-                    }
-                    return temp;
-                },
-                [] (uint64_t left, uint64_t right) {
-                    return left + right;
-                }
-                );
+        std::vector<uint64_t> res(vec.size() + 1);
+        res[0] = 0;
+
+        // For small arrays, just do it sequentially (prefix sum is inherently sequential)
+        for (size_t i = 0; i < vec.size(); ++i) {
+            res[i + 1] = res[i] + vec[i];
+        }
         return res;
     }
     void GraphConverter::load_txt() {
@@ -113,14 +99,14 @@ namespace minigraph {
         LOG(INFO) << "Finished Reading in: " << t.Passed() << " seconds";
         // make sort edge pair for building indices
         t.Reset();
-        tbb::parallel_sort(edge_vec.begin(), edge_vec.end(),
-                  [](const Edge& a, const Edge& b)->bool {
-                      if (a.first == b.first) {
-                          return a.second < b.second;
-                      } else {
-                          return a.first < b.first;
-                      }
-                  });
+        std::sort(edge_vec.begin(), edge_vec.end(),
+          [](const Edge& a, const Edge& b)->bool {
+              if (a.first == b.first) {
+                  return a.second < b.second;
+              } else {
+                  return a.first < b.first;
+              }
+            });
         edge_vec.erase(std::unique(edge_vec.begin(), edge_vec.end()), edge_vec.end());
         edge_vec.shrink_to_fit();
 
@@ -146,23 +132,22 @@ namespace minigraph {
 
 
         LOG(INFO) << "Finished building indices in: " << t.Passed() << " seconds";
-        tbb::parallel_for(tbb::blocked_range<uint64_t >(0, v_num), [this](tbb::blocked_range<uint64_t> r){
-            for (uint64_t i = r.begin(); i != r.end(); i++){
-                Counter counter{};
-                auto v1_start = indices.cbegin() + indptr.at(i);
-                auto v1_end = indices.cbegin() + indptr.at(i+1);
-                offsets.at(i) = std::distance(v1_start, std::lower_bound(v1_start, v1_end, i));
+        #pragma omp parallel for
+        for (uint64_t i = 0; i < v_num; i++){
+            Counter counter{};
+            auto v1_start = indices.cbegin() + indptr.at(i);
+            auto v1_end = indices.cbegin() + indptr.at(i+1);
+            offsets.at(i) = std::distance(v1_start, std::lower_bound(v1_start, v1_end, i));
 
-                const int v1_degree = std::distance(v1_start, v1_end);
-                for (int j = 0; j < v1_degree; j++){
-                    uint64_t v2_id = v1_start[j];
-                    auto v2_start = indices.cbegin() + indptr.at(v2_id);
-                    auto v2_end = indices.cbegin() + indptr.at(v2_id+1);
-                    std::set_intersection(v1_start, v1_end, v2_start, v2_end, std::back_inserter(counter));
-                }
-                triangles.at(i) = counter.count;
+            const int v1_degree = std::distance(v1_start, v1_end);
+            for (int j = 0; j < v1_degree; j++){
+                uint64_t v2_id = v1_start[j];
+                auto v2_start = indices.cbegin() + indptr.at(v2_id);
+                auto v2_end = indices.cbegin() + indptr.at(v2_id+1);
+                std::set_intersection(v1_start, v1_end, v2_start, v2_end, std::back_inserter(counter));
             }
-        });
+            triangles.at(i) = counter.count;
+        }
         tri_num = parallel_sum(triangles);
         max_deg = parallel_max(degrees);
         max_offset = parallel_max(offsets);
