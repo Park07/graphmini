@@ -14,7 +14,6 @@ PRUNING_TYPES=(
 
 DATASETS=("wiki" "enron")
 THREAD_COUNTS=(1 2 4 6 8 12 16)
-# not sure if i should remove 16 hmm def add more dataset but for prelim only focus just on the 3 ones.
 
 RESULTS_DIR="../pruning_analysis_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR"
