@@ -25,7 +25,8 @@ namespace minigraph {
     {
         int num_threads{1};
         int iep_redundency{1};
-        tbb::tick_count tick_begin{tbb::tick_count::now()};
+        std::chrono::steady_clock::time_point tick_begin{std::chrono::steady_clock::now()};
+        // tbb::tick_count tick_begin{tbb::tick_count::now()};
         std::vector<cc> per_thread_result;
         std::vector<cc> per_thread_handled;
         std::vector<double> per_thread_time; // omp

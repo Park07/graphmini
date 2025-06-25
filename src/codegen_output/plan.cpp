@@ -6,6 +6,7 @@ namespace minigraph {
 uint64_t pattern_size() { return 5; }
 static const Graph *graph;
 using MiniGraphType = MiniGraphCostModel;
+
 class Loop2 {
 private:
   Context &ctx;
@@ -18,10 +19,10 @@ private:
 public:
   Loop2(Context &_ctx, VertexSet &_s1, MiniGraphEager &_m1)
       : ctx{_ctx}, s1{_s1}, m1{_m1} {};
-  void operator()(size_t start, size_t end) const {
+  void operator()(size_t start, size_t end) const { // operator begin
     const int worker_id = omp_get_thread_num();
     cc &counter = ctx.per_thread_result.at(worker_id);
-    for (size_t i2_idx = start; i2_idx < end; i2_idx++) {
+    for (size_t i2_idx = start; i2_idx < end; i2_idx++) { // loop-2begin
       const IdType i2_id = s1[i2_idx];
       VertexSet m1_adj = m1.N(i2_idx);
       VertexSet s2 = m1_adj.bounded(i2_id);
@@ -51,10 +52,10 @@ private:
 public:
   Loop1(Context &_ctx, VertexSet &_s0, MiniGraphEager &_m0)
       : ctx{_ctx}, s0{_s0}, m0{_m0} {};
-  void operator()(const tbb::blocked_range<size_t> &r) const { // operator begin
+  void operator()(size_t start, size_t end) const { // operator begin
     const int worker_id = omp_get_thread_num();
-    for (size_t i1_idx = start; i1_idx < end; i1_idx++) {
-    for (size_t i1_idx = r.begin(); i1_idx < r.end(); i1_idx++) { // loop-1begin
+    cc &counter = ctx.per_thread_result.at(worker_id);
+    for (size_t i1_idx = start; i1_idx < end; i1_idx++) { // loop-1begin
       const IdType i1_id = s0[i1_idx];
       VertexSet m0_adj = m0.N(i1_idx);
       VertexSet s1 = m0_adj.bounded(i1_id);
@@ -72,6 +73,8 @@ public:
         for (size_t i = 0; i < s1.size(); i++) {
           loop2(i, i + 1);
         }
+        continue;
+      }
       for (size_t i2_idx = 0; i2_idx < s1.size(); i2_idx++) { // loop-2 begin
         const IdType i2_id = s1[i2_idx];
         VertexSet m1_adj = m1.N(i2_idx);
@@ -97,10 +100,10 @@ private:
 
 public:
   Loop0(Context &_ctx) : ctx{_ctx} {};
-  void operator()(const tbb::blocked_range<size_t> &r) const { // operator begin
+  void operator()(size_t start, size_t end) const { // operator begin
     const int worker_id = omp_get_thread_num();
-    for (size_t i0_id = start; i0_id < end; i0_id++) {
-    for (size_t i0_id = r.begin(); i0_id < r.end(); i0_id++) { // loop-0begin
+    cc &counter = ctx.per_thread_result.at(worker_id);
+    for (size_t i0_id = start; i0_id < end; i0_id++) { // loop-0begin
       VertexSet i0_adj = graph->N(i0_id);
       VertexSet s0 = i0_adj.bounded(i0_id);
       if (s0.size() == 0)
