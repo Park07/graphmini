@@ -67,8 +67,8 @@ public:
        * In-Edges: 0 1 Restricts: 0 1 */
       m1.build(&m0, s1, s1, s1);
       // skip building indices for m1 because they can be obtained directly
-      if (s1.size() > 4 * 6) {
-        #pragma omp parallel for schedule(static)
+      if (s1.size() > 1000) { // CHANGED!: changed from 4 x 6 to 1000 as it was parallelising too much
+        #pragma omp parallel for schedule(dynamic, 100) // CHANGED!
         for (size_t i2_idx = 0; i2_idx < s1.size(); i2_idx++) {
           const int worker_id = omp_get_thread_num();
           cc &counter = ctx.per_thread_result.at(worker_id);
@@ -125,7 +125,7 @@ public:
       m0.build(s0, s0, s0);
       // skip building indices for m0 because they can be obtained directly
       if (s0.size() > 4 * 6) {
-      #pragma omp parallel for schedule(static)
+      #pragma omp parallel for schedule(dynamic, 100) // CHANGED!
       for (size_t i1_idx = 0; i1_idx < s0.size(); i1_idx++) {
         const int worker_id = omp_get_thread_num();
         cc &counter = ctx.per_thread_result.at(worker_id);
@@ -163,8 +163,8 @@ public:
          * VSet(1) In-Edges: 0 1 Restricts: 0 1 */
         m1.build(&m0, s1, s1, s1);
         // skip building indices for m1 because they can be obtained directly
-        if (s1.size() > 4 * 6) {
-          #pragma omp parallel for schedule(static)
+        if (s1.size() > 1000) { // CHANGED FROM 4 X 6 TO 1000
+          #pragma omp parallel for schedule(dynamic, 100) // instead of static
           for (size_t i2_idx = 0; i2_idx < s1.size(); i2_idx++) {
             const int worker_id = omp_get_thread_num();
             cc &counter = ctx.per_thread_result.at(worker_id);
@@ -204,7 +204,7 @@ public:
 }; // Loop
 
 void plan(const GraphType *_graph, Context &ctx) { // plan
-  // for open MP to use exacrtly the number of Context expects
+  // for openMP to use exactly the number of threads Context expects
   omp_set_num_threads(ctx.num_threads);
 
   ctx.tick_begin = std::chrono::steady_clock::now();
@@ -212,36 +212,43 @@ void plan(const GraphType *_graph, Context &ctx) { // plan
   graph = _graph;
   MiniGraphIF::DATA_GRAPH = graph;
   VertexSetType::MAX_DEGREE = graph->get_maxdeg();
-  #pragma omp parallel for schedule(static)
+
+  #pragma omp parallel for schedule(dynamic, 100)
   for (size_t i0_id = 0; i0_id < graph->get_vnum(); i0_id++) {
     const int worker_id = omp_get_thread_num();
     cc &counter = ctx.per_thread_result.at(worker_id);
+
     VertexSet i0_adj = graph->N(i0_id);
     VertexSet s0 = i0_adj.bounded(i0_id);
     if (s0.size() == 0) continue;
+
     MiniGraphEager m0(true, false);
     m0.build(s0, s0, s0);
+
     // Rest is sequential to avoid nested parallelism
     for (size_t i1_idx = 0; i1_idx < s0.size(); i1_idx++) {
       const IdType i1_id = s0[i1_idx];
       VertexSet m0_adj = m0.N(i1_idx);
       VertexSet s1 = m0_adj.bounded(i1_id);
       if (s1.size() == 0) continue;
+
       MiniGraphEager m1(true, false);
       m1.build(&m0, s1, s1, s1);
+
       for (size_t i2_idx = 0; i2_idx < s1.size(); i2_idx++) {
         const IdType i2_id = s1[i2_idx];
         VertexSet m1_adj = m1.N(i2_idx);
         VertexSet s2 = m1_adj.bounded(i2_id);
         if (s2.size() == 0) continue;
+
         auto m1_s2 = m1.indices(s2);
         for (size_t i3_idx = 0; i3_idx < s2.size(); i3_idx++) {
           const IdType i3_id = s2[i3_idx];
           VertexSet m1_adj = m1.N(m1_s2[i3_idx]);
           counter += s2.intersect_cnt(m1_adj, m1_adj.vid());
-        }
-      }
-    }
-  }
-} // plan
+        } // i3_idx loop end
+      } // i2_idx loop end
+    } // i1_idx loop end
+  } // i0_id parallel loop end
+} // plan function end
 } // namespace minigraph
