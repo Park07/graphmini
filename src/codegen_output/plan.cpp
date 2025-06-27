@@ -204,6 +204,9 @@ public:
 }; // Loop
 
 void plan(const GraphType *_graph, Context &ctx) { // plan
+  // for open MP to use exacrtly the number of Context expects
+  omp_set_num_threads(ctx.num_threads);
+
   ctx.tick_begin = std::chrono::steady_clock::now();
   ctx.iep_redundency = 0;
   graph = _graph;
