@@ -1,0 +1,7 @@
+Threads=8
+LoadTime(s)=0.00202929
+CODE_EXECUTION_TIME(s)=0.26356
+RESULT=5809356
+Throughput=2.20419e+07
+VertexSetAllocated=0.00 Bytes
+MiniGraphAllocated=604.86 KB
