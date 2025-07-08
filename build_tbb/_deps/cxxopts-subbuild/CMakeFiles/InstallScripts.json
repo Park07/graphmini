@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/williampark/GraphMini/build_tbb/_deps/cxxopts-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
