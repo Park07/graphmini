@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/williampark/GraphMini/build_tbb/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/_deps/fmt-build/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/_deps/cxxopts-build/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/_deps/cxxopts-build/include/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/dependency/GraphPi/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/dependency/GraphPi/src/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/dependency/GraphPi/tianhe/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/src/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/src/codegen/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/src/preprocess/cmake_install.cmake",
+		"/Users/williampark/GraphMini/build_tbb/src/codegen_output/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

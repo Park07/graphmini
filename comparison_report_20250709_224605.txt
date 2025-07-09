@@ -1,0 +1,132 @@
+=== RESULT Comparison Report ===
+Generated: Wed Jul  9 22:46:05 AEST 2025
+OpenMP dir: unified_results_corrected_20250709_210700
+GraphMini dir: unified_results_graphmini_20250709_212303
+
+ERROR: dblp_4clique_16t.log - OpenMP: '', GraphMini: '16713192'
+MISMATCH: dblp_4clique_1t.log - OpenMP: 2224385, GraphMini: 16713192
+MISMATCH: dblp_4clique_2t.log - OpenMP: 2224385, GraphMini: 16713192
+MISMATCH: dblp_4clique_4t.log - OpenMP: 2224385, GraphMini: 16713192
+MISMATCH: dblp_4clique_8t.log - OpenMP: 2224385, GraphMini: 16713192
+MISMATCH: dblp_4cycle_16t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4cycle_1t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4cycle_2t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4cycle_4t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4cycle_8t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4path_16t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4path_1t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4path_2t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4path_4t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4path_8t.log - OpenMP: 2224385, GraphMini: 252893
+MISMATCH: dblp_4star_16t.log - OpenMP: 2224385, GraphMini: 258570802
+MISMATCH: dblp_4star_1t.log - OpenMP: 2224385, GraphMini: 258570802
+MISMATCH: dblp_4star_2t.log - OpenMP: 2224385, GraphMini: 258570802
+MISMATCH: dblp_4star_4t.log - OpenMP: 2224385, GraphMini: 258570802
+MISMATCH: dblp_4star_8t.log - OpenMP: 2224385, GraphMini: 258570802
+MISMATCH: dblp_5clique_16t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_5clique_1t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_5clique_2t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_5clique_4t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_5clique_8t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_diamond_16t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_diamond_1t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_diamond_2t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_diamond_4t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_diamond_8t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_house_16t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_house_1t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_house_2t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_house_4t.log - OpenMP: 2224385, GraphMini: 262663639
+MISMATCH: dblp_house_8t.log - OpenMP: 2224385, GraphMini: 262663639
+MATCH: dblp_triangle_16t.log - RESULT=2224385
+MATCH: dblp_triangle_1t.log - RESULT=2224385
+MATCH: dblp_triangle_2t.log - RESULT=2224385
+MATCH: dblp_triangle_4t.log - RESULT=2224385
+MATCH: dblp_triangle_8t.log - RESULT=2224385
+MISMATCH: enron_4clique_16t.log - OpenMP: 727044, GraphMini: 2341639
+MISMATCH: enron_4clique_1t.log - OpenMP: 727044, GraphMini: 2341639
+MISMATCH: enron_4clique_2t.log - OpenMP: 727044, GraphMini: 2341639
+MISMATCH: enron_4clique_4t.log - OpenMP: 727044, GraphMini: 2341639
+MISMATCH: enron_4clique_8t.log - OpenMP: 727044, GraphMini: 2341639
+MISMATCH: enron_4cycle_16t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4cycle_1t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4cycle_2t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4cycle_4t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4cycle_8t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4path_16t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4path_1t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4path_2t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4path_4t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4path_8t.log - OpenMP: 727044, GraphMini: 8821744
+MISMATCH: enron_4star_16t.log - OpenMP: 727044, GraphMini: 4479591993
+MISMATCH: enron_4star_1t.log - OpenMP: 727044, GraphMini: 4479591993
+MISMATCH: enron_4star_2t.log - OpenMP: 727044, GraphMini: 4479591993
+MISMATCH: enron_4star_4t.log - OpenMP: 727044, GraphMini: 4479591993
+MISMATCH: enron_4star_8t.log - OpenMP: 727044, GraphMini: 4479591993
+MISMATCH: enron_5clique_16t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_5clique_1t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_5clique_2t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_5clique_4t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_5clique_8t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_diamond_16t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_diamond_1t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_diamond_2t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_diamond_4t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_diamond_8t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_house_16t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_house_1t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_house_2t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_house_4t.log - OpenMP: 727044, GraphMini: 5809356
+MISMATCH: enron_house_8t.log - OpenMP: 727044, GraphMini: 5809356
+ERROR: enron_triangle_16t.log - OpenMP: '727044', GraphMini: ''
+MATCH: enron_triangle_1t.log - RESULT=727044
+MATCH: enron_triangle_2t.log - RESULT=727044
+MATCH: enron_triangle_4t.log - RESULT=727044
+MATCH: enron_triangle_8t.log - RESULT=727044
+MISMATCH: wiki_4clique_16t.log - OpenMP: 608389, GraphMini: 2077903
+MISMATCH: wiki_4clique_1t.log - OpenMP: 608389, GraphMini: 2077903
+MISMATCH: wiki_4clique_2t.log - OpenMP: 608389, GraphMini: 2077903
+MISMATCH: wiki_4clique_4t.log - OpenMP: 608389, GraphMini: 2077903
+MISMATCH: wiki_4clique_8t.log - OpenMP: 608389, GraphMini: 2077903
+MISMATCH: wiki_4cycle_16t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4cycle_1t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4cycle_2t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4cycle_4t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4cycle_8t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4path_16t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4path_1t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4path_2t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4path_4t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4path_8t.log - OpenMP: 608389, GraphMini: 32230662
+MISMATCH: wiki_4star_16t.log - OpenMP: 608389, GraphMini: 1127174796
+MISMATCH: wiki_4star_1t.log - OpenMP: 608389, GraphMini: 1127174796
+ERROR: wiki_4star_2t.log - OpenMP: '608389', GraphMini: ''
+MISMATCH: wiki_4star_4t.log - OpenMP: 608389, GraphMini: 1127174796
+MISMATCH: wiki_4star_8t.log - OpenMP: 608389, GraphMini: 1127174796
+MISMATCH: wiki_5clique_16t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_5clique_1t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_5clique_2t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_5clique_4t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_5clique_8t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_diamond_16t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_diamond_1t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_diamond_2t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_diamond_4t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_diamond_8t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_house_16t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_house_1t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_house_2t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_house_4t.log - OpenMP: 608389, GraphMini: 4514137
+MISMATCH: wiki_house_8t.log - OpenMP: 608389, GraphMini: 4514137
+MATCH: wiki_triangle_16t.log - RESULT=608389
+MATCH: wiki_triangle_1t.log - RESULT=608389
+MATCH: wiki_triangle_2t.log - RESULT=608389
+MATCH: wiki_triangle_4t.log - RESULT=608389
+MATCH: wiki_triangle_8t.log - RESULT=608389
+
+=== SUMMARY ===
+Total tests compared: 120
+Matching results: 14
+Mismatched results: 103
+Missing/Error: 3
+FAILURE: Found 103 mismatched results

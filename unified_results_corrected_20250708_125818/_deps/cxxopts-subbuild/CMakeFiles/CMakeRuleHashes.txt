@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+bc0b7460a68862fff9e37c3d8e35e295 CMakeFiles/cxxopts-populate
+3baf7259e2329ed05c8f70b4d52763a3 CMakeFiles/cxxopts-populate-complete
+a6c2edf7260508fc72c9979bea229b81 cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-build
+bf6752891dacb01a63b32572bd35efe8 cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-configure
+860ec5542771a1194d7c715285f8a6ee cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-download
+3bd1aa73c2ebe4b7896ecfc8a1831f7b cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-install
+58d565b49c3319d9340ef659a8d2f33f cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-mkdir
+f5124c82ce929c43a51c3639f6f601b5 cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-patch
+ef1ced8a8cfee69374fab9446951e671 cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-test
+123492d0f526c93eec43de5687224ecf cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-update
