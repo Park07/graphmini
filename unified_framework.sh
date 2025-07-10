@@ -11,7 +11,7 @@ PATTERNS=(
     # Basic patterns
     "triangle 011101110 triangle-3nodes"
     "4path 0110100110100110 path-4nodes"
-    "4cycle 0110100110100110 cycle-4nodes"
+    "4cycle 0111101110011110 cycle-4nodes"
     "4star 0111100010001000 star-4nodes"
     "4clique 0111101111011110 clique-4nodes"
 
