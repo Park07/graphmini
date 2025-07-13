@@ -17,8 +17,8 @@ PATTERNS=(
 
     # Complex patterns
     "5clique 0111110111110111110111110 clique-5nodes"
-    "house 0111110001111100001000 house-5nodes"
-    "diamond 011110110001100001000000 diamond-6nodes"
+    "house 0111010101110001000101010 house-5nodes"
+    "diamond 0111101111011110 diamond-4nodes"
 )
 
 # Thread scaling
