@@ -147,7 +147,7 @@ int main(int argc, char *argv[]){
     GraphType *graph = load_bin(in_dir, false);
     LOG(MSG) << "LoadTime(s)=" << t.Passed();
     bool time_out = false;
-    double seconds = 24 * 3600;
+    double seconds = 24 * 3600; 
     Context ctx(processor_count);
 
     RunnerLog log;
