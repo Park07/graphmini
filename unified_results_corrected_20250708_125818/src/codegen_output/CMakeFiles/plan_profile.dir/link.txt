@@ -1,2 +1,0 @@
-/usr/bin/ar qc libplan_profile.a CMakeFiles/plan_profile.dir/plan_profile.cpp.o
-/usr/bin/ranlib libplan_profile.a
