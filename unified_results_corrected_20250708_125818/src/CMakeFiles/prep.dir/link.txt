@@ -1,1 +1,0 @@
-/usr/bin/c++  -stdlib=libc++ -Xpreprocessor -fopenmp -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp CMakeFiles/prep.dir/prep.cpp.o -o ../bin/prep  -Wl,-rpath,/opt/homebrew/lib preprocess/libpreprocess.a libcommon.a /opt/homebrew/lib/libtbb.12.15.dylib /opt/homebrew/lib/libtbbmalloc.2.15.dylib
