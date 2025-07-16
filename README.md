@@ -1,7 +1,7 @@
 # GraphMini
-GraphMini is a high-performance graph pattern-matching system. It supports subgraph enumeration on arbitrary patterns. 
+GraphMini is a high-performance graph pattern-matching system. It supports subgraph enumeration on arbitrary patterns.
 
-# Hardware Requirements
+# Hardware Requirements 
 1. 128GB of free RAM to preprocess the graph Friendster correctly.
 2. 180GB of free disk space to store preprocessed graphs.
 
@@ -9,6 +9,7 @@ GraphMini is a high-performance graph pattern-matching system. It supports subgr
 # Software Dependencies
 ### Operating System
 1. Ubuntu 22.04 (tested)
+2. Macbook OS (v12.05)
 
 ### Libraries
 1. CMake (Version >= 3.20)
@@ -26,17 +27,24 @@ sudo apt install curl bc cmake mpich clang-format -y
 ```
 
 # Tested Graph Data
+** Have to test on LABELLED tests according to professor.
 1. Wiki
-2. YouTube
-3. Patents
-4. LiveJournal
-5. Orkut
-6. Friendster
+2. Enron
+3. DBLP
+https://github.com/Park07/graphmini/tree/main/unified_results_graphmini_20250716_000652
+^ For small dataset I managed to match the correctness in here (120/120)
+
+Medium:
+
+Large:
+
 
 # How to compile
 ```bash
-mkdir -p build && cd build && cmake .. && make -j
+mkdir -p build && cd build && cmake .. && make -j & make ..
+make run && make runner
 ```
+Have to actually run all these make commands or it doesn't run for some reason.
 
 # How to download and preprocess data graph
 After you successfully compile the code.
@@ -54,9 +62,9 @@ The binary takes 7 required and 1 optional input:
 - path_to_graph: path to the directory that contains the preprocessed graph. (ex ../Datasets/GraphMini/wiki)
 - query_nickname: nickname for tested query (ex. P1)
 - query_adjmat: adjacency matrix of the tested query (ex. "0111101111011110" 4-clique)
-- query_type: 
-    - 0: vertex-induced, 
-    - 1: edge-induced, 
+- query_type:
+    - 0: vertex-induced,
+    - 1: edge-induced,
     - 2: edge-induced with IEP optimization
 - pruning_type:
     - 0: None: not pruning
@@ -76,4 +84,4 @@ For example:
 ./build/bin/run wiki ./dataset/GraphMini/wiki P1 0111101111011110 0 4 3
 ```
 
-This query runs P1 (4clique) on graph wiki. The query is vertex-induced. The executable uses CostModel to decide which adjacency lists to prune and uses nested parallelism to speed up query execution. 
+This query runs P1 (4clique) on graph wiki. The query is vertex-induced. The executable uses CostModel to decide which adjacency lists to prune and uses nested parallelism to speed up query execution.
