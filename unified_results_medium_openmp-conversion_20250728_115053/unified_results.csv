@@ -1,0 +1,11 @@
+Dataset,Graph_Size,Pattern,Pattern_Size,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Throughput,Memory_Peak_MB,Speedup,Efficiency,Baseline_s,Notes
+youtube,4M_nodes_34.7M_edges,triangle,3,1,0.156374,1.30203,3056386,2.3474e+06,52800.0,1.000,100.00,1.30203,baseline
+youtube,4M_nodes_34.7M_edges,triangle,3,2,0.0461138,0.664886,3056386,4.59685e+06,53008.0,1.9582,97.900,1.30203,calculated
+youtube,4M_nodes_34.7M_edges,triangle,3,4,0.042924,0.377146,3056386,8.10398e+06,53136.0,3.4523,86.300,1.30203,calculated
+youtube,4M_nodes_34.7M_edges,triangle,3,8,0.0297668,0.224256,3056386,1.3629e+07,53040.0,5.8059,72.500,1.30203,calculated
+youtube,4M_nodes_34.7M_edges,triangle,3,16,0.0289165,0.211106,3056386,1.4478e+07,53264.0,6.1676,38.500,1.30203,calculated
+youtube,4M_nodes_34.7M_edges,4cycle,4,1,0.036372,29.2353,14960895,,61360.0,1.000,100.00,29.2353,baseline
+youtube,4M_nodes_34.7M_edges,4cycle,4,2,0.144779,15.8374,14960895,,61552.0,1.8459,92.200,29.2353,calculated
+youtube,4M_nodes_34.7M_edges,4cycle,4,4,0.13254,12.6073,14960895,1.18669e+06,62336.0,2.3189,57.900,29.2353,calculated
+youtube,4M_nodes_34.7M_edges,4cycle,4,8,0.159238,9.18089,14960895,1.62957e+06,62976.0,3.1843,39.800,29.2353,calculated
+youtube,4M_nodes_34.7M_edges,4cycle,4,16,0.141974,9.41826,14960895,1.5885e+06,67984.0,3.1041,19.400,29.2353,calculated

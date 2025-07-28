@@ -1,0 +1,21 @@
+Threads=2
+LoadTime(s)=0.196204
+time: command terminated abnormally
+       39.27 real        59.31 user         0.93 sys
+            54460416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3923  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  67  voluntary context switches
+              150951  involuntary context switches
+        314153521079  instructions retired
+        103131026634  cycles elapsed
+            53166912  peak memory footprint

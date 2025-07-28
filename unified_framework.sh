@@ -4,7 +4,7 @@ echo "=== GraphMini Unified Performance Framework ==="
 cd /Users/williampark/GraphMini/build
 
 # Comprehensive datasets
-DATASETS=("wiki" "enron" "dblp")
+DATASETS=("youtube" "patents" "lj")
 
 # Real meaningful patterns from graph mining research
 PATTERNS=(
