@@ -5,19 +5,19 @@ echo "=== graphmini Advanced Experiment Framework (No Pre-processing) ==="
 # --- CONFIGURATION ---
 # This script is designed to be run from your project root: /Users/williampark/graphmini
 # Running on the three requested datasets
-DATASETS=("dblp" "enron" "wiki")
+DATASETS=("wiki" "dblp" "enron")
 THREAD_COUNTS=(1 2 4 8 16)
 TIMEOUT=900 # 15 minutes
 NUM_QUERIES_PER_CATEGORY=5
 
 # --- PATTERN DEFINITIONS ---
 PATTERN_CATEGORIES=(
-    "small_sparse;8;3"
-    "small_dense;8;6"
-    "medium_sparse;16;4"
-    "medium_dense;16;8"
-    "large_sparse;24;5"
-    "large_dense;24;10"
+    "small_sparse;8;6"     # 8 vertices, min 6 edges
+    "small_dense;8;12"     # 8 vertices, min 12 edges
+    "medium_sparse;16;20"  # 16 vertices, min 20 edges
+    "medium_dense;16;40"   # 16 vertices, min 40 edges
+    "large_sparse;24;30"   # 24 vertices, min 30 edges
+    "large_dense;24;60"    # 24 vertices, min 60 edges
 )
 
 # --- SETUP ---
@@ -37,18 +37,18 @@ echo "========================================="
 echo "PHASE 1: CHECKING/GENERATING QUERY GRAPHS"
 echo "========================================="
 for dataset in "${DATASETS[@]}"; do
-    dataset_file_path="${PROJECT_ROOT}/dataset/GraphMini/${dataset}/snap.txt"
+    dataset_file_path="${PROJECT_ROOT}/dataset/graphmini/${dataset}/snap.txt"
     if [ ! -f "$dataset_file_path" ]; then
         echo "Warning: snap.txt not found for '$dataset' at '$dataset_file_path'. Skipping query generation."
         continue
     fi
     for category_info in "${PATTERN_CATEGORIES[@]}"; do
-        IFS=';' read -r category_name target_vertices _ <<< "$category_info"
+        IFS=';' read -r category_name target_vertices min_edges <<< "$category_info"
         query_dir="${PROJECT_ROOT}/queries/${dataset}/${category_name}"
         mkdir -p "$query_dir"
         if [ -z "$(ls -A ${query_dir} 2>/dev/null)" ]; then
             echo "Generating ${NUM_QUERIES_PER_CATEGORY} queries for ${dataset} -> ${category_name}..."
-            ./generate_queries "$dataset_file_path" "$NUM_QUERIES_PER_CATEGORY" "$target_vertices" "$query_dir"
+            ./generate_queries "$dataset_file_path" "$NUM_QUERIES_PER_CATEGORY" "$target_vertices" "$min_edges" "$query_dir"
         else
             echo "Queries for ${dataset} -> ${category_name} already exist. Skipping."
         fi
@@ -59,16 +59,27 @@ done
 function file_to_binary_string() {
     local file_path=$1
     if [ ! -f "$file_path" ]; then echo "ERROR_FILE_NOT_FOUND"; return; fi
-    local n; n=$(head -n 1 "$file_path")
+
+    local n
+    n=$(head -n 1 "$file_path")
     if ! [[ "$n" =~ ^[0-9]+$ ]] || [[ "$n" -eq 0 ]]; then echo "ERROR_INVALID_VERTICES"; return; fi
-    local matrix; matrix=$(printf '0%.0s' $(seq 1 $((n * n))))
-    tail -n +2 "$file_path" | while read -r u v; do
-        if [[ -n "$u" && -n "$v" ]]; then
-            local index1=$((u * n + v)); local index2=$((v * n + u))
-            matrix=$(echo "${matrix:0:index1}1${matrix:index1+1}")
-            matrix=$(echo "${matrix:0:index2}1${matrix:index2+1}")
+
+    # Initialize matrix with zeros
+    local matrix=$(printf '0%.0s' $(seq 1 $((n * n))))
+
+    # Use process substitution instead of pipe to avoid subshell
+    while IFS=' ' read -r u v; do
+        if [[ -n "$u" && -n "$v" ]] && [[ "$u" =~ ^[0-9]+$ ]] && [[ "$v" =~ ^[0-9]+$ ]]; then
+            if [[ $u -lt $n && $v -lt $n ]]; then
+                local index1=$((u * n + v))
+                local index2=$((v * n + u))
+                # Fix the string manipulation
+                matrix="${matrix:0:$index1}1${matrix:$((index1+1))}"
+                matrix="${matrix:0:$index2}1${matrix:$((index2+1))}"
+            fi
         fi
-    done
+    done < <(tail -n +2 "$file_path")
+
     echo "$matrix"
 }
 
@@ -77,14 +88,25 @@ echo ""
 echo "========================================="
 echo "PHASE 2: RUNNING EXPERIMENTS"
 echo "========================================="
-total_tests=$(find "${PROJECT_ROOT}/queries" -type f -name "*.graph" | wc -l | xargs)
+# Calculate total tests based on actual datasets and categories being tested
+total_tests=0
+for dataset in "${DATASETS[@]}"; do
+    for category_info in "${PATTERN_CATEGORIES[@]}"; do
+        IFS=';' read -r category_name _ _ <<< "$category_info"
+        query_dir="${PROJECT_ROOT}/queries/${dataset}/${category_name}"
+        if [ -d "$query_dir" ]; then
+            patterns_in_category=$(find "$query_dir" -name "*.graph" 2>/dev/null | wc -l)
+            total_tests=$((total_tests + patterns_in_category))
+        fi
+    done
+done
 total_tests=$((total_tests * ${#THREAD_COUNTS[@]}))
 test_count=0
 
 cd "${PROJECT_ROOT}/build" || { echo "ERROR: Could not cd to build directory. Exiting."; exit 1; }
 
 for dataset in "${DATASETS[@]}"; do
-    dataset_runner_path="../dataset/GraphMini/${dataset}"
+    dataset_runner_path="../dataset/graphmini/${dataset}"
     for category_info in "${PATTERN_CATEGORIES[@]}"; do
         IFS=';' read -r category_name _ _ <<< "$category_info"
         query_dir="../queries/${dataset}/${category_name}"
@@ -113,7 +135,7 @@ for dataset in "${DATASETS[@]}"; do
 
                 # Execute the runner with the new pattern
                 export OMP_NUM_THREADS=$threads
-                timeout $TIMEOUT /usr/bin/time -l ./bin/runner 1 "$dataset_runner_path" > "$log_file" 2>&1
+                /usr/bin/time -l ./bin/runner 1 "$dataset_runner_path" > "$log_file" 2>&1
                 exit_code=$?
 
                 status="SUCCESS"; notes=""
