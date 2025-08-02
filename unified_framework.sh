@@ -19,7 +19,7 @@ PATTERNS=(
     "5clique 0111110111110111110111110 clique-5nodes"
     "house 0111010101110001000101010 house-5nodes"
     "diamond 0111101111011110 diamond-4nodes"
-)   
+)
 
 # Thread scaling
 THREAD_COUNTS=(1 2 4 8 16)
