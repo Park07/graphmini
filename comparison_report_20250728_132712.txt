@@ -1,0 +1,57 @@
+=== RESULT Comparison Report ===
+Generated: Mon Jul 28 13:27:12 AEST 2025
+OpenMP dir: unified_results_medium_openmp-conversion_20250728_120346
+GraphMini dir: unified_results_medium_graphmini_20250728_124742
+
+MATCH: lj_4clique_16t.log - RESULT=5216918441
+MATCH: lj_4clique_1t.log - RESULT=5216918441
+MATCH: lj_4clique_2t.log - RESULT=5216918441
+MATCH: lj_4clique_4t.log - RESULT=5216918441
+MATCH: lj_4clique_8t.log - RESULT=5216918441
+MATCH: lj_4cycle_16t.log - RESULT=15650755323
+MATCH: lj_4cycle_1t.log - RESULT=15650755323
+MATCH: lj_4cycle_2t.log - RESULT=15650755323
+MATCH: lj_4cycle_4t.log - RESULT=15650755323
+MATCH: lj_4cycle_8t.log - RESULT=15650755323
+MATCH: lj_triangle_16t.log - RESULT=177820130
+MATCH: lj_triangle_1t.log - RESULT=177820130
+MATCH: lj_triangle_2t.log - RESULT=177820130
+MATCH: lj_triangle_4t.log - RESULT=177820130
+MATCH: lj_triangle_8t.log - RESULT=177820130
+MATCH: patents_4clique_16t.log - RESULT=3501071
+MATCH: patents_4clique_1t.log - RESULT=3501071
+MATCH: patents_4clique_2t.log - RESULT=3501071
+MATCH: patents_4clique_4t.log - RESULT=3501071
+MATCH: patents_4clique_8t.log - RESULT=3501071
+MATCH: patents_4cycle_16t.log - RESULT=10503213
+MATCH: patents_4cycle_1t.log - RESULT=10503213
+MATCH: patents_4cycle_2t.log - RESULT=10503213
+MATCH: patents_4cycle_4t.log - RESULT=10503213
+MATCH: patents_4cycle_8t.log - RESULT=10503213
+MATCH: patents_triangle_16t.log - RESULT=7515023
+MATCH: patents_triangle_1t.log - RESULT=7515023
+MATCH: patents_triangle_2t.log - RESULT=7515023
+MATCH: patents_triangle_4t.log - RESULT=7515023
+MATCH: patents_triangle_8t.log - RESULT=7515023
+MATCH: youtube_4clique_16t.log - RESULT=4986965
+MATCH: youtube_4clique_1t.log - RESULT=4986965
+MATCH: youtube_4clique_2t.log - RESULT=4986965
+MATCH: youtube_4clique_4t.log - RESULT=4986965
+MATCH: youtube_4clique_8t.log - RESULT=4986965
+MATCH: youtube_4cycle_16t.log - RESULT=14960895
+MATCH: youtube_4cycle_1t.log - RESULT=14960895
+MATCH: youtube_4cycle_2t.log - RESULT=14960895
+MATCH: youtube_4cycle_4t.log - RESULT=14960895
+MATCH: youtube_4cycle_8t.log - RESULT=14960895
+MATCH: youtube_triangle_16t.log - RESULT=3056386
+MATCH: youtube_triangle_1t.log - RESULT=3056386
+MATCH: youtube_triangle_2t.log - RESULT=3056386
+MATCH: youtube_triangle_4t.log - RESULT=3056386
+MATCH: youtube_triangle_8t.log - RESULT=3056386
+
+=== SUMMARY ===
+Total tests compared: 45
+Matching results: 45
+Mismatched results: 0
+Missing/Error: 0
+SUCCESS: All RESULT values match!
