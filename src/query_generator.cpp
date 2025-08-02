@@ -1,131 +1,151 @@
+// In file: ~/graphmini/src/query_generator.cpp
+
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <string>
+#include <sstream> // Required for robust line parsing
 #include <random>
 #include <unordered_set>
 #include <unordered_map>
 #include <algorithm>
 #include <queue>
+#include <cstdio>
 
-#include "graph.h"
+// A simple, self-contained representation of a graph for this generator ONLY.
+struct SimpleGraph {
+    int num_vertices = 0;
+    std::vector<std::vector<int>> adj_list;
 
-/**
- * The CORE LOGIC for generating a single query graph by sampling.
- * It takes the large data graph and the target number of vertices for the query.
- */
-void generate_query_and_save(const Graph *data_graph, int target_vertices, const std::string &output_path)
-{
-    if (data_graph->getVerticesCount() < target_vertices)
-    {
-        std::cerr << "Error: Target query size is larger than the data graph." << std::endl;
+    // A more robust function to load graph files.
+    bool loadFromFile(const std::string& file_path) {
+        std::ifstream file(file_path);
+        if (!file.is_open()) {
+            std::cerr << "Error: Could not open data graph file: " << file_path << std::endl;
+            return false;
+        }
+
+        int max_vertex_id = -1;
+        std::vector<std::pair<int, int>> edges;
+        std::string line;
+
+        while (std::getline(file, line)) {
+            // Skip empty lines or lines that are comments
+            if (line.empty() || line[0] == '#' || line[0] == '%') {
+                continue;
+            }
+
+            std::stringstream ss(line);
+            int u, v;
+
+            // Try to read two integers from the line
+            if (ss >> u >> v) {
+                edges.push_back({u, v});
+                if (u > max_vertex_id) max_vertex_id = u;
+                if (v > max_vertex_id) max_vertex_id = v;
+            }
+        }
+
+        if (max_vertex_id == -1) {
+            std::cerr << "Error: No edges were loaded from the file. Check the file format and path." << std::endl;
+            return false;
+        }
+
+        num_vertices = max_vertex_id + 1;
+        adj_list.resize(num_vertices);
+        for (const auto& edge : edges) {
+            // Ensure we don't go out of bounds
+            if (edge.first < num_vertices && edge.second < num_vertices) {
+                adj_list[edge.first].push_back(edge.second);
+                adj_list[edge.second].push_back(edge.first);
+            }
+        }
+        std::cout << "Successfully loaded data graph '" << file_path << "' with " << num_vertices << " vertices." << std::endl;
+        return true;
+    }
+};
+
+void save_query_for_bash(int num_vertices, const std::vector<std::pair<int, int>>& edges, const std::string& output_path) {
+    std::ofstream out_file(output_path);
+    if (!out_file.is_open()) {
+        std::cerr << "Error: Could not open file for writing: " << output_path << std::endl;
+        return;
+    }
+    out_file << num_vertices << std::endl;
+    for (const auto& edge : edges) {
+        out_file << edge.first << " " << edge.second << std::endl;
+    }
+    out_file.close();
+    std::cout << "Saved query to " << output_path << std::endl;
+}
+
+void generate_query(const SimpleGraph& data_graph, int target_vertices, const std::string& output_path) {
+    if (data_graph.num_vertices < target_vertices) {
+        std::cerr << "Error: Target query size (" << target_vertices << ") is larger than the data graph (" << data_graph.num_vertices << ")." << std::endl;
         return;
     }
 
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<VertexID> dis(0, data_graph->getVerticesCount() - 1);
+    std::uniform_int_distribution<> dis(0, data_graph.num_vertices - 1);
 
-    std::unordered_set<VertexID> query_nodes_set;
-    std::queue<VertexID> q;
+    std::unordered_set<int> query_nodes_set;
+    std::queue<int> q;
 
-    // 1. Pick a random start node and add it to the queue
-    VertexID start_node = dis(gen);
+    int start_node = -1;
+    int attempts = 0;
+    do {
+        start_node = dis(gen);
+        attempts++;
+    } while (data_graph.adj_list.at(start_node).empty() && attempts < data_graph.num_vertices);
+
+    if (data_graph.adj_list.at(start_node).empty()) {
+        std::cerr << "Error: Could not find a starting node with neighbors." << std::endl;
+        return;
+    }
+
     q.push(start_node);
     query_nodes_set.insert(start_node);
 
-    // 2. Perform a Breadth-First Search (BFS) to find connected nodes
-    while (!q.empty() && query_nodes_set.size() < target_vertices)
-    {
-        VertexID u = q.front();
+    while (!q.empty() && query_nodes_set.size() < target_vertices) {
+        int u = q.front();
         q.pop();
 
-        ui u_degree = 0;
-        const VertexID *u_neighbors = data_graph->getNeighbors(u, u_degree);
+        if (data_graph.adj_list.at(u).empty()) continue;
 
-        if (u_degree == 0)
-            continue;
+        std::uniform_int_distribution<> neighbor_dis(0, data_graph.adj_list.at(u).size() - 1);
+        int v = data_graph.adj_list.at(u).at(neighbor_dis(gen));
 
-        // Add a few random neighbors to expand the query
-        for (int i = 0; i < std::min((ui)2, u_degree); ++i)
-        { // Explore up to 2 neighbors
-            std::uniform_int_distribution<ui> neighbor_dis(0, u_degree - 1);
-            VertexID v = u_neighbors[neighbor_dis(gen)];
-
-            if (query_nodes_set.find(v) == query_nodes_set.end() && query_nodes_set.size() < target_vertices)
-            {
-                query_nodes_set.insert(v);
-                q.push(v);
-            }
+        if (query_nodes_set.find(v) == query_nodes_set.end()) {
+           query_nodes_set.insert(v);
+           q.push(v);
         }
     }
 
-    // 3. Build the new query graph from the sampled nodes
-    std::vector<VertexID> query_nodes_vec(query_nodes_set.begin(), query_nodes_set.end());
-    ui num_query_vertices = query_nodes_vec.size();
-    std::unordered_map<VertexID, VertexID> node_map; // Maps original ID to new ID (0..N-1)
+    std::vector<int> query_nodes_vec(query_nodes_set.begin(), query_nodes_set.end());
+    int num_query_vertices = query_nodes_vec.size();
+    std::unordered_map<int, int> node_map;
 
-    for (ui i = 0; i < num_query_vertices; ++i)
-    {
+    for (int i = 0; i < num_query_vertices; ++i) {
         node_map[query_nodes_vec[i]] = i;
     }
 
-    // 4. Create the query graph file content
-    std::vector<std::pair<VertexID, VertexID>> query_edges;
-    for (ui i = 0; i < num_query_vertices; ++i)
-    {
-        VertexID u_original = query_nodes_vec[i];
-
-        ui u_degree = 0;
-        const VertexID *u_neighbors = data_graph->getNeighbors(u_original, u_degree);
-
-        for (ui j = 0; j < u_degree; ++j)
-        {
-            VertexID v_original = u_neighbors[j];
-            // If the neighbor is also in our sampled set, add the edge
-            if (query_nodes_set.count(v_original))
-            {
-                // To avoid duplicates, only add edges where u < v in the new mapping
-                if (node_map[u_original] < node_map[v_original])
-                {
+    std::vector<std::pair<int, int>> query_edges;
+    for (int u_original : query_nodes_vec) {
+        for (int v_original : data_graph.adj_list.at(u_original)) {
+            if (query_nodes_set.count(v_original)) {
+                if (node_map[u_original] < node_map[v_original]) {
                     query_edges.push_back({node_map[u_original], node_map[v_original]});
                 }
             }
         }
     }
-
-    // 5. Save the query graph to a file in a simple edge list format
-    std::ofstream out_file(output_path);
-    if (!out_file.is_open())
-    {
-        std::cerr << "Error: Could not open file for writing: " << output_path << std::endl;
-        return;
-    }
-
-    // Header for many graph formats: t # num_vertices num_edges
-    out_file << "t # " << num_query_vertices << " " << query_edges.size() << std::endl;
-
-    // A common format is to list vertices with their labels
-    // Assuming labels are not a primary concern for now, we assign a default label '0'
-    for (ui i = 0; i < num_query_vertices; ++i)
-    {
-        out_file << "v " << i << " 0" << std::endl;
-    }
-
-    // Then list the edges
-    for (const auto &edge : query_edges)
-    {
-        out_file << "e " << edge.first << " " << edge.second << std::endl;
-    }
-
-    out_file.close();
-    std::cout << "Saved query graph to " << output_path << std::endl;
+    save_query_for_bash(num_query_vertices, query_edges, output_path);
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc != 5)
-    {
-        std::cerr << "Usage: " << argv[0] << " <data_graph_path> <num_queries_to_generate> <num_vertices_in_query> <output_dir>" << std::endl;
+int main(int argc, char* argv[]) {
+    if (argc != 5) {
+        std::cerr << "Usage: " << argv[0] << " <data_graph_path> <num_queries> <num_vertices> <output_dir>" << std::endl;
         return 1;
     }
 
@@ -134,17 +154,16 @@ int main(int argc, char *argv[])
     int target_size = std::stoi(argv[3]);
     std::string output_dir = argv[4];
 
-    // Use the Graph class from the copied files
-    Graph data_graph(true); // Assuming `true` enables directionality if needed
-    data_graph.loadGraphFromFile(data_graph_path);
-
-    for (int i = 0; i < num_to_generate; ++i)
-    {
-        std::string file_path = output_dir + "/query_v" + std::to_string(target_size) + "_id" + std::to_string(i) + ".graph";
-        generate_query_and_save(&data_graph, target_size, file_path);
+    SimpleGraph data_graph;
+    if (!data_graph.loadFromFile(data_graph_path)) {
+        return 1;
     }
 
-    std::cout << "\nFinished generating " << num_to_generate << " queries." << std::endl;
+    for (int i = 0; i < num_to_generate; ++i) {
+        std::string file_path = output_dir + "/query_v" + std::to_string(target_size) + "_id" + std::to_string(i) + ".graph";
+        generate_query(data_graph, target_size, file_path);
+    }
 
+    std::cout << "\nFinished generating " << num_to_generate << " queries for this category." << std::endl;
     return 0;
 }

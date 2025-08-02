@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "=== GraphMini Unified Performance Framework ==="
-cd /Users/williampark/GraphMini/build
+cd /Users/williampark/graphmini/build
 
 # Comprehensive datasets
-DATASETS=("youtube" "patents" "lj")
+DATASETS=("wiki" "enron" "dblp")
 
 # Real meaningful patterns from graph mining research
 PATTERNS=(
@@ -321,4 +321,3 @@ except Exception as e:
     import traceback
     traceback.print_exc()
 PYTHON_EOF
-

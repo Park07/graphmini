@@ -1,0 +1,2 @@
+Dataset,Graph_Size,Pattern,Pattern_Size,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Throughput,Memory_Peak_MB,Speedup,Efficiency,Baseline_s,Notes
+wiki,7K_nodes_100K_edges,triangle,3,1,0.00471433,0.105301,608389,5.77764e+06,3904.0,1.000,100.00,0.105301,baseline
