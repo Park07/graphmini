@@ -12,12 +12,7 @@ NUM_QUERIES_PER_CATEGORY=5
 
 # --- PATTERN DEFINITIONS ---
 PATTERN_CATEGORIES=(
-    "small_sparse;8;6"     # 8 vertices, min 6 edges
-    "small_dense;8;12"     # 8 vertices, min 12 edges
-    "medium_sparse;16;20"  # 16 vertices, min 20 edges
-    "medium_dense;16;40"   # 16 vertices, min 40 edges
-    "large_sparse;24;30"   # 24 vertices, min 30 edges
-    "large_dense;24;60"    # 24 vertices, min 60 edges
+    "hku_patterns;16;mixed"
 )
 
 # --- SETUP ---
@@ -120,7 +115,7 @@ for dataset in "${DATASETS[@]}"; do
 
                 echo "[Test ${test_count}/${total_tests}] DATASET: ${dataset}, PATTERN: ${category_name}/${test_name}, THREADS: ${threads}"
 
-                pattern_binary=$(file_to_binary_string "$query_file")
+                pattern_binary=$(file_to_binary_string "$(pwd)/$query_file")
                 query_vertices=$(head -n 1 "$query_file")
                 query_edges=$(tail -n +2 "$query_file" | wc -l | xargs)
 
