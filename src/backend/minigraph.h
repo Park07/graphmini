@@ -653,6 +653,17 @@ namespace minigraph {
         void build(const VertexSet &_vertex,
                    const VertexSet &_intersect,
                    const VertexSet &_iter) override {
+            // DEBUG: CHANGED This single check at the beginning handles all crash scenarios.
+            // If the list of vertices to process is empty, there is no work to do.
+            if (_vertex.size() == 0) {
+                m_vertex = _vertex;
+                m_intersect = _intersect;
+                m_pos.Reserve(1); // allocating a minimum capacity
+                m_pos.set_size(1);
+                m_pos[0] = 0;
+                m_degree.set_size(0);
+                return; // Exit the function immediately
+            }
             m_vertex = _vertex;
             m_intersect = _intersect;
             // threshold = DATA_GRAPH->get_enum() / DATA_GRAPH->get_vnum();
