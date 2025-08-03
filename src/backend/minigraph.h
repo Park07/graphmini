@@ -14,7 +14,7 @@
 //#define DISABLE_REUSE 1
 
 namespace minigraph {
-    
+
     struct Container {
         IdType *data{nullptr};
         size_t capacity{0}; // number of elements can be stored into the buffer
@@ -194,7 +194,7 @@ namespace minigraph {
     inline const IdType *advance(const IdType* begin, const IdType* end, const IdType val) {
         while (*begin < val && begin < end) begin++;
         return begin;
-    } 
+    }
 
     inline const IdType *binary_search(const IdType *begin, const IdType *end, const IdType val) {
         assert(begin <= end);
@@ -669,7 +669,9 @@ namespace minigraph {
             //     two_htop += DATA_GRAPH->Degree(v_id);
             // }
             if (_iter.begin() == m_vertex.begin()) {
-                for (uint64_t i = 0; i < _iter.size(); ++i) {
+                // debugging: was crashing because some random queries, the list was empty?
+                if (m_vertex.size() == 0) {
+                    for (uint64_t i = 0; i < _iter.size(); ++i) {
                     size_t buffer_required = m_intersect.size() + m_pos[i];
                     if (m_ctn.capacity() < buffer_required) m_ctn.Resize(buffer_required);
                     IdType v_id = m_vertex[i];
@@ -679,7 +681,9 @@ namespace minigraph {
                     m_degree[i] = degree;
                     m_pos[i + 1] = m_pos[i] + degree;
                     num_edges += degree;
+                    }
                 }
+
                 for (uint64_t i = _iter.size(); i < m_vertex.size(); i++) {
                     if (should_prune(i)) {
                         // size_t buffer_required = m_intersect.size() + m_pos[i];

@@ -57,11 +57,7 @@ struct SimpleGraph {
     }
 };
 
-void save_query_for_bash(int num_vertices, const std::vector<std::pair<int, int>>& edges, const std::string& output_path);
-void generate_query_connected_subgraph(const SimpleGraph& data_graph, int target_vertices, int min_edges, const std::string& output_path);
-bool is_connected(int n, const std::vector<std::pair<int, int>>& edges);
-
-void save_query_for_bash(int num_vertices, const std::vector<std::pair<int, int>>& edges, const std::string& output_path) {
+void save_query_to_file(int num_vertices, const std::vector<std::pair<int, int>>& edges, const std::string& output_path) {
     std::ofstream out_file(output_path);
     if (!out_file.is_open()) {
         std::cerr << "Error: Could not open file for writing: " << output_path << std::endl;
@@ -75,116 +71,82 @@ void save_query_for_bash(int num_vertices, const std::vector<std::pair<int, int>
     std::cout << "Saved query to " << output_path << " (" << num_vertices << " vertices, " << edges.size() << " edges)" << std::endl;
 }
 
-void generate_query_connected_subgraph(const SimpleGraph& data_graph, int target_vertices, int min_edges, const std::string& output_path) {
+// New, more robust generation logic
+void generate_guaranteed_connected_subgraph(const SimpleGraph& data_graph, int target_vertices, const std::string& output_path) {
+    if (data_graph.num_vertices < target_vertices) {
+        std::cerr << "Error: Target query size is larger than the data graph." << std::endl;
+        return;
+    }
+
     std::random_device rd;
     std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, data_graph.num_vertices - 1);
 
-    for (int attempt = 0; attempt < 1000; ++attempt) {
-        // Find vertices with good connectivity
-        std::vector<int> candidates;
-        for (int i = 0; i < data_graph.num_vertices; ++i) {
-            if (data_graph.adj_list[i].size() >= 3) {  // Only consider well-connected vertices
-                candidates.push_back(i);
-            }
-        }
-
-        if (candidates.size() < target_vertices) continue;
-
-        // Start with a random well-connected vertex
-        std::uniform_int_distribution<> start_dis(0, candidates.size() - 1);
-        std::unordered_set<int> selected;
-        std::queue<int> to_explore;
-
-        int start = candidates[start_dis(gen)];
-        selected.insert(start);
-        to_explore.push(start);
-
-        // BFS expansion to get exactly target_vertices
-        while (selected.size() < target_vertices && !to_explore.empty()) {
-            int current = to_explore.front();
-            to_explore.pop();
-
-            // Shuffle neighbors for randomness
-            std::vector<int> neighbors = data_graph.adj_list[current];
-            std::shuffle(neighbors.begin(), neighbors.end(), gen);
-
-            for (int neighbor : neighbors) {
-                if (selected.size() >= target_vertices) break;
-                if (selected.find(neighbor) == selected.end()) {
-                    selected.insert(neighbor);
-                    to_explore.push(neighbor);
-                }
-            }
-        }
-
-        // Must have exactly target_vertices
-        if (selected.size() != target_vertices) continue;
-
-        // Create mapping and extract edges
-        std::vector<int> nodes(selected.begin(), selected.end());
-        std::unordered_map<int, int> node_map;
-        for (int i = 0; i < nodes.size(); ++i) {
-            node_map[nodes[i]] = i;
-        }
-
-        std::vector<std::pair<int, int>> edges;
-        for (int u_orig : nodes) {
-            for (int v_orig : data_graph.adj_list[u_orig]) {
-                if (selected.count(v_orig) && u_orig < v_orig) {
-                    edges.push_back({node_map[u_orig], node_map[v_orig]});
-                }
-            }
-        }
-
-        // Check if we have enough edges and the graph is connected
-        if (edges.size() >= min_edges && is_connected(target_vertices, edges)) {
-            save_query_for_bash(target_vertices, edges, output_path);
-            return;
-        }
-    }
-
-    std::cerr << "Failed to generate suitable query after 1000 attempts for " << output_path << std::endl;
-}
-
-// Add this connectivity check function:
-bool is_connected(int n, const std::vector<std::pair<int, int>>& edges) {
-    std::vector<std::vector<int>> adj(n);
-    for (const auto& edge : edges) {
-        adj[edge.first].push_back(edge.second);
-        adj[edge.second].push_back(edge.first);
-    }
-
-    std::vector<bool> visited(n, false);
+    std::unordered_set<int> selected_nodes;
     std::queue<int> q;
-    q.push(0);
-    visited[0] = true;
-    int count = 1;
 
-    while (!q.empty()) {
+    // 1. Find a random starting node that has at least one neighbor
+    int start_node = -1;
+    do {
+        start_node = dis(gen);
+    } while (data_graph.adj_list.at(start_node).empty());
+
+    q.push(start_node);
+    selected_nodes.insert(start_node);
+
+    // 2. Perform a Breadth-First Search (BFS) to gather a connected set of nodes
+    while (selected_nodes.size() < target_vertices && !q.empty()) {
         int u = q.front();
         q.pop();
-        for (int v : adj[u]) {
-            if (!visited[v]) {
-                visited[v] = true;
-                q.push(v);
-                count++;
+
+        const auto& neighbors = data_graph.adj_list.at(u);
+        if (neighbors.empty()) continue;
+
+        // Add a random neighbor to the set
+        std::uniform_int_distribution<> neighbor_dis(0, neighbors.size() - 1);
+        int v = neighbors[neighbor_dis(gen)];
+
+        if (selected_nodes.find(v) == selected_nodes.end()) {
+           selected_nodes.insert(v);
+           q.push(v);
+        }
+    }
+
+    // 3. Create a mapping from original node IDs to new IDs (0 to N-1)
+    std::vector<int> query_nodes_vec(selected_nodes.begin(), selected_nodes.end());
+    int num_query_vertices = query_nodes_vec.size();
+    std::unordered_map<int, int> node_map;
+    for (int i = 0; i < num_query_vertices; ++i) {
+        node_map[query_nodes_vec[i]] = i;
+    }
+
+    // 4. Add all the edges that exist between the selected nodes
+    std::vector<std::pair<int, int>> query_edges;
+    for (int u_original : query_nodes_vec) {
+        for (int v_original : data_graph.adj_list.at(u_original)) {
+            // If the neighbor was also selected, add the edge
+            if (selected_nodes.count(v_original)) {
+                if (node_map[u_original] < node_map[v_original]) { // Avoid duplicate edges
+                    query_edges.push_back({node_map[u_original], node_map[v_original]});
+                }
             }
         }
     }
 
-    return count == n;
+    save_query_to_file(num_query_vertices, query_edges, output_path);
 }
 
 int main(int argc, char* argv[]) {
+    // The script now passes 5 arguments, so we check for 6 (including the program name)
     if (argc != 6) {
-        std::cerr << "Usage: " << argv[0] << " <data_graph_path> <num_queries> <num_vertices> <min_edges> <output_dir>" << std::endl;
+        std::cerr << "Usage: " << argv[0] << " <data_graph_path> <num_queries> <num_vertices> <min_edges_ignored> <output_dir>" << std::endl;
         return 1;
     }
 
     std::string data_graph_path = argv[1];
     int num_to_generate = std::stoi(argv[2]);
     int target_size = std::stoi(argv[3]);
-    int min_edges = std::stoi(argv[4]);
+    // We ignore argv[4] (min_edges) for this simpler, more robust generator
     std::string output_dir = argv[5];
 
     SimpleGraph data_graph;
@@ -194,7 +156,7 @@ int main(int argc, char* argv[]) {
 
     for (int i = 0; i < num_to_generate; ++i) {
         std::string file_path = output_dir + "/query_v" + std::to_string(target_size) + "_id" + std::to_string(i) + ".graph";
-        generate_query_connected_subgraph(data_graph, target_size, min_edges, file_path);
+        generate_guaranteed_connected_subgraph(data_graph, target_size, file_path);
     }
 
     std::cout << "\nFinished generating " << num_to_generate << " queries." << std::endl;
