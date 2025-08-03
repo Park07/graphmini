@@ -8,3 +8,5 @@ cmake-build-release
 .idea
 .cache
 .DS_Store
+dataset_backup_openmp/
+temp_backup/
