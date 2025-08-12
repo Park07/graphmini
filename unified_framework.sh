@@ -4,7 +4,7 @@ echo "=== GraphMini Unified Performance Framework ==="
 cd /Users/williampark/GraphMini/build
 
 # Comprehensive datasets
-DATASETS=("wiki" "enron" "dblp")
+DATASETS=("wiki" "enron")
 
 # Real meaningful patterns from graph mining research
 PATTERNS=(
@@ -16,13 +16,13 @@ PATTERNS=(
     "4clique 0111101111011110 clique-4nodes"
 
     # Complex patterns
-    "5clique 0111110111110111110111110 clique-5nodes"
-    "house 0111010101110001000101010 house-5nodes"
-    "diamond 0111101111011110 diamond-4nodes"
+    #"5clique 0111110111110111110111110 clique-5nodes"
+    #"house 0111010101110001000101010 house-5nodes"
+    #"diamond 0111101111011110 diamond-4nodes"
 )
 
 # Thread scaling
-THREAD_COUNTS=(1 2 4 8 16)
+THREAD_COUNTS=(1 2 4)
 BRANCH_NAME=$(git branch --show-current)
 RESULTS_DIR="../unified_results_${BRANCH_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR"
