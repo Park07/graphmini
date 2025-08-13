@@ -1,0 +1,22 @@
+Threads=16
+LoadTime(s)=0.00269333
+Assertion failed: (i < m_size), function operator[], file vertex_set.h, line 118.
+time: command terminated abnormally
+        0.04 real         0.00 user         0.00 sys
+             5111808  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                 398  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                  76  involuntary context switches
+            29044667  instructions retired
+            14496077  cycles elapsed
+             3703936  peak memory footprint

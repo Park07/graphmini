@@ -1,0 +1,3 @@
+Dataset,PatternCategory,QueryFile,QueryVertices,QueryEdges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_Peak_MB,Status,Notes
+wiki,small_sparse,query_v8_id0.graph,8,12,1,0.00981575,14.6704,7581407,3984.0,SUCCESS,
+wiki,small_sparse,query_v8_id0.graph,8,12,2,0.00998562,7.73359,7581407,4416.0,SUCCESS,

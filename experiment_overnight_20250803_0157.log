@@ -1,0 +1,29 @@
+=== graphmini Advanced Experiment Framework (No Pre-processing) ===
+Results will be saved in: /Users/williampark/graphmini/unified_results_openmp-conversion_20250803_015746
+
+=========================================
+PHASE 1: CHECKING/GENERATING QUERY GRAPHS
+=========================================
+Queries for wiki -> small_sparse already exist. Skipping.
+Queries for wiki -> small_dense already exist. Skipping.
+Queries for wiki -> medium_sparse already exist. Skipping.
+Queries for wiki -> medium_dense already exist. Skipping.
+Queries for wiki -> large_sparse already exist. Skipping.
+Queries for wiki -> large_dense already exist. Skipping.
+Queries for dblp -> small_sparse already exist. Skipping.
+Queries for dblp -> small_dense already exist. Skipping.
+Queries for dblp -> medium_sparse already exist. Skipping.
+Queries for dblp -> medium_dense already exist. Skipping.
+Queries for dblp -> large_sparse already exist. Skipping.
+Queries for dblp -> large_dense already exist. Skipping.
+Queries for enron -> small_sparse already exist. Skipping.
+Queries for enron -> small_dense already exist. Skipping.
+Queries for enron -> medium_sparse already exist. Skipping.
+Queries for enron -> medium_dense already exist. Skipping.
+Queries for enron -> large_sparse already exist. Skipping.
+Queries for enron -> large_dense already exist. Skipping.
+
+=========================================
+PHASE 2: RUNNING EXPERIMENTS
+=========================================
+[Test 1/450] DATASET: wiki, PATTERN: small_sparse/query_v8_id0, THREADS: 1
