@@ -1,0 +1,57 @@
+Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes
+youtube,Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_1,4,3,4,N/A,N/A,N/A,53.2,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,53.9,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_4v_1,4,3,32,N/A,N/A,N/A,54.6,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_4v_1,4,3,64,N/A,N/A,N/A,56.0,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_4v_2,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_2,4,3,4,0.0381056,231.115,91488735459,53.7,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_2,4,3,16,0.0396993,58.7493,91488735459,55.4,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_2,4,3,32,0.0383107,30.3903,91488735459,57.8,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_2,4,3,64,0.0375609,27.7903,91488735459,62.1,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_3,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_3,4,3,4,0.0390682,236.663,91488735459,53.6,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_3,4,3,16,0.0304017,65.4319,91488735459,55.4,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_3,4,3,32,0.0391343,32.3383,91488735459,57.6,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_3,4,3,64,0.0380585,29.7324,91488735459,62.2,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_4,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_4,4,3,4,0.0377751,237.727,91488735459,53.7,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_4,4,3,16,0.0478447,59.5581,91488735459,55.5,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_4,4,3,32,0.0385817,30.7473,91488735459,57.9,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_4,4,3,64,0.0361913,28.5378,91488735459,62.2,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_5,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_5,4,3,4,0.0372128,238.379,91488735459,53.5,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_5,4,3,16,0.0382668,62.2923,91488735459,55.5,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_5,4,3,32,0.0401914,30.5003,91488735459,57.8,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_5,4,3,64,0.0375163,24.7685,91488735459,62.2,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_6,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_6,4,3,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_6,4,3,16,0.038082,58.437,91488735459,55.4,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_6,4,3,32,0.0385217,30.5166,91488735459,57.9,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_6,4,3,64,0.0376081,24.6157,91488735459,62.3,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_7,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_7,4,3,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_7,4,3,16,0.038248,58.3072,91488735459,55.4,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_7,4,3,32,0.0380392,30.4772,91488735459,57.7,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_7,4,3,64,0.0379396,24.572,91488735459,62.2,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_8,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_8,4,3,4,0.0379326,235.503,91488735459,53.5,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_8,4,3,16,0.0392301,61.2904,91488735459,55.4,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_8,4,3,32,0.0375608,30.8074,91488735459,57.8,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_8,4,3,64,0.0407232,25.843,91488735459,62.1,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_9,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_9,4,3,4,0.0404288,231.38,91488735459,53.6,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_9,4,3,16,0.0401385,58.2579,91488735459,55.4,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_9,4,3,32,0.0402811,30.4662,91488735459,57.8,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_9,4,3,64,0.0399319,28.4597,91488735459,62.3,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_10,4,4,1,0.0394172,145.413,12371157628,57.3,1.00,100.0,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_10,4,4,4,0.0412494,48.7708,12371157628,63.7,2.98,74.5,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_10,4,4,16,0.0400191,44.5361,12371157628,70.8,3.26,20.3,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_10,4,4,32,0.040675,44.5749,12371157628,78.3,3.26,10.1,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_10,4,4,64,0.0399649,43.6536,12371157628,87.4,3.33,5.2,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_11,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
+youtube,Patterns,small_dense_4v_11,4,3,4,0.0387318,234.304,91488735459,53.5,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_11,4,3,16,0.0396456,58.9882,91488735459,55.5,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_11,4,3,32,0.040144,30.5006,91488735459,57.7,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_11,4,3,64,0.0401041,24.8699,91488735459,62.2,N/A,N/A,SUCCESS,GraphMini pattern worked!
+youtube,Patterns,small_dense_4v_12,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (240s)
