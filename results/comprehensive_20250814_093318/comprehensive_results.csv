@@ -1,0 +1,317 @@
+Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes
+dblp,GraphMini_Original,P1,4,N/A,1,0.016821,0.602005,16713192,19.7,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P1,4,N/A,4,0.0166908,0.173829,16713192,19.8,3.46,86.5,SUCCESS,Original pattern
+dblp,GraphMini_Original,P1,4,N/A,16,0.0173917,0.065985,16713192,20.0,9.12,57.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P1,4,N/A,32,0.017133,0.0476825,16713192,20.2,12.62,39.4,SUCCESS,Original pattern
+dblp,GraphMini_Original,P1,4,N/A,64,0.0170413,0.0427491,16713192,20.9,14.08,22.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P2,5,N/A,1,0.0167206,4.02945,11466097,19.6,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P2,5,N/A,4,0.0174824,0.995395,11466097,19.8,4.04,101.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P2,5,N/A,16,0.0171405,0.29013,11466097,20.0,13.88,86.7,SUCCESS,Original pattern
+dblp,GraphMini_Original,P2,5,N/A,32,0.0169319,0.16063,11466097,20.4,25.08,78.3,SUCCESS,Original pattern
+dblp,GraphMini_Original,P2,5,N/A,64,0.0168966,0.130819,11466097,21.2,30.80,48.1,SUCCESS,Original pattern
+dblp,GraphMini_Original,P3,5,N/A,1,0.0170624,21.4397,93821341,19.7,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P3,5,N/A,4,0.0172385,5.74402,93821341,19.8,3.73,93.2,SUCCESS,Original pattern
+dblp,GraphMini_Original,P3,5,N/A,16,0.0175239,1.55493,93821341,20.1,13.78,86.1,SUCCESS,Original pattern
+dblp,GraphMini_Original,P3,5,N/A,32,0.0171407,0.82773,93821341,20.5,25.90,80.9,SUCCESS,Original pattern
+dblp,GraphMini_Original,P3,5,N/A,64,0.0169874,0.739398,93821341,21.2,28.99,45.2,SUCCESS,Original pattern
+dblp,GraphMini_Original,P4,5,N/A,1,0.0159697,4.51348,262663639,19.5,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P4,5,N/A,4,0.0173593,1.2211,262663639,19.7,3.69,92.2,SUCCESS,Original pattern
+dblp,GraphMini_Original,P4,5,N/A,16,0.0162308,0.33616,262663639,19.8,13.42,83.8,SUCCESS,Original pattern
+dblp,GraphMini_Original,P4,5,N/A,32,0.0174027,0.213455,262663639,20.4,21.14,66.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P4,5,N/A,64,0.0172528,0.222539,262663639,21.2,20.28,31.6,SUCCESS,Original pattern
+dblp,GraphMini_Original,P5,6,N/A,1,0.0190619,152.9,89217432,19.7,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P5,6,N/A,4,0.0193668,38.4955,89217432,19.9,3.97,99.2,SUCCESS,Original pattern
+dblp,GraphMini_Original,P5,6,N/A,16,0.0196258,10.0493,89217432,20.4,15.21,95.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P5,6,N/A,32,0.0176263,5.1169,89217432,21.0,29.88,93.3,SUCCESS,Original pattern
+dblp,GraphMini_Original,P5,6,N/A,64,0.0178218,3.94867,89217432,22.1,38.72,60.5,SUCCESS,Original pattern
+dblp,GraphMini_Original,P6,6,N/A,1,0.0174227,5.61395,24076173,19.6,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P6,6,N/A,4,0.017681,1.43895,24076173,19.7,3.90,97.5,SUCCESS,Original pattern
+dblp,GraphMini_Original,P6,6,N/A,16,0.0173583,0.385468,24076173,20.7,14.56,91.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P6,6,N/A,32,0.0168385,0.224626,24076173,21.1,24.99,78.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P6,6,N/A,64,0.0171299,0.170761,24076173,23.6,32.87,51.3,SUCCESS,Original pattern
+dblp,GraphMini_Original,P7,6,N/A,1,0.0189613,69.017,30817361,19.6,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P7,6,N/A,4,0.0187379,17.5769,30817361,20.0,3.92,98.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P7,6,N/A,16,0.0193354,4.68672,30817361,20.6,14.72,92.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P7,6,N/A,32,0.0173719,2.43382,30817361,21.7,28.35,88.5,SUCCESS,Original pattern
+dblp,GraphMini_Original,P7,6,N/A,64,0.0188194,2.01637,30817361,23.7,34.22,53.4,SUCCESS,Original pattern
+dblp,GraphMini_Original,P8,7,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+dblp,GraphMini_Original,P8,7,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+dblp,GraphMini_Original,P8,7,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+dblp,Your_Patterns,small_dense_4v_1,4,4,1,0.0168064,4.54847,96615211,19.6,1.00,100.0,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_dense_4v_1,4,4,4,0.0170899,1.30365,96615211,19.8,3.48,87.0,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_dense_4v_1,4,4,16,0.0168326,0.362474,96615211,20.0,12.54,78.3,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_dense_4v_1,4,4,32,0.0166734,0.203766,96615211,20.2,22.32,69.7,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_dense_4v_1,4,4,64,0.0177853,0.142697,96615211,21.3,31.87,49.7,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_sparse_4v_1,4,3,1,0.0173814,4.90877,252447350,19.6,1.00,100.0,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_sparse_4v_1,4,3,4,0.0190748,1.25549,252447350,19.8,3.90,97.5,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_sparse_4v_1,4,3,16,0.0189299,0.361902,252447350,20.0,13.56,84.7,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_sparse_4v_1,4,3,32,0.0187314,0.200516,252447350,20.5,24.48,76.5,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_sparse_4v_1,4,3,64,0.0188484,0.141115,252447350,21.5,34.78,54.3,SUCCESS,Your pattern worked!
+dblp,Your_Patterns,small_dense_8v_1,8,9,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+dblp,Your_Patterns,small_dense_8v_1,8,9,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+dblp,Your_Patterns,small_dense_8v_1,8,9,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+dblp,Your_Patterns,small_sparse_8v_1,8,15,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout (60s)
+youtube,GraphMini_Original,P1,4,N/A,1,0.0462207,2.65936,4986965,53.2,1.00,100.0,SUCCESS,Original pattern
+youtube,GraphMini_Original,P1,4,N/A,4,0.0453148,0.699636,4986965,53.4,3.80,95.0,SUCCESS,Original pattern
+youtube,GraphMini_Original,P1,4,N/A,16,0.0472289,0.232919,4986965,53.6,11.41,71.3,SUCCESS,Original pattern
+youtube,GraphMini_Original,P1,4,N/A,32,0.0485244,0.1677,4986965,53.7,15.85,49.5,SUCCESS,Original pattern
+youtube,GraphMini_Original,P1,4,N/A,64,0.0487088,0.128429,4986965,54.1,20.70,32.3,SUCCESS,Original pattern
+youtube,GraphMini_Original,P2,5,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P2,5,N/A,4,0.0472091,136.742,50244537511,53.4,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P2,5,N/A,16,0.04388,80.4178,50244537511,53.6,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P2,5,N/A,32,0.0472747,78.7696,50244537511,54.0,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P2,5,N/A,64,0.0400645,79.3688,50244537511,54.8,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P3,5,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P3,5,N/A,4,0.0396786,125.986,1902181461,53.3,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P3,5,N/A,16,0.047249,31.8693,1902181461,53.4,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P3,5,N/A,32,0.0478903,18.3919,1902181461,54.3,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P3,5,N/A,64,0.0403838,14.7559,1902181461,55.0,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P4,5,N/A,1,0.0396181,3.64653,7211947,53.2,1.00,100.0,SUCCESS,Original pattern
+youtube,GraphMini_Original,P4,5,N/A,4,0.0394784,0.946996,7211947,53.4,3.85,96.2,SUCCESS,Original pattern
+youtube,GraphMini_Original,P4,5,N/A,16,0.0382061,0.288326,7211947,53.6,12.64,79.0,SUCCESS,Original pattern
+youtube,GraphMini_Original,P4,5,N/A,32,0.0415543,0.189802,7211947,53.9,19.21,60.0,SUCCESS,Original pattern
+youtube,GraphMini_Original,P4,5,N/A,64,0.0487613,0.144518,7211947,54.6,25.23,39.4,SUCCESS,Original pattern
+youtube,GraphMini_Original,P5,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P5,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P5,6,N/A,16,0.0468262,274.655,73583788710,53.7,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P5,6,N/A,32,0.0397489,171.536,73583788710,54.6,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P5,6,N/A,64,0.040939,168.403,73583788710,55.6,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P6,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P6,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P6,6,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P6,6,N/A,32,0.0491349,223.15,122401075225,59.6,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P6,6,N/A,64,0.0427294,218.979,122401075225,65.5,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P7,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P7,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P7,6,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P7,6,N/A,32,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P7,6,N/A,64,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,GraphMini_Original,P8,7,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+youtube,GraphMini_Original,P8,7,N/A,4,0.0484888,60.5442,99180327,53.4,N/A,N/A,SUCCESS,Original pattern
+youtube,GraphMini_Original,P8,7,N/A,16,0.0468736,15.5611,99180327,53.7,N/A,N/A,SUCCESS,Original pattern
+youtube,Your_Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,Your_Patterns,small_dense_4v_1,4,3,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,Your_Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,Your_Patterns,small_dense_4v_1,4,3,32,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,Your_Patterns,small_dense_4v_1,4,3,64,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,Your_Patterns,small_sparse_4v_1,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,Your_Patterns,small_sparse_4v_1,4,3,4,0.0465302,233.105,91488735459,53.7,N/A,N/A,SUCCESS,Your pattern worked!
+youtube,Your_Patterns,small_sparse_4v_1,4,3,16,0.0466566,58.7059,91488735459,55.3,N/A,N/A,SUCCESS,Your pattern worked!
+youtube,Your_Patterns,small_sparse_4v_1,4,3,32,0.0393442,30.7132,91488735459,57.6,N/A,N/A,SUCCESS,Your pattern worked!
+youtube,Your_Patterns,small_sparse_4v_1,4,3,64,0.0394101,24.6316,91488735459,62.2,N/A,N/A,SUCCESS,Your pattern worked!
+youtube,Your_Patterns,small_dense_8v_1,8,7,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout (60s)
+youtube,Your_Patterns,small_sparse_8v_1,8,7,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+youtube,Your_Patterns,small_sparse_8v_1,8,7,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+youtube,Your_Patterns,small_sparse_8v_1,8,7,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+roadNet-CA,GraphMini_Original,P1,4,N/A,1,0.0497543,0.466415,42,70.3,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P1,4,N/A,4,0.0601779,0.18425,42,70.6,2.53,63.2,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P1,4,N/A,16,0.0506055,0.146818,42,70.8,3.17,19.8,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P1,4,N/A,32,0.0506732,0.127579,42,71.0,3.65,11.4,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P1,4,N/A,64,0.0590903,0.155404,42,71.4,3.00,4.6,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P2,5,N/A,1,0.0617168,0.682703,1,70.5,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P2,5,N/A,4,0.0485513,0.222298,1,70.6,3.07,76.7,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P2,5,N/A,16,0.0593916,0.19477,1,70.7,3.50,21.8,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P2,5,N/A,32,0.0490598,0.145804,1,71.1,4.68,14.6,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P2,5,N/A,64,0.0611719,0.215692,1,71.6,3.16,4.9,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P3,5,N/A,1,0.0609065,0.705208,1,70.6,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P3,5,N/A,4,0.0590112,0.286088,1,70.7,2.46,61.5,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P3,5,N/A,16,0.0589664,0.262339,1,70.9,2.68,16.7,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P3,5,N/A,32,0.0610889,0.260403,1,71.1,2.70,8.4,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P3,5,N/A,64,0.0610658,0.17734,1,71.5,3.97,6.2,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P4,5,N/A,1,0.0596614,0.477171,0,70.3,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P4,5,N/A,4,0.0574198,0.238179,0,70.5,2.00,50.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P4,5,N/A,16,0.0582868,0.233346,0,70.7,2.04,12.7,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P4,5,N/A,32,0.0595077,0.219986,0,71.0,2.16,6.7,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P4,5,N/A,64,0.0611656,0.179321,0,71.7,2.66,4.1,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P5,6,N/A,1,0.0592233,0.710298,0,70.3,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P5,6,N/A,4,0.058298,0.284074,0,70.5,2.50,62.5,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P5,6,N/A,16,0.058698,0.228168,0,70.6,3.11,19.4,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P5,6,N/A,32,0.0610309,0.221706,0,70.8,3.20,10.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P5,6,N/A,64,0.0609008,0.211865,0,71.6,3.35,5.2,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P6,6,N/A,1,0.0608928,1.86605,48,70.6,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P6,6,N/A,4,0.0589961,0.547917,48,70.4,3.40,85.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P6,6,N/A,16,0.0580617,0.285929,48,70.8,6.52,40.7,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P6,6,N/A,32,0.0609638,0.264453,48,71.0,7.05,22.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P6,6,N/A,64,0.0614908,0.210488,48,71.8,8.86,13.8,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P7,6,N/A,1,0.0597742,1.82712,12,70.5,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P7,6,N/A,4,0.058392,0.537954,12,70.7,3.39,84.7,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P7,6,N/A,16,0.0591496,0.268583,12,70.7,6.80,42.5,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P7,6,N/A,32,0.0608334,0.232475,12,71.0,7.85,24.5,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P7,6,N/A,64,0.059146,0.18565,12,71.5,9.84,15.3,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P8,7,N/A,1,0.0593861,0.909238,0,70.6,1.00,100.0,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P8,7,N/A,4,0.0584376,0.318866,0,70.6,2.85,71.2,SUCCESS,Original pattern
+roadNet-CA,GraphMini_Original,P8,7,N/A,16,0.0586378,0.246324,0,70.7,3.69,23.0,SUCCESS,Original pattern
+roadNet-CA,Your_Patterns,small_dense_4v_1,4,3,1,0.0605692,1.6095,10746270,70.5,1.00,100.0,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_dense_4v_1,4,3,4,0.0573645,0.489235,10746270,70.5,3.28,82.0,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_dense_4v_1,4,3,16,0.057476,0.257691,10746270,70.7,6.24,39.0,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_dense_4v_1,4,3,32,0.0607139,0.260142,10746270,71.0,6.18,19.3,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_dense_4v_1,4,3,64,0.06124,0.213188,10746270,71.5,7.54,11.7,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_sparse_4v_1,4,3,1,0.0587894,1.60907,10746270,70.6,1.00,100.0,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_sparse_4v_1,4,3,4,0.0579886,0.504813,10746270,70.6,3.18,79.5,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_sparse_4v_1,4,3,16,0.0582075,0.254287,10746270,70.7,6.32,39.5,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_sparse_4v_1,4,3,32,0.0596649,0.262173,10746270,70.9,6.13,19.1,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_sparse_4v_1,4,3,64,0.0591212,0.20907,10746270,71.6,7.69,12.0,SUCCESS,Your pattern worked!
+roadNet-CA,Your_Patterns,small_dense_8v_1,8,10,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout (60s)
+roadNet-CA,Your_Patterns,small_sparse_8v_1,8,9,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout (60s)
+enron,GraphMini_Original,P1,4,N/A,1,0.00316483,0.390934,2341639,6.7,1.00,100.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P1,4,N/A,4,0.00352779,0.115604,2341639,6.8,3.38,84.5,SUCCESS,Original pattern
+enron,GraphMini_Original,P1,4,N/A,16,0.00344939,0.049534,2341639,7.0,7.89,49.3,SUCCESS,Original pattern
+enron,GraphMini_Original,P1,4,N/A,32,0.00345159,0.0366694,2341639,7.2,10.66,33.3,SUCCESS,Original pattern
+enron,GraphMini_Original,P1,4,N/A,64,0.00355091,0.0317759,2341639,7.8,12.30,19.2,SUCCESS,Original pattern
+enron,GraphMini_Original,P2,5,N/A,1,0.00314937,18.0398,406817255,6.6,1.00,100.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P2,5,N/A,4,0.00310272,4.67819,406817255,6.8,3.85,96.2,SUCCESS,Original pattern
+enron,GraphMini_Original,P2,5,N/A,16,0.00346423,1.41357,406817255,6.8,12.76,79.7,SUCCESS,Original pattern
+enron,GraphMini_Original,P2,5,N/A,32,0.00354151,0.966485,406817255,7.5,18.66,58.3,SUCCESS,Original pattern
+enron,GraphMini_Original,P2,5,N/A,64,0.00309694,0.918175,406817255,8.2,19.64,30.6,SUCCESS,Original pattern
+enron,GraphMini_Original,P3,5,N/A,1,0.00394934,42.2991,285692402,6.6,1.00,100.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P3,5,N/A,4,0.00413088,10.9926,285692402,6.7,3.84,96.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P3,5,N/A,16,0.00344563,2.97523,285692402,7.0,14.21,88.8,SUCCESS,Original pattern
+enron,GraphMini_Original,P3,5,N/A,32,0.00317603,1.58821,285692402,7.5,26.63,83.2,SUCCESS,Original pattern
+enron,GraphMini_Original,P3,5,N/A,64,0.00305341,1.2756,285692402,8.3,33.16,51.8,SUCCESS,Original pattern
+enron,GraphMini_Original,P4,5,N/A,1,0.0034467,0.869513,5809356,6.7,1.00,100.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P4,5,N/A,4,0.00346686,0.238852,5809356,6.8,3.64,91.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P4,5,N/A,16,0.00345566,0.0890132,5809356,7.0,9.76,61.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P4,5,N/A,32,0.00364354,0.0607451,5809356,7.3,14.31,44.7,SUCCESS,Original pattern
+enron,GraphMini_Original,P4,5,N/A,64,0.0039459,0.0569818,5809356,8.2,15.25,23.8,SUCCESS,Original pattern
+enron,GraphMini_Original,P5,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+enron,GraphMini_Original,P5,6,N/A,4,0.00347385,98.9195,3980912552,6.8,N/A,N/A,SUCCESS,Original pattern
+enron,GraphMini_Original,P5,6,N/A,16,0.00306311,26.6621,3980912552,6.9,N/A,N/A,SUCCESS,Original pattern
+enron,GraphMini_Original,P5,6,N/A,32,0.00360844,17.4791,3980912552,7.9,N/A,N/A,SUCCESS,Original pattern
+enron,GraphMini_Original,P5,6,N/A,64,0.0030349,15.3286,3980912552,8.9,N/A,N/A,SUCCESS,Original pattern
+enron,GraphMini_Original,P6,6,N/A,1,0.00302593,207.151,3980902924,6.6,1.00,100.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P6,6,N/A,4,0.00397451,52.0333,3980902924,6.8,3.98,99.5,SUCCESS,Original pattern
+enron,GraphMini_Original,P6,6,N/A,16,0.00345984,15.619,3980902924,7.1,13.26,82.8,SUCCESS,Original pattern
+enron,GraphMini_Original,P6,6,N/A,32,0.00308163,13.5681,3980902924,8.2,15.26,47.6,SUCCESS,Original pattern
+enron,GraphMini_Original,P6,6,N/A,64,0.00302484,12.5093,3980902924,10.1,16.55,25.8,SUCCESS,Original pattern
+enron,GraphMini_Original,P7,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+enron,GraphMini_Original,P7,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+enron,GraphMini_Original,P7,6,N/A,16,0.00334278,104.789,2673718975,7.1,N/A,N/A,SUCCESS,Original pattern
+enron,GraphMini_Original,P7,6,N/A,32,0.00345275,80.8745,2673718975,8.5,N/A,N/A,SUCCESS,Original pattern
+enron,GraphMini_Original,P7,6,N/A,64,0.00322123,73.262,2673718975,10.2,N/A,N/A,SUCCESS,Original pattern
+enron,GraphMini_Original,P8,7,N/A,1,0.00304907,56.9804,118042094,6.7,1.00,100.0,SUCCESS,Original pattern
+enron,GraphMini_Original,P8,7,N/A,4,0.00347697,14.4232,118042094,6.8,3.95,98.7,SUCCESS,Original pattern
+enron,GraphMini_Original,P8,7,N/A,16,0.0030724,4.22704,118042094,7.0,13.47,84.1,SUCCESS,Original pattern
+enron,Your_Patterns,small_dense_4v_1,4,3,1,0.00304912,18.7022,1371828020,6.6,1.00,100.0,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_dense_4v_1,4,3,4,0.00326922,4.97793,1371828020,6.7,3.75,93.7,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_dense_4v_1,4,3,16,0.00343525,1.37322,1371828020,6.9,13.61,85.0,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_dense_4v_1,4,3,32,0.00348241,0.738235,1371828020,7.4,25.33,79.1,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_dense_4v_1,4,3,64,0.00313239,0.533163,1371828020,8.4,35.07,54.7,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_sparse_4v_1,4,4,1,0.00352719,11.1567,375691411,6.6,1.00,100.0,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_sparse_4v_1,4,4,4,0.00334598,3.06953,375691411,6.8,3.63,90.7,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_sparse_4v_1,4,4,16,0.00346904,0.846856,375691411,6.9,13.17,82.3,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_sparse_4v_1,4,4,32,0.00362348,0.450964,375691411,7.2,24.73,77.2,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_sparse_4v_1,4,4,64,0.00363745,0.323033,375691411,8.2,34.53,53.9,SUCCESS,Your pattern worked!
+enron,Your_Patterns,small_dense_8v_1,8,15,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+enron,Your_Patterns,small_dense_8v_1,8,15,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+enron,Your_Patterns,small_dense_8v_1,8,15,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+enron,Your_Patterns,small_sparse_8v_1,8,15,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+enron,Your_Patterns,small_sparse_8v_1,8,15,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+enron,Your_Patterns,small_sparse_8v_1,8,15,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,GraphMini_Original,P1,4,N/A,1,0.170717,148.028,5216918441,360.5,1.00,100.0,SUCCESS,Original pattern
+lj,GraphMini_Original,P1,4,N/A,4,0.253506,37.4519,5216918441,360.6,3.95,98.7,SUCCESS,Original pattern
+lj,GraphMini_Original,P1,4,N/A,16,0.20375,9.78662,5216918441,360.7,15.12,94.5,SUCCESS,Original pattern
+lj,GraphMini_Original,P1,4,N/A,32,0.179042,5.22048,5216918441,361.0,28.35,88.5,SUCCESS,Original pattern
+lj,GraphMini_Original,P1,4,N/A,64,0.196286,3.30047,5216918441,361.8,44.85,70.0,SUCCESS,Original pattern
+lj,GraphMini_Original,P2,5,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P2,5,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P2,5,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P2,5,N/A,32,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P2,5,N/A,64,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P3,5,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P3,5,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P3,5,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P3,5,N/A,32,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P3,5,N/A,64,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P4,5,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P4,5,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P4,5,N/A,16,0.259455,293.67,246378629120,360.9,N/A,N/A,SUCCESS,Original pattern
+lj,GraphMini_Original,P4,5,N/A,32,0.179916,156.863,246378629120,361.2,N/A,N/A,SUCCESS,Original pattern
+lj,GraphMini_Original,P4,5,N/A,64,0.207716,107.252,246378629120,361.8,N/A,N/A,SUCCESS,Original pattern
+lj,GraphMini_Original,P5,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P5,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P5,6,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P5,6,N/A,32,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P5,6,N/A,64,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P6,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P6,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P6,6,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P6,6,N/A,32,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P6,6,N/A,64,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P7,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P7,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P7,6,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P7,6,N/A,32,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P7,6,N/A,64,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,GraphMini_Original,P8,7,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,GraphMini_Original,P8,7,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,GraphMini_Original,P8,7,N/A,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,Your_Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,Your_Patterns,small_dense_4v_1,4,3,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,Your_Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,Your_Patterns,small_dense_4v_1,4,3,32,0.208943,290.37,542683013686,363.1,N/A,N/A,SUCCESS,Your pattern worked!
+lj,Your_Patterns,small_dense_4v_1,4,3,64,0.208334,190.289,542683013686,365.8,N/A,N/A,SUCCESS,Your pattern worked!
+lj,Your_Patterns,small_sparse_4v_1,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,Your_Patterns,small_sparse_4v_1,4,3,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,Your_Patterns,small_sparse_4v_1,4,3,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+lj,Your_Patterns,small_sparse_4v_1,4,3,32,0.20547,290.473,542683013686,363.1,N/A,N/A,SUCCESS,Your pattern worked!
+lj,Your_Patterns,small_sparse_4v_1,4,3,64,0.211302,190.315,542683013686,365.8,N/A,N/A,SUCCESS,Your pattern worked!
+lj,Your_Patterns,small_dense_8v_1,8,7,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,Your_Patterns,small_dense_8v_1,8,7,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,Your_Patterns,small_dense_8v_1,8,7,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,Your_Patterns,small_sparse_8v_1,8,7,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,Your_Patterns,small_sparse_8v_1,8,7,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+lj,Your_Patterns,small_sparse_8v_1,8,7,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+wiki,GraphMini_Original,P1,4,N/A,1,0.00150763,0.552723,2077903,5.3,1.00,100.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P1,4,N/A,4,0.00160605,0.143957,2077903,5.5,3.83,95.7,SUCCESS,Original pattern
+wiki,GraphMini_Original,P1,4,N/A,16,0.00167025,0.0563202,2077903,5.6,9.81,61.3,SUCCESS,Original pattern
+wiki,GraphMini_Original,P1,4,N/A,32,0.00148022,0.0427233,2077903,5.9,12.93,40.4,SUCCESS,Original pattern
+wiki,GraphMini_Original,P1,4,N/A,64,0.00148441,0.0446727,2077903,6.6,12.37,19.3,SUCCESS,Original pattern
+wiki,GraphMini_Original,P2,5,N/A,1,0.00169517,27.1385,593201615,5.2,1.00,100.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P2,5,N/A,4,0.0016557,6.97563,593201615,5.5,3.89,97.2,SUCCESS,Original pattern
+wiki,GraphMini_Original,P2,5,N/A,16,0.0016665,2.53148,593201615,5.7,10.72,67.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P2,5,N/A,32,0.0014894,1.91877,593201615,6.1,14.14,44.1,SUCCESS,Original pattern
+wiki,GraphMini_Original,P2,5,N/A,64,0.00151253,1.67544,593201615,6.6,16.19,25.2,SUCCESS,Original pattern
+wiki,GraphMini_Original,P3,5,N/A,1,0.00147352,43.1519,354811302,5.3,1.00,100.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P3,5,N/A,4,0.00168254,11.0974,354811302,5.5,3.88,97.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P3,5,N/A,16,0.00169979,3.2643,354811302,5.6,13.21,82.5,SUCCESS,Original pattern
+wiki,GraphMini_Original,P3,5,N/A,32,0.00171624,2.33673,354811302,6.2,18.46,57.6,SUCCESS,Original pattern
+wiki,GraphMini_Original,P3,5,N/A,64,0.0014912,1.83338,354811302,7.0,23.53,36.7,SUCCESS,Original pattern
+wiki,GraphMini_Original,P4,5,N/A,1,0.0016887,1.34987,4514137,5.3,1.00,100.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P4,5,N/A,4,0.00161543,0.393639,4514137,5.4,3.42,85.5,SUCCESS,Original pattern
+wiki,GraphMini_Original,P4,5,N/A,16,0.00153183,0.13163,4514137,5.6,10.25,64.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P4,5,N/A,32,0.00175954,0.09806,4514137,6.0,13.76,43.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P4,5,N/A,64,0.00171517,0.0938491,4514137,7.0,14.38,22.4,SUCCESS,Original pattern
+wiki,GraphMini_Original,P5,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+wiki,GraphMini_Original,P5,6,N/A,4,0.00168644,128.146,6185828330,5.4,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P5,6,N/A,16,0.00169633,45.172,6185828330,5.8,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P5,6,N/A,32,0.00172778,33.1134,6185828330,6.4,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P5,6,N/A,64,0.00169042,28.598,6185828330,7.6,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P6,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+wiki,GraphMini_Original,P6,6,N/A,4,0.00166471,108.297,6671480334,5.4,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P6,6,N/A,16,0.00199799,46.9871,6671480334,6.1,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P6,6,N/A,32,0.00198916,37.2105,6671480334,7.0,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P6,6,N/A,64,0.00148786,34.6889,6671480334,8.8,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P7,6,N/A,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+wiki,GraphMini_Original,P7,6,N/A,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+wiki,GraphMini_Original,P7,6,N/A,16,0.00149749,233.538,6374008876,5.8,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P7,6,N/A,32,0.00165731,178.595,6374008876,6.3,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P7,6,N/A,64,0.00168496,163.825,6374008876,8.2,N/A,N/A,SUCCESS,Original pattern
+wiki,GraphMini_Original,P8,7,N/A,1,0.00148049,53.7231,89671252,5.2,1.00,100.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P8,7,N/A,4,0.0017055,13.6701,89671252,5.3,3.92,98.0,SUCCESS,Original pattern
+wiki,GraphMini_Original,P8,7,N/A,16,0.00165722,4.8059,89671252,5.7,11.17,69.8,SUCCESS,Original pattern
+wiki,Your_Patterns,small_dense_4v_1,4,3,1,0.00153499,23.1098,1048807458,5.4,1.00,100.0,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_dense_4v_1,4,3,4,0.00170359,6.04684,1048807458,5.2,3.82,95.5,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_dense_4v_1,4,3,16,0.00161818,1.7907,1048807458,5.3,12.90,80.6,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_dense_4v_1,4,3,32,0.00163818,1.06941,1048807458,6.2,21.60,67.5,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_dense_4v_1,4,3,64,0.0016809,0.928492,1048807458,7.1,24.88,38.8,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_sparse_4v_1,4,3,1,0.00147766,23.1169,1048807458,5.3,1.00,100.0,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_sparse_4v_1,4,3,4,0.00166918,6.11219,1048807458,5.4,3.78,94.5,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_sparse_4v_1,4,3,16,0.00165246,1.82088,1048807458,5.5,12.69,79.3,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_sparse_4v_1,4,3,32,0.00150119,1.15764,1048807458,6.0,19.96,62.3,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_sparse_4v_1,4,3,64,0.00148925,0.999387,1048807458,6.9,23.13,36.1,SUCCESS,Your pattern worked!
+wiki,Your_Patterns,small_dense_8v_1,8,9,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+wiki,Your_Patterns,small_dense_8v_1,8,9,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+wiki,Your_Patterns,small_dense_8v_1,8,9,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+wiki,Your_Patterns,small_sparse_8v_1,8,9,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+wiki,Your_Patterns,small_sparse_8v_1,8,9,4,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)
+wiki,Your_Patterns,small_sparse_8v_1,8,9,16,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (210s)

@@ -4,7 +4,7 @@ echo "=== GraphMini Unified Performance Framework (TODS Server Edition) ==="
 
 # --- 1. CONFIGURATION ---
 PROJECT_ROOT="/home/williamp/graphmini"
-DATA_ROOT="/home/williamp/thesis_data/processed_datasets"
+DATA_ROOT="/home/williamp/thesis_data/snap_format"  # Use preprocessed data
 QUERY_ROOT_BASE="/home/williamp/thesis_data/query_sets"
 
 # Define datasets to test (all except the still-downloading friendster)
@@ -51,7 +51,7 @@ function file_to_binary_string() {
 # --- 4. MAIN EXECUTION LOOP ---
 for dataset_name in "${DATASETS_TO_TEST[@]}"; do
 
-    DATASET_PATH="${DATA_ROOT}/${dataset_name}/data.graph"
+    DATASET_PATH="${DATA_ROOT}/${dataset_name}/"  # Directory path, not file
     QUERY_ROOT="${QUERY_ROOT_BASE}/${dataset_name}"
     DATASET_RESULTS_DIR="${PARENT_RESULTS_DIR}/${dataset_name}"
     mkdir -p "$DATASET_RESULTS_DIR"
@@ -62,11 +62,8 @@ for dataset_name in "${DATASETS_TO_TEST[@]}"; do
     echo "   Results will be saved in: $RESULTS_CSV"
     echo "Dataset,PatternCategory,QueryFile,QueryVertices,QueryEdges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_Peak_MB,Status,Notes" > "$RESULTS_CSV"
 
-    # Logic to handle pre-existing HKU queries for dblp and youtube
-    if [[ "$dataset_name" == "dblp" || "$dataset_name" == "youtube" ]]; then
-        QUERY_ROOT="/home/williamp/thesis_data/raw_datasets/${dataset_name}/query_graph"
-        echo "   (Using pre-existing HKU queries for $dataset_name)"
-    fi
+    # REMOVED: Special case for dblp/youtube
+    # All datasets now use the same query structure from query_sets
 
     cd "${PROJECT_ROOT}/build" || { echo "ERROR: Could not cd to build directory. Exiting."; continue; }
 
@@ -99,10 +96,12 @@ for dataset_name in "${DATASETS_TO_TEST[@]}"; do
                 echo "  -> Running with $threads threads..."
                 export OMP_NUM_THREADS=$threads
 
-                ./bin/run "$dataset_name" "$DATASET_PATH" "$test_name" "$pattern_binary" 0 4 0 > /dev/null 2>&1
+                # Use pruning type 1 (static) to avoid floating point errors
+                ./bin/run "$dataset_name" "$DATASET_PATH" "$test_name" "$pattern_binary" 0 0 0 > /dev/null 2>&1
 
                 log_file="$DATASET_RESULTS_DIR/log_${test_name}_${threads}t.log"
-                timeout "$TIMEOUT" /usr/bin/time -l ./bin/runner 1 "$DATASET_PATH" > "$log_file" 2>&1
+                # Note: runner expects the data file path, not directory
+                timeout "$TIMEOUT" /usr/bin/time -l ./bin/runner 1 "${DATA_ROOT}/${dataset_name}/snap.txt" > "$log_file" 2>&1
                 exit_code=$?
 
                 status="SUCCESS"; notes=""

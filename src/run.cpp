@@ -125,20 +125,20 @@ void compile(AppConfig config) {
     if (flag != 0) exit(-1 && "compilation error");
     auto compile_t = t.Passed();
     LOG(MSG) << "COMPILATION_TIME(s)=" << compile_t;
-    auto mkdir_cmd = fmt::format("mkdir -p {bin_dir}",
-                                 fmt::arg("bin_dir", PROJECT_PLAN_DIR));
+    //auto mkdir_cmd = fmt::format("mkdir -p {bin_dir}",
+    //                             fmt::arg("bin_dir", PROJECT_PLAN_DIR));
     // LOG(MSG) << "CMD: " << mkdir_cmd;
-    flag = system(mkdir_cmd.c_str());
-    if (flag != 0) exit(-1 && "mkdir error");
+    //flag = system(mkdir_cmd.c_str());
+    //if (flag != 0) exit(-1 && "mkdir error");
 
-    std::filesystem::path bin_path = std::filesystem::path(CMAKE_RUNTIME_OUTPUT_DIRECTORY) / "runner";
-    std::filesystem::path dst_path = std::filesystem::path(PROJECT_PLAN_DIR) / std::to_string(config.exp_id);
-    auto mv_cmd = fmt::format("mv {bin_path} {dst_path}",
-                              fmt::arg("bin_path", bin_path.string()),
-                              fmt::arg("dst_path", dst_path.string()));
+    //std::filesystem::path bin_path = std::filesystem::path(CMAKE_RUNTIME_OUTPUT_DIRECTORY) / "runner";
+    //std::filesystem::path dst_path = std::filesystem::path(PROJECT_PLAN_DIR) / std::to_string(config.exp_id);
+    //auto mv_cmd = fmt::format("mv {bin_path} {dst_path}",
+                              //fmt::arg("bin_path", bin_path.string()),
+                              //fmt::arg("dst_path", dst_path.string()));
 
-    flag = system(mv_cmd.c_str());
-    if (flag != 0) exit(-1 && "mv error");
+    //flag = system(mv_cmd.c_str());
+    //if (flag != 0) exit(-1 && "mv error");
 
     log.expId = config.exp_id;
     log.patternSize = sqrt(config.pat.size());

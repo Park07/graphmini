@@ -1,0 +1,30 @@
+Threads=4
+LoadTime(s)=0.00166471
+CODE_EXECUTION_TIME(s)=108.297
+RESULT=6671480334
+Throughput=6.16036e+07
+VertexSetAllocated=8.50 MB
+MiniGraphAllocated=0.00 Bytes
+	Command being timed: "./bin/runner 4 /home/williamp/thesis_data/snap_format/wiki/"
+	User time (seconds): 432.51
+	System time (seconds): 0.00
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:48.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5600
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 3380
+	Voluntary context switches: 35
+	Involuntary context switches: 343
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

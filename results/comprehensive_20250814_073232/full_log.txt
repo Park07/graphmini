@@ -1,0 +1,116 @@
+=== Test Configuration ===
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Thread counts: 1 4 16 32 64 (limited for large patterns)
+Results directory: /home/williamp/graphmini/results/comprehensive_20250814_073232
+
+=========================================
+STARTING COMPREHENSIVE TEST
+=========================================
+
+=========================================
+DATASET: dblp
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4) - max threads: 64, timeout: 120s
+  1t: ✅ 0.600642s, 16713192 matches, 1.00x
+  4t: ✅ 0.177519s, 16713192 matches, 3.38x
+  16t: ✅ 0.0652301s, 16713192 matches, 9.20x
+  32t: ✅ 0.0494223s, 16713192 matches, 12.15x
+  64t: ✅ 0.0423208s, 16713192 matches, 14.19x
+
+Pattern: P2 (5x5) - max threads: 64, timeout: 120s
+  1t: ✅ 4.20221s, 11466097 matches, 1.00x
+  4t: ✅ 1.07471s, 11466097 matches, 3.91x
+  16t: ✅ 0.299576s, 11466097 matches, 14.02x
+  32t: ✅ 0.164541s, 11466097 matches, 25.53x
+  64t: ✅ 0.146663s, 11466097 matches, 28.65x
+
+Pattern: P3 (5x5) - max threads: 64, timeout: 120s
+  1t: ✅ 21.0019s, 93821341 matches, 1.00x
+  4t: ✅ 5.65787s, 93821341 matches, 3.71x
+  16t: ✅ 1.59123s, 93821341 matches, 13.19x
+  32t: ✅ 0.907003s, 93821341 matches, 23.15x
+  64t: ✅ 0.794051s, 93821341 matches, 26.44x
+
+Pattern: P4 (5x5) - max threads: 64, timeout: 120s
+  1t: ✅ 4.51961s, 262663639 matches, 1.00x
+  4t: ✅ 1.21854s, 262663639 matches, 3.70x
+  16t: ✅ 0.335186s, 262663639 matches, 13.48x
+  32t: ✅ 0.212125s, 262663639 matches, 21.30x
+  64t: ✅ 0.198535s, 262663639 matches, 22.76x
+
+Pattern: P5 (6x6) - max threads: 64, timeout: 120s
+  1t: ❌ TIMEOUT_EXEC (120s)
+  4t: ✅ 38.4385s, 89217432 matches, N/Ax
+  16t: ✅ 9.98593s, 89217432 matches, N/Ax
+  32t: ✅ 5.20503s, 89217432 matches, N/Ax
+  64t: ✅ 4.01359s, 89217432 matches, N/Ax
+
+Pattern: P6 (6x6) - max threads: 64, timeout: 120s
+  1t: ✅ 5.61193s, 24076173 matches, 1.00x
+  4t: ✅ 1.51645s, 24076173 matches, 3.70x
+  16t: ✅ 0.427401s, 24076173 matches, 13.13x
+  32t: ✅ 0.233103s, 24076173 matches, 24.07x
+  64t: ✅ 0.168472s, 24076173 matches, 33.31x
+
+Pattern: P7 (6x6) - max threads: 64, timeout: 120s
+  1t: ✅ 69.4684s, 30817361 matches, 1.00x
+  4t: ✅ 17.6311s, 30817361 matches, 3.94x
+  16t: ✅ 4.70797s, 30817361 matches, 14.75x
+  32t: ✅ 2.45563s, 30817361 matches, 28.28x
+  64t: ✅ 1.99273s, 30817361 matches, 34.86x
+
+Pattern: P8 (7x7) - max threads: 4, timeout: 30s
+  1t: ❌ TIMEOUT_EXEC (30s)
+  4t: ❌ TIMEOUT_EXEC (30s)
+  16t: SKIPPED (pattern too large)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e - max threads: 64
+  1t: ✅ 4.55192s, 96615211 matches, 1.00x
+  4t: ✅ 1.30879s, 96615211 matches, 3.47x
+  16t: ✅ 0.394745s, 96615211 matches, 11.53x
+  32t: ✅ 0.206297s, 96615211 matches, 22.06x
+  64t: ✅ 0.145591s, 96615211 matches, 31.26x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e - max threads: 64
+  1t: ✅ 4.79996s, 252447350 matches, 1.00x
+  4t: ✅ 1.41434s, 252447350 matches, 3.39x
+  16t: ✅ 0.36594s, 252447350 matches, 13.11x
+  32t: ✅ 0.199393s, 252447350 matches, 24.07x
+  64t: ✅ 0.141359s, 252447350 matches, 33.95x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e - max threads: 16
+  1t: ❌ TIMEOUT_CODEGEN (30s)
+  4t: ❌ TIMEOUT_CODEGEN (30s)
+  16t: ❌ TIMEOUT_CODEGEN (30s)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e - max threads: 16
+  1t: ❌ TIMEOUT_CODEGEN (30s)
+  4t: ❌ TIMEOUT_CODEGEN (30s)
+  16t: ❌ TIMEOUT_CODEGEN (30s)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+Testing: medium_dense (pattern #1)
+  Pattern: 15v, 20e - max threads: 16
+  1t: ❌ TIMEOUT_CODEGEN (30s)
+  4t: ❌ TIMEOUT_CODEGEN (30s)
+  16t: ❌ TIMEOUT_CODEGEN (30s)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 15v, 54e - max threads: 16
+  1t: 

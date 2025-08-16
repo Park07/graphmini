@@ -1,0 +1,8 @@
+Dataset,PatternCategory,QueryFile,QueryVertices,QueryEdges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_Peak_MB,Status,Notes
+dblp,small_dense_4v,query_sample_4v_1.graph,4,4,1,,N/A,N/A,0,FAILED,Exit code 125
+dblp,small_dense_4v,query_sample_4v_1.graph,4,4,4,,N/A,N/A,0,FAILED,Exit code 125
+dblp,small_dense_4v,query_sample_4v_1.graph,4,4,16,,N/A,N/A,0,FAILED,Exit code 125
+dblp,small_dense_4v,query_sample_4v_1.graph,4,4,32,,N/A,N/A,0,FAILED,Exit code 125
+dblp,small_dense_4v,query_sample_4v_1.graph,4,4,64,,N/A,N/A,0,FAILED,Exit code 125
+dblp,small_dense_4v,query_sample_4v_2.graph,4,4,1,,N/A,N/A,0,FAILED,Exit code 125
+dblp,small_dense_4v,query_sample_4v_2.graph,4,4,4,,N/A,N/A,0,FAILED,Exit code 125

@@ -1,0 +1,167 @@
+=== Test Configuration ===
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Thread counts: 1 4 16 32 64
+Results directory: /home/williamp/graphmini/results/comprehensive_20250814_052738
+
+=========================================
+STARTING COMPREHENSIVE TEST
+=========================================
+
+=========================================
+DATASET: dblp
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.608172s, 16713192 matches, 1.00x
+  4t: ✅ 0.182612s, 16713192 matches, 3.33x
+  16t: ✅ 0.0848023s, 16713192 matches, 7.17x
+  32t: ✅ 0.0675779s, 16713192 matches, 8.99x
+  64t: ✅ 0.0526586s, 16713192 matches, 11.54x
+
+Pattern: P2 (5x5)
+  1t: ✅ 4.01066s, 11466097 matches, 1.00x
+  4t: ✅ 1.14562s, 11466097 matches, 3.50x
+  16t: ✅ 0.301508s, 11466097 matches, 13.30x
+  32t: ✅ 0.175503s, 11466097 matches, 22.85x
+  64t: ✅ 0.145058s, 11466097 matches, 27.64x
+
+Pattern: P3 (5x5)
+  1t: ✅ 21.4727s, 93821341 matches, 1.00x
+  4t: ✅ 5.58248s, 93821341 matches, 3.84x
+  16t: ✅ 1.5944s, 93821341 matches, 13.46x
+  32t: ✅ 0.905325s, 93821341 matches, 23.71x
+  64t: ✅ 0.743577s, 93821341 matches, 28.87x
+
+Pattern: P4 (5x5)
+  1t: ✅ 4.48774s, 262663639 matches, 1.00x
+  4t: ✅ 1.21927s, 262663639 matches, 3.68x
+  16t: ✅ 0.341065s, 262663639 matches, 13.15x
+  32t: ✅ 0.212993s, 262663639 matches, 21.06x
+  64t: ✅ 0.196427s, 262663639 matches, 22.84x
+
+Pattern: P5 (6x6)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ✅ 38.6456s, 89217432 matches, N/Ax
+  16t: ✅ 9.98295s, 89217432 matches, N/Ax
+  32t: ✅ 5.15047s, 89217432 matches, N/Ax
+  64t: ✅ 4.30109s, 89217432 matches, N/Ax
+
+Pattern: P6 (6x6)
+  1t: ✅ 5.61244s, 24076173 matches, 1.00x
+  4t: ✅ 1.43727s, 24076173 matches, 3.90x
+  16t: ✅ 0.390825s, 24076173 matches, 14.36x
+  32t: ✅ 0.225023s, 24076173 matches, 24.94x
+  64t: ✅ 0.174085s, 24076173 matches, 32.23x
+
+Pattern: P7 (6x6)
+  1t: ✅ 69.573s, 30817361 matches, 1.00x
+  4t: ✅ 17.5946s, 30817361 matches, 3.95x
+  16t: ✅ 4.66822s, 30817361 matches, 14.90x
+  32t: ✅ 2.44544s, 30817361 matches, 28.45x
+  64t: ✅ 1.97003s, 30817361 matches, 35.31x
+
+Pattern: P8 (7x7)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ❌ TIMEOUT_EXEC
+  16t: ❌ TIMEOUT_EXEC
+  32t: ❌ TIMEOUT_EXEC
+  64t: ❌ TIMEOUT_EXEC
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ✅ 4.54661s, 96615211 matches, 1.00x
+  4t: ✅ 1.17931s, 96615211 matches, 3.85x
+  16t: ✅ 0.33198s, 96615211 matches, 13.69x
+  32t: ✅ 0.193114s, 96615211 matches, 23.54x
+  64t: ✅ 0.139466s, 96615211 matches, 32.60x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 4.92274s, 252447350 matches, 1.00x
+  4t: ✅ 1.31874s, 252447350 matches, 3.73x
+  16t: ✅ 0.366567s, 252447350 matches, 13.42x
+  32t: ✅ 0.209883s, 252447350 matches, 23.45x
+  64t: ✅ 0.138861s, 252447350 matches, 35.45x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_dense (pattern #1)
+  Pattern: 15v, 20e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 15v, 54e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+=========================================
+DATASET: youtube
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 2.60304s, 4986965 matches, 1.00x
+  4t: ✅ 0.698654s, 4986965 matches, 3.72x
+  16t: ✅ 0.287034s, 4986965 matches, 9.06x
+  32t: ✅ 0.166942s, 4986965 matches, 15.59x
+  64t: ✅ 0.171807s, 4986965 matches, 15.15x
+
+Pattern: P2 (5x5)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ❌ TIMEOUT_EXEC
+  16t: ✅ 80.3255s, 50244537511 matches, N/Ax
+  32t: ✅ 78.9346s, 50244537511 matches, N/Ax
+  64t: ✅ 78.5382s, 50244537511 matches, N/Ax
+
+Pattern: P3 (5x5)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ❌ TIMEOUT_EXEC
+  16t: ✅ 31.9814s, 1902181461 matches, N/Ax
+  32t: ✅ 18.3672s, 1902181461 matches, N/Ax
+  64t: ✅ 14.7105s, 1902181461 matches, N/Ax
+
+Pattern: P4 (5x5)
+  1t: ✅ 3.63969s, 7211947 matches, 1.00x
+  4t: ✅ 0.986655s, 7211947 matches, 3.68x
+  16t: ✅ 0.297802s, 7211947 matches, 12.22x
+  32t: ✅ 0.193983s, 7211947 matches, 18.76x
+  64t: ✅ 0.146418s, 7211947 matches, 24.85x
+
+Pattern: P5 (6x6)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ❌ TIMEOUT_EXEC
+  16t: ❌ TIMEOUT_EXEC
+  32t: ❌ TIMEOUT_EXEC
+  64t: ❌ TIMEOUT_EXEC
+
+Pattern: P6 (6x6)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ❌ TIMEOUT_EXEC
+  16t: ❌ TIMEOUT_EXEC
+  32t: 

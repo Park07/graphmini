@@ -1,0 +1,68 @@
+=== Test Configuration ===
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Thread counts: 1 4 16 32 64 (limited to 1 4 16 for large patterns)
+Results directory: /home/williamp/graphmini/results/comprehensive_20250814_064646
+
+=========================================
+STARTING COMPREHENSIVE TEST
+=========================================
+
+=========================================
+DATASET: dblp
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.491853s, 16713192 matches, 1.00x
+  4t: ✅ 0.168605s, 16713192 matches, 2.91x
+  16t: ✅ 0.0729163s, 16713192 matches, 6.74x
+  32t: ✅ 0.0628522s, 16713192 matches, 7.82x
+  64t: ✅ 0.0551522s, 16713192 matches, 8.91x
+
+Pattern: P2 (5x5)
+  1t: ✅ 4.01683s, 11466097 matches, 1.00x
+  4t: ✅ 1.1431s, 11466097 matches, 3.51x
+  16t: ✅ 0.31154s, 11466097 matches, 12.89x
+  32t: ✅ 0.167276s, 11466097 matches, 24.01x
+  64t: ✅ 0.144924s, 11466097 matches, 27.71x
+
+Pattern: P3 (5x5)
+  1t: ✅ 21.5934s, 93821341 matches, 1.00x
+  4t: ✅ 5.58291s, 93821341 matches, 3.86x
+  16t: ✅ 1.59376s, 93821341 matches, 13.54x
+  32t: ✅ 0.907552s, 93821341 matches, 23.79x
+  64t: ✅ 0.764504s, 93821341 matches, 28.24x
+
+Pattern: P4 (5x5)
+  1t: ✅ 4.56408s, 262663639 matches, 1.00x
+  4t: ✅ 1.09594s, 262663639 matches, 4.16x
+  16t: ✅ 0.332341s, 262663639 matches, 13.73x
+  32t: ✅ 0.21168s, 262663639 matches, 21.56x
+  64t: ✅ 0.194076s, 262663639 matches, 23.51x
+
+Pattern: P5 (6x6)
+  1t: ✅ 152.306s, 89217432 matches, 1.00x
+  4t: ✅ 38.5144s, 89217432 matches, 3.95x
+  16t: ✅ 9.96641s, 89217432 matches, 15.28x
+  32t: ✅ 5.20557s, 89217432 matches, 29.25x
+  64t: ✅ 4.16608s, 89217432 matches, 36.55x
+
+Pattern: P6 (6x6)
+  1t: ✅ 5.61067s, 24076173 matches, 1.00x
+  4t: ✅ 1.43767s, 24076173 matches, 3.90x
+  16t: ✅ 0.411951s, 24076173 matches, 13.61x
+  32t: ✅ 0.237651s, 24076173 matches, 23.60x
+  64t: ✅ 0.170971s, 24076173 matches, 32.81x
+
+Pattern: P7 (6x6)
+  1t: ✅ 69.4263s, 30817361 matches, 1.00x
+  4t: ✅ 17.6263s, 30817361 matches, 3.93x
+  16t: ✅ 4.71585s, 30817361 matches, 14.72x
+  32t: ✅ 2.42361s, 30817361 matches, 28.64x
+  64t: ✅ 1.94684s, 30817361 matches, 35.66x
+
+Pattern: P8 (7x7)
+  (Using limited threads for large pattern)
+  1t: ❌ TIMEOUT_EXEC
+  4t: 

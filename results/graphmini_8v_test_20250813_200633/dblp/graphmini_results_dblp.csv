@@ -1,0 +1,9 @@
+Dataset,PatternCategory,QueryFile,QueryVertices,QueryEdges,Threads,Status,Notes
+dblp,small_dense_8v,query_sample_8v_1.graph,8,9,1,FAILED_136,
+dblp,small_dense_8v,query_sample_8v_1.graph,8,9,4,FAILED_136,
+dblp,small_dense_8v,query_sample_8v_2.graph,8,9,1,FAILED_136,
+dblp,small_dense_8v,query_sample_8v_2.graph,8,9,4,FAILED_136,
+dblp,small_dense_8v,query_sample_8v_3.graph,8,9,1,FAILED_136,
+dblp,small_dense_8v,query_sample_8v_3.graph,8,9,4,FAILED_136,
+dblp,small_sparse_8v,query_sample_8v_1.graph,8,9,1,FAILED_136,
+dblp,small_sparse_8v,query_sample_8v_1.graph,8,9,4,FAILED_136,

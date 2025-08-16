@@ -1,0 +1,5 @@
+Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes
+dblp,GraphMini_Original,P1,4,N/A,1,0.0190278,0.615175,16713192,19.6,1.00,100.0,SUCCESS,Original pattern
+dblp,GraphMini_Original,P1,4,N/A,4,0.0185718,0.184076,16713192,19.9,3.34,83.5,SUCCESS,Original pattern
+dblp,GraphMini_Original,P1,4,N/A,16,0.0193684,0.0809757,16713192,19.8,7.59,47.4,SUCCESS,Original pattern
+dblp,GraphMini_Original,P1,4,N/A,32,0.018877,0.0681951,16713192,20.3,9.02,28.1,SUCCESS,Original pattern

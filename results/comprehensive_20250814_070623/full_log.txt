@@ -1,0 +1,145 @@
+=== Test Configuration ===
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Thread counts: 1 4 16 32 64 (limited for large patterns)
+Results directory: /home/williamp/graphmini/results/comprehensive_20250814_070623
+
+=========================================
+STARTING COMPREHENSIVE TEST
+=========================================
+
+=========================================
+DATASET: dblp
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4) - max threads: 64, timeout: 120s
+  1t: ✅ 0.601924s, 16713192 matches, 1.00x
+  4t: ✅ 0.173565s, 16713192 matches, 3.46x
+  16t: ✅ 0.066833s, 16713192 matches, 9.00x
+  32t: ✅ 0.0501933s, 16713192 matches, 11.99x
+  64t: ✅ 0.044428s, 16713192 matches, 13.54x
+
+Pattern: P2 (5x5) - max threads: 64, timeout: 120s
+  1t: ✅ 4.05595s, 11466097 matches, 1.00x
+  4t: ✅ 1.15483s, 11466097 matches, 3.51x
+  16t: ✅ 0.304378s, 11466097 matches, 13.32x
+  32t: ✅ 0.165814s, 11466097 matches, 24.46x
+  64t: ✅ 0.143516s, 11466097 matches, 28.26x
+
+Pattern: P3 (5x5) - max threads: 64, timeout: 120s
+  1t: ✅ 21.605s, 93821341 matches, 1.00x
+  4t: ✅ 5.79078s, 93821341 matches, 3.73x
+  16t: ✅ 1.59934s, 93821341 matches, 13.50x
+  32t: ✅ 0.906605s, 93821341 matches, 23.83x
+  64t: ✅ 0.789084s, 93821341 matches, 27.37x
+
+Pattern: P4 (5x5) - max threads: 64, timeout: 120s
+  1t: ✅ 4.51176s, 262663639 matches, 1.00x
+  4t: ✅ 1.22896s, 262663639 matches, 3.67x
+  16t: ✅ 0.340542s, 262663639 matches, 13.24x
+  32t: ✅ 0.2122s, 262663639 matches, 21.26x
+  64t: ✅ 0.213758s, 262663639 matches, 21.10x
+
+Pattern: P5 (6x6) - max threads: 64, timeout: 120s
+  1t: ❌ TIMEOUT_EXEC (120s)
+  4t: ✅ 38.7985s, 89217432 matches, N/Ax
+  16t: ✅ 9.94517s, 89217432 matches, N/Ax
+  32t: ✅ 5.2141s, 89217432 matches, N/Ax
+  64t: ✅ 4.36553s, 89217432 matches, N/Ax
+
+Pattern: P6 (6x6) - max threads: 64, timeout: 120s
+  1t: ✅ 5.61087s, 24076173 matches, 1.00x
+  4t: ✅ 1.50197s, 24076173 matches, 3.73x
+  16t: ✅ 0.415228s, 24076173 matches, 13.51x
+  32t: ✅ 0.230491s, 24076173 matches, 24.34x
+  64t: ✅ 0.176906s, 24076173 matches, 31.71x
+
+Pattern: P7 (6x6) - max threads: 64, timeout: 120s
+  1t: ✅ 69.0046s, 30817361 matches, 1.00x
+  4t: ✅ 18.0044s, 30817361 matches, 3.83x
+  16t: ✅ 4.68794s, 30817361 matches, 14.71x
+  32t: ✅ 2.42363s, 30817361 matches, 28.47x
+  64t: ✅ 2.11773s, 30817361 matches, 32.58x
+
+Pattern: P8 (7x7) - max threads: 4, timeout: 30s
+  1t: ❌ TIMEOUT_EXEC (30s)
+  4t: ❌ TIMEOUT_EXEC (30s)
+  16t: SKIPPED (pattern too large)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e - max threads: 64
+  1t: ✅ 5.04579s, 96615211 matches, 1.00x
+  4t: ✅ 1.34235s, 96615211 matches, 3.75x
+  16t: ✅ 0.381004s, 96615211 matches, 13.24x
+  32t: ✅ 0.206896s, 96615211 matches, 24.38x
+  64t: ✅ 0.151443s, 96615211 matches, 33.31x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e - max threads: 64
+  1t: ✅ 5.03635s, 252447350 matches, 1.00x
+  4t: ✅ 1.35145s, 252447350 matches, 3.72x
+  16t: ✅ 0.370277s, 252447350 matches, 13.60x
+  32t: ✅ 0.198301s, 252447350 matches, 25.39x
+  64t: ✅ 0.144703s, 252447350 matches, 34.80x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e - max threads: 16
+  1t: ❌ TIMEOUT_CODEGEN (30s)
+  4t: ❌ TIMEOUT_CODEGEN (30s)
+  16t: ❌ TIMEOUT_CODEGEN (30s)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e - max threads: 16
+  1t: ❌ TIMEOUT_CODEGEN (30s)
+  4t: ❌ TIMEOUT_CODEGEN (30s)
+  16t: ❌ TIMEOUT_CODEGEN (30s)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+Testing: medium_dense (pattern #1)
+  Pattern: 15v, 20e - max threads: 16
+  1t: ❌ TIMEOUT_CODEGEN (30s)
+  4t: ❌ TIMEOUT_CODEGEN (30s)
+  16t: ❌ TIMEOUT_CODEGEN (30s)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 15v, 54e - max threads: 16
+  1t: ❌ TIMEOUT_CODEGEN (30s)
+  4t: ❌ TIMEOUT_CODEGEN (30s)
+  16t: ❌ TIMEOUT_CODEGEN (30s)
+  32t: SKIPPED (pattern too large)
+  64t: SKIPPED (pattern too large)
+
+=========================================
+DATASET: youtube
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4) - max threads: 64, timeout: 120s
+  1t: ✅ 2.60609s, 4986965 matches, 1.00x
+  4t: ✅ 0.787922s, 4986965 matches, 3.30x
+  16t: ✅ 0.229434s, 4986965 matches, 11.35x
+  32t: ✅ 0.174978s, 4986965 matches, 14.89x
+  64t: ✅ 0.155272s, 4986965 matches, 16.78x
+
+Pattern: P2 (5x5) - max threads: 64, timeout: 120s
+  1t: ❌ TIMEOUT_EXEC (120s)
+  4t: ❌ TIMEOUT_EXEC (120s)
+  16t: ✅ 80.4481s, 50244537511 matches, N/Ax
+  32t: ✅ 79.1305s, 50244537511 matches, N/Ax
+  64t: ✅ 78.5092s, 50244537511 matches, N/Ax
+
+Pattern: P3 (5x5) - max threads: 64, timeout: 120s
+  1t: ❌ TIMEOUT_EXEC (120s)
+  4t: ❌ TIMEOUT_EXEC (120s)
+  16t: 

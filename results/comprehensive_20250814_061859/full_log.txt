@@ -1,0 +1,93 @@
+=== Test Configuration ===
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Thread counts: 1 4 16 32 64
+Results directory: /home/williamp/graphmini/results/comprehensive_20250814_061859
+
+=========================================
+STARTING COMPREHENSIVE TEST
+=========================================
+
+=========================================
+DATASET: dblp
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.599499s, 16713192 matches, 1.00x
+  4t: ✅ 0.169368s, 16713192 matches, 3.53x
+  16t: ✅ 0.064345s, 16713192 matches, 9.31x
+  32t: ✅ 0.0530773s, 16713192 matches, 11.29x
+  64t: ✅ 0.0329347s, 16713192 matches, 18.20x
+
+Pattern: P2 (5x5)
+  1t: ✅ 3.65979s, 11466097 matches, 1.00x
+  4t: ✅ 1.13526s, 11466097 matches, 3.22x
+  16t: ✅ 0.298256s, 11466097 matches, 12.27x
+  32t: ✅ 0.215445s, 11466097 matches, 16.98x
+  64t: ✅ 0.124794s, 11466097 matches, 29.32x
+
+Pattern: P3 (5x5)
+  1t: ✅ 21.5925s, 93821341 matches, 1.00x
+  4t: ✅ 5.75886s, 93821341 matches, 3.74x
+  16t: ✅ 1.59519s, 93821341 matches, 13.53x
+  32t: ✅ 0.905422s, 93821341 matches, 23.84x
+  64t: ✅ 0.821618s, 93821341 matches, 26.28x
+
+Pattern: P4 (5x5)
+  1t: ✅ 4.07178s, 262663639 matches, 1.00x
+  4t: ✅ 1.22206s, 262663639 matches, 3.33x
+  16t: ✅ 0.352127s, 262663639 matches, 11.56x
+  32t: ✅ 0.211885s, 262663639 matches, 19.21x
+  64t: ✅ 0.19293s, 262663639 matches, 21.10x
+
+Pattern: P5 (6x6)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ✅ 38.5105s, 89217432 matches, N/Ax
+  16t: ✅ 9.94741s, 89217432 matches, N/Ax
+  32t: ✅ 5.15468s, 89217432 matches, N/Ax
+  64t: ✅ 4.10666s, 89217432 matches, N/Ax
+
+Pattern: P6 (6x6)
+  1t: ✅ 5.60837s, 24076173 matches, 1.00x
+  4t: ✅ 1.59585s, 24076173 matches, 3.51x
+  16t: ✅ 0.419367s, 24076173 matches, 13.37x
+  32t: ✅ 0.234725s, 24076173 matches, 23.89x
+  64t: ✅ 0.170377s, 24076173 matches, 32.91x
+
+Pattern: P7 (6x6)
+  1t: ✅ 69.4924s, 30817361 matches, 1.00x
+  4t: ✅ 17.6252s, 30817361 matches, 3.94x
+  16t: ✅ 4.74583s, 30817361 matches, 14.64x
+  32t: ✅ 2.43054s, 30817361 matches, 28.59x
+  64t: ✅ 1.96562s, 30817361 matches, 35.35x
+
+Pattern: P8 (7x7)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ❌ TIMEOUT_EXEC
+  16t: ❌ TIMEOUT_EXEC
+  32t: ❌ TIMEOUT_EXEC
+  64t: ❌ TIMEOUT_EXEC
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ✅ 4.55681s, 96615211 matches, 1.00x
+  4t: ✅ 1.21379s, 96615211 matches, 3.75x
+  16t: ✅ 0.344568s, 96615211 matches, 13.22x
+  32t: ✅ 0.191709s, 96615211 matches, 23.76x
+  64t: ✅ 0.138875s, 96615211 matches, 32.81x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 4.4061s, 252447350 matches, 1.00x
+  4t: ✅ 1.33021s, 252447350 matches, 3.31x
+  16t: ✅ 0.368149s, 252447350 matches, 11.96x
+  32t: ✅ 0.211118s, 252447350 matches, 20.87x
+  64t: ✅ 0.148933s, 252447350 matches, 29.58x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_EXEC
+  4t: 

@@ -1,0 +1,559 @@
+nohup: ignoring input
+=== COMPREHENSIVE GraphMini Test (TODS) ===
+Starting at: Thu Aug 14 09:33:18 AM UTC 2025
+=== Test Configuration ===
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Results directory: /home/williamp/graphmini/results/comprehensive_20250814_093318
+
+=========================================
+STARTING COMPREHENSIVE TEST
+=========================================
+
+=========================================
+DATASET: dblp
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.602005s, 16713192 matches, 1.00x
+  4t: ✅ 0.173829s, 16713192 matches, 3.46x
+  16t: ✅ 0.065985s, 16713192 matches, 9.12x
+  32t: ✅ 0.0476825s, 16713192 matches, 12.62x
+  64t: ✅ 0.0427491s, 16713192 matches, 14.08x
+
+Pattern: P2 (5x5)
+  1t: ✅ 4.02945s, 11466097 matches, 1.00x
+  4t: ✅ 0.995395s, 11466097 matches, 4.04x
+  16t: ✅ 0.29013s, 11466097 matches, 13.88x
+  32t: ✅ 0.16063s, 11466097 matches, 25.08x
+  64t: ✅ 0.130819s, 11466097 matches, 30.80x
+
+Pattern: P3 (5x5)
+  1t: ✅ 21.4397s, 93821341 matches, 1.00x
+  4t: ✅ 5.74402s, 93821341 matches, 3.73x
+  16t: ✅ 1.55493s, 93821341 matches, 13.78x
+  32t: ✅ 0.82773s, 93821341 matches, 25.90x
+  64t: ✅ 0.739398s, 93821341 matches, 28.99x
+
+Pattern: P4 (5x5)
+  1t: ✅ 4.51348s, 262663639 matches, 1.00x
+  4t: ✅ 1.2211s, 262663639 matches, 3.69x
+  16t: ✅ 0.33616s, 262663639 matches, 13.42x
+  32t: ✅ 0.213455s, 262663639 matches, 21.14x
+  64t: ✅ 0.222539s, 262663639 matches, 20.28x
+
+Pattern: P5 (6x6)
+  1t: ✅ 152.9s, 89217432 matches, 1.00x
+  4t: ✅ 38.4955s, 89217432 matches, 3.97x
+  16t: ✅ 10.0493s, 89217432 matches, 15.21x
+  32t: ✅ 5.1169s, 89217432 matches, 29.88x
+  64t: ✅ 3.94867s, 89217432 matches, 38.72x
+
+Pattern: P6 (6x6)
+  1t: ✅ 5.61395s, 24076173 matches, 1.00x
+  4t: ✅ 1.43895s, 24076173 matches, 3.90x
+  16t: ✅ 0.385468s, 24076173 matches, 14.56x
+  32t: ✅ 0.224626s, 24076173 matches, 24.99x
+  64t: ✅ 0.170761s, 24076173 matches, 32.87x
+
+Pattern: P7 (6x6)
+  1t: ✅ 69.017s, 30817361 matches, 1.00x
+  4t: ✅ 17.5769s, 30817361 matches, 3.92x
+  16t: ✅ 4.68672s, 30817361 matches, 14.72x
+  32t: ✅ 2.43382s, 30817361 matches, 28.35x
+  64t: ✅ 2.01637s, 30817361 matches, 34.22x
+
+Pattern: P8 (7x7)
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ✅ 4.54847s, 96615211 matches, 1.00x
+  4t: ✅ 1.30365s, 96615211 matches, 3.48x
+  16t: ✅ 0.362474s, 96615211 matches, 12.54x
+  32t: ✅ 0.203766s, 96615211 matches, 22.32x
+  64t: ✅ 0.142697s, 96615211 matches, 31.87x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 4.90877s, 252447350 matches, 1.00x
+  4t: ✅ 1.25549s, 252447350 matches, 3.90x
+  16t: ✅ 0.361902s, 252447350 matches, 13.56x
+  32t: ✅ 0.200516s, 252447350 matches, 24.48x
+  64t: ✅ 0.141115s, 252447350 matches, 34.78x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+DATASET: youtube
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 2.65936s, 4986965 matches, 1.00x
+  4t: ✅ 0.699636s, 4986965 matches, 3.80x
+  16t: ✅ 0.232919s, 4986965 matches, 11.41x
+  32t: ✅ 0.1677s, 4986965 matches, 15.85x
+  64t: ✅ 0.128429s, 4986965 matches, 20.70x
+
+Pattern: P2 (5x5)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ✅ 136.742s, 50244537511 matches, N/Ax
+  16t: ✅ 80.4178s, 50244537511 matches, N/Ax
+  32t: ✅ 78.7696s, 50244537511 matches, N/Ax
+  64t: ✅ 79.3688s, 50244537511 matches, N/Ax
+
+Pattern: P3 (5x5)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ✅ 125.986s, 1902181461 matches, N/Ax
+  16t: ✅ 31.8693s, 1902181461 matches, N/Ax
+  32t: ✅ 18.3919s, 1902181461 matches, N/Ax
+  64t: ✅ 14.7559s, 1902181461 matches, N/Ax
+
+Pattern: P4 (5x5)
+  1t: ✅ 3.64653s, 7211947 matches, 1.00x
+  4t: ✅ 0.946996s, 7211947 matches, 3.85x
+  16t: ✅ 0.288326s, 7211947 matches, 12.64x
+  32t: ✅ 0.189802s, 7211947 matches, 19.21x
+  64t: ✅ 0.144518s, 7211947 matches, 25.23x
+
+Pattern: P5 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ✅ 274.655s, 73583788710 matches, N/Ax
+  32t: ✅ 171.536s, 73583788710 matches, N/Ax
+  64t: ✅ 168.403s, 73583788710 matches, N/Ax
+
+Pattern: P6 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ✅ 223.15s, 122401075225 matches, N/Ax
+  64t: ✅ 218.979s, 122401075225 matches, N/Ax
+
+Pattern: P7 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ❌ TIMEOUT_EXEC (300s)
+  64t: ❌ TIMEOUT_EXEC (300s)
+
+Pattern: P8 (7x7)
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ✅ 60.5442s, 99180327 matches, N/Ax
+  16t: ✅ 15.5611s, 99180327 matches, N/Ax
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ❌ TIMEOUT_EXEC (300s)
+  64t: ❌ TIMEOUT_EXEC (300s)
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ✅ 233.105s, 91488735459 matches, N/Ax
+  16t: ✅ 58.7059s, 91488735459 matches, N/Ax
+  32t: ✅ 30.7132s, 91488735459 matches, N/Ax
+  64t: ✅ 24.6316s, 91488735459 matches, N/Ax
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_CODEGEN (60s)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+=========================================
+DATASET: roadNet-CA
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.466415s, 42 matches, 1.00x
+  4t: ✅ 0.18425s, 42 matches, 2.53x
+  16t: ✅ 0.146818s, 42 matches, 3.17x
+  32t: ✅ 0.127579s, 42 matches, 3.65x
+  64t: ✅ 0.155404s, 42 matches, 3.00x
+
+Pattern: P2 (5x5)
+  1t: ✅ 0.682703s, 1 matches, 1.00x
+  4t: ✅ 0.222298s, 1 matches, 3.07x
+  16t: ✅ 0.19477s, 1 matches, 3.50x
+  32t: ✅ 0.145804s, 1 matches, 4.68x
+  64t: ✅ 0.215692s, 1 matches, 3.16x
+
+Pattern: P3 (5x5)
+  1t: ✅ 0.705208s, 1 matches, 1.00x
+  4t: ✅ 0.286088s, 1 matches, 2.46x
+  16t: ✅ 0.262339s, 1 matches, 2.68x
+  32t: ✅ 0.260403s, 1 matches, 2.70x
+  64t: ✅ 0.17734s, 1 matches, 3.97x
+
+Pattern: P4 (5x5)
+  1t: ✅ 0.477171s, 0 matches, 1.00x
+  4t: ✅ 0.238179s, 0 matches, 2.00x
+  16t: ✅ 0.233346s, 0 matches, 2.04x
+  32t: ✅ 0.219986s, 0 matches, 2.16x
+  64t: ✅ 0.179321s, 0 matches, 2.66x
+
+Pattern: P5 (6x6)
+  1t: ✅ 0.710298s, 0 matches, 1.00x
+  4t: ✅ 0.284074s, 0 matches, 2.50x
+  16t: ✅ 0.228168s, 0 matches, 3.11x
+  32t: ✅ 0.221706s, 0 matches, 3.20x
+  64t: ✅ 0.211865s, 0 matches, 3.35x
+
+Pattern: P6 (6x6)
+  1t: ✅ 1.86605s, 48 matches, 1.00x
+  4t: ✅ 0.547917s, 48 matches, 3.40x
+  16t: ✅ 0.285929s, 48 matches, 6.52x
+  32t: ✅ 0.264453s, 48 matches, 7.05x
+  64t: ✅ 0.210488s, 48 matches, 8.86x
+
+Pattern: P7 (6x6)
+  1t: ✅ 1.82712s, 12 matches, 1.00x
+  4t: ✅ 0.537954s, 12 matches, 3.39x
+  16t: ✅ 0.268583s, 12 matches, 6.80x
+  32t: ✅ 0.232475s, 12 matches, 7.85x
+  64t: ✅ 0.18565s, 12 matches, 9.84x
+
+Pattern: P8 (7x7)
+  1t: ✅ 0.909238s, 0 matches, 1.00x
+  4t: ✅ 0.318866s, 0 matches, 2.85x
+  16t: ✅ 0.246324s, 0 matches, 3.69x
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 1.6095s, 10746270 matches, 1.00x
+  4t: ✅ 0.489235s, 10746270 matches, 3.28x
+  16t: ✅ 0.257691s, 10746270 matches, 6.24x
+  32t: ✅ 0.260142s, 10746270 matches, 6.18x
+  64t: ✅ 0.213188s, 10746270 matches, 7.54x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 1.60907s, 10746270 matches, 1.00x
+  4t: ✅ 0.504813s, 10746270 matches, 3.18x
+  16t: ✅ 0.254287s, 10746270 matches, 6.32x
+  32t: ✅ 0.262173s, 10746270 matches, 6.13x
+  64t: ✅ 0.20907s, 10746270 matches, 7.69x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 10e
+  1t: ❌ TIMEOUT_CODEGEN (60s)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+DATASET: enron
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.390934s, 2341639 matches, 1.00x
+  4t: ✅ 0.115604s, 2341639 matches, 3.38x
+  16t: ✅ 0.049534s, 2341639 matches, 7.89x
+  32t: ✅ 0.0366694s, 2341639 matches, 10.66x
+  64t: ✅ 0.0317759s, 2341639 matches, 12.30x
+
+Pattern: P2 (5x5)
+  1t: ✅ 18.0398s, 406817255 matches, 1.00x
+  4t: ✅ 4.67819s, 406817255 matches, 3.85x
+  16t: ✅ 1.41357s, 406817255 matches, 12.76x
+  32t: ✅ 0.966485s, 406817255 matches, 18.66x
+  64t: ✅ 0.918175s, 406817255 matches, 19.64x
+
+Pattern: P3 (5x5)
+  1t: ✅ 42.2991s, 285692402 matches, 1.00x
+  4t: ✅ 10.9926s, 285692402 matches, 3.84x
+  16t: ✅ 2.97523s, 285692402 matches, 14.21x
+  32t: ✅ 1.58821s, 285692402 matches, 26.63x
+  64t: ✅ 1.2756s, 285692402 matches, 33.16x
+
+Pattern: P4 (5x5)
+  1t: ✅ 0.869513s, 5809356 matches, 1.00x
+  4t: ✅ 0.238852s, 5809356 matches, 3.64x
+  16t: ✅ 0.0890132s, 5809356 matches, 9.76x
+  32t: ✅ 0.0607451s, 5809356 matches, 14.31x
+  64t: ✅ 0.0569818s, 5809356 matches, 15.25x
+
+Pattern: P5 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ✅ 98.9195s, 3980912552 matches, N/Ax
+  16t: ✅ 26.6621s, 3980912552 matches, N/Ax
+  32t: ✅ 17.4791s, 3980912552 matches, N/Ax
+  64t: ✅ 15.3286s, 3980912552 matches, N/Ax
+
+Pattern: P6 (6x6)
+  1t: ✅ 207.151s, 3980902924 matches, 1.00x
+  4t: ✅ 52.0333s, 3980902924 matches, 3.98x
+  16t: ✅ 15.619s, 3980902924 matches, 13.26x
+  32t: ✅ 13.5681s, 3980902924 matches, 15.26x
+  64t: ✅ 12.5093s, 3980902924 matches, 16.55x
+
+Pattern: P7 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ✅ 104.789s, 2673718975 matches, N/Ax
+  32t: ✅ 80.8745s, 2673718975 matches, N/Ax
+  64t: ✅ 73.262s, 2673718975 matches, N/Ax
+
+Pattern: P8 (7x7)
+  1t: ✅ 56.9804s, 118042094 matches, 1.00x
+  4t: ✅ 14.4232s, 118042094 matches, 3.95x
+  16t: ✅ 4.22704s, 118042094 matches, 13.47x
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 18.7022s, 1371828020 matches, 1.00x
+  4t: ✅ 4.97793s, 1371828020 matches, 3.75x
+  16t: ✅ 1.37322s, 1371828020 matches, 13.61x
+  32t: ✅ 0.738235s, 1371828020 matches, 25.33x
+  64t: ✅ 0.533163s, 1371828020 matches, 35.07x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ✅ 11.1567s, 375691411 matches, 1.00x
+  4t: ✅ 3.06953s, 375691411 matches, 3.63x
+  16t: ✅ 0.846856s, 375691411 matches, 13.17x
+  32t: ✅ 0.450964s, 375691411 matches, 24.73x
+  64t: ✅ 0.323033s, 375691411 matches, 34.53x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+=========================================
+DATASET: lj
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 148.028s, 5216918441 matches, 1.00x
+  4t: ✅ 37.4519s, 5216918441 matches, 3.95x
+  16t: ✅ 9.78662s, 5216918441 matches, 15.12x
+  32t: ✅ 5.22048s, 5216918441 matches, 28.35x
+  64t: ✅ 3.30047s, 5216918441 matches, 44.85x
+
+Pattern: P2 (5x5)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ❌ TIMEOUT_EXEC (300s)
+  64t: ❌ TIMEOUT_EXEC (300s)
+
+Pattern: P3 (5x5)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ❌ TIMEOUT_EXEC (300s)
+  64t: ❌ TIMEOUT_EXEC (300s)
+
+Pattern: P4 (5x5)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ✅ 293.67s, 246378629120 matches, N/Ax
+  32t: ✅ 156.863s, 246378629120 matches, N/Ax
+  64t: ✅ 107.252s, 246378629120 matches, N/Ax
+
+Pattern: P5 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ❌ TIMEOUT_EXEC (300s)
+  64t: ❌ TIMEOUT_EXEC (300s)
+
+Pattern: P6 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ❌ TIMEOUT_EXEC (300s)
+  64t: ❌ TIMEOUT_EXEC (300s)
+
+Pattern: P7 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ❌ TIMEOUT_EXEC (300s)
+  64t: ❌ TIMEOUT_EXEC (300s)
+
+Pattern: P8 (7x7)
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ✅ 290.37s, 542683013686 matches, N/Ax
+  64t: ✅ 190.289s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ❌ TIMEOUT_EXEC (300s)
+  32t: ✅ 290.473s, 542683013686 matches, N/Ax
+  64t: ✅ 190.315s, 542683013686 matches, N/Ax
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+=========================================
+DATASET: wiki
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.552723s, 2077903 matches, 1.00x
+  4t: ✅ 0.143957s, 2077903 matches, 3.83x
+  16t: ✅ 0.0563202s, 2077903 matches, 9.81x
+  32t: ✅ 0.0427233s, 2077903 matches, 12.93x
+  64t: ✅ 0.0446727s, 2077903 matches, 12.37x
+
+Pattern: P2 (5x5)
+  1t: ✅ 27.1385s, 593201615 matches, 1.00x
+  4t: ✅ 6.97563s, 593201615 matches, 3.89x
+  16t: ✅ 2.53148s, 593201615 matches, 10.72x
+  32t: ✅ 1.91877s, 593201615 matches, 14.14x
+  64t: ✅ 1.67544s, 593201615 matches, 16.19x
+
+Pattern: P3 (5x5)
+  1t: ✅ 43.1519s, 354811302 matches, 1.00x
+  4t: ✅ 11.0974s, 354811302 matches, 3.88x
+  16t: ✅ 3.2643s, 354811302 matches, 13.21x
+  32t: ✅ 2.33673s, 354811302 matches, 18.46x
+  64t: ✅ 1.83338s, 354811302 matches, 23.53x
+
+Pattern: P4 (5x5)
+  1t: ✅ 1.34987s, 4514137 matches, 1.00x
+  4t: ✅ 0.393639s, 4514137 matches, 3.42x
+  16t: ✅ 0.13163s, 4514137 matches, 10.25x
+  32t: ✅ 0.09806s, 4514137 matches, 13.76x
+  64t: ✅ 0.0938491s, 4514137 matches, 14.38x
+
+Pattern: P5 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ✅ 128.146s, 6185828330 matches, N/Ax
+  16t: ✅ 45.172s, 6185828330 matches, N/Ax
+  32t: ✅ 33.1134s, 6185828330 matches, N/Ax
+  64t: ✅ 28.598s, 6185828330 matches, N/Ax
+
+Pattern: P6 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ✅ 108.297s, 6671480334 matches, N/Ax
+  16t: ✅ 46.9871s, 6671480334 matches, N/Ax
+  32t: ✅ 37.2105s, 6671480334 matches, N/Ax
+  64t: ✅ 34.6889s, 6671480334 matches, N/Ax
+
+Pattern: P7 (6x6)
+  1t: ❌ TIMEOUT_EXEC (300s)
+  4t: ❌ TIMEOUT_EXEC (300s)
+  16t: ✅ 233.538s, 6374008876 matches, N/Ax
+  32t: ✅ 178.595s, 6374008876 matches, N/Ax
+  64t: ✅ 163.825s, 6374008876 matches, N/Ax
+
+Pattern: P8 (7x7)
+  1t: ✅ 53.7231s, 89671252 matches, 1.00x
+  4t: ✅ 13.6701s, 89671252 matches, 3.92x
+  16t: ✅ 4.8059s, 89671252 matches, 11.17x
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 23.1098s, 1048807458 matches, 1.00x
+  4t: ✅ 6.04684s, 1048807458 matches, 3.82x
+  16t: ✅ 1.7907s, 1048807458 matches, 12.90x
+  32t: ✅ 1.06941s, 1048807458 matches, 21.60x
+  64t: ✅ 0.928492s, 1048807458 matches, 24.88x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ✅ 23.1169s, 1048807458 matches, 1.00x
+  4t: ✅ 6.11219s, 1048807458 matches, 3.78x
+  16t: ✅ 1.82088s, 1048807458 matches, 12.69x
+  32t: ✅ 1.15764s, 1048807458 matches, 19.96x
+  64t: ✅ 0.999387s, 1048807458 matches, 23.13x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_EXEC (210s)
+  4t: ❌ TIMEOUT_EXEC (210s)
+  16t: ❌ TIMEOUT_EXEC (210s)
+
+=========================================
+COMPREHENSIVE TEST COMPLETE
+=========================================
+Ended at: Thu Aug 14 06:24:00 PM UTC 2025
+
+=== SUMMARY ===
+Results CSV: /home/williamp/graphmini/results/comprehensive_20250814_093318/comprehensive_results.csv
+Full log: /home/williamp/graphmini/results/comprehensive_20250814_093318/full_log.txt
+
+Test outcomes:
+  Successful: 223
+  Timeouts: 93
+  Failures: 0
+
+Full results saved to: /home/williamp/graphmini/results/comprehensive_20250814_093318/
+/home/williamp/graphmini/comprehensive_graphmini_test.sh: line 320: EOF: command not found

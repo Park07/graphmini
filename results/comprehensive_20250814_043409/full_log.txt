@@ -1,0 +1,766 @@
+=== Test Configuration ===
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Thread counts: 1 4 16 32 64
+Results directory: /home/williamp/graphmini/results/comprehensive_20250814_043409
+
+=========================================
+STARTING COMPREHENSIVE TEST
+=========================================
+
+=========================================
+DATASET: dblp
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.602535s, 16713192 matches, 1.00x
+  4t: ✅ 0.174662s, 16713192 matches, 3.44x
+  16t: ✅ 0.0656831s, 16713192 matches, 9.17x
+  32t: ✅ 0.0484002s, 16713192 matches, 12.44x
+  64t: ✅ 0.0427211s, 16713192 matches, 14.10x
+
+Pattern: P2 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283936 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283939 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283942 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283945 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283948 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P3 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283955 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283958 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283961 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283964 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1283967 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P4 (5x5)
+  1t: ✅ 4.6359s, 262663639 matches, 1.00x
+  4t: ✅ 1.22336s, 262663639 matches, 3.78x
+  16t: ✅ 0.341806s, 262663639 matches, 13.56x
+  32t: ✅ 0.207963s, 262663639 matches, 22.29x
+  64t: ✅ 0.211334s, 262663639 matches, 21.93x
+
+Pattern: P5 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284494 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284497 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284500 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284503 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284506 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P6 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284513 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284516 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284519 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284522 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284525 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P7 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284532 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284535 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284538 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284541 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284544 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P8 (7x7)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284551 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284554 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284557 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284560 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1284563 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284579 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284582 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284585 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284588 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284591 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284607 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284610 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284613 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284616 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1284619 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_dense (pattern #1)
+  Pattern: 15v, 20e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 15v, 54e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+=========================================
+DATASET: youtube
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 2.77894s, 4986965 matches, 1.00x
+  4t: ✅ 0.696046s, 4986965 matches, 3.99x
+  16t: ✅ 0.230219s, 4986965 matches, 12.07x
+  32t: ✅ 0.145599s, 4986965 matches, 19.08x
+  64t: ✅ 0.11066s, 4986965 matches, 25.11x
+
+Pattern: P2 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285244 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285247 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285250 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285253 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285256 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P3 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285263 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285266 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285269 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285272 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285275 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P4 (5x5)
+  1t: ✅ 4.29895s, 7211947 matches, 1.00x
+  4t: ✅ 1.10107s, 7211947 matches, 3.90x
+  16t: ✅ 0.331251s, 7211947 matches, 12.97x
+  32t: ✅ 0.202596s, 7211947 matches, 21.21x
+  64t: ✅ 0.149666s, 7211947 matches, 28.72x
+
+Pattern: P5 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285802 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285805 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285808 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285811 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285814 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P6 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285821 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285824 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285827 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285830 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285833 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P7 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285840 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285843 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285846 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285849 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285852 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P8 (7x7)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285859 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285862 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285865 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285868 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1285871 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285887 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285890 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285893 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285896 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285899 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285915 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285918 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285921 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285924 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1285927 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_dense (pattern #1)
+  Pattern: 15v, 16e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 15v, 14e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+=========================================
+DATASET: roadNet-CA
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.467959s, 42 matches, 1.00x
+  4t: ✅ 0.158992s, 42 matches, 2.94x
+  16t: ✅ 0.137727s, 42 matches, 3.39x
+  32t: ✅ 0.112921s, 42 matches, 4.14x
+  64t: ✅ 0.104677s, 42 matches, 4.47x
+
+Pattern: P2 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286547 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286550 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286553 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286556 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286559 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P3 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286566 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286569 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286572 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286575 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1286578 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P4 (5x5)
+  1t: ✅ 0.476674s, 0 matches, 1.00x
+  4t: ✅ 0.164855s, 0 matches, 2.89x
+  16t: ✅ 0.127495s, 0 matches, 3.73x
+  32t: ✅ 0.12756s, 0 matches, 3.73x
+  64t: ✅ 0.103998s, 0 matches, 4.58x
+
+Pattern: P5 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287105 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287108 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287111 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287114 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287117 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P6 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287124 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287127 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287130 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287133 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287136 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P7 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287143 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287146 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287149 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287152 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287155 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P8 (7x7)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287162 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287165 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287168 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287171 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287174 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287190 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287193 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287196 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287199 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287202 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287218 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287221 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287224 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287227 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1287230 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 10e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_dense (pattern #1)
+  Pattern: 15v, 17e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 15v, 15e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+=========================================
+DATASET: enron
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ✅ 0.38927s, 2341639 matches, 1.00x
+  4t: ✅ 0.114382s, 2341639 matches, 3.40x
+  16t: ✅ 0.047615s, 2341639 matches, 8.17x
+  32t: ✅ 0.0351575s, 2341639 matches, 11.07x
+  64t: ✅ 0.0303068s, 2341639 matches, 12.84x
+
+Pattern: P2 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287862 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287865 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287868 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287871 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287874 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P3 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287881 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287884 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287887 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287890 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1287893 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P4 (5x5)
+  1t: ✅ 1.07839s, 5809356 matches, 1.00x
+  4t: ✅ 0.28454s, 5809356 matches, 3.78x
+  16t: ✅ 0.0903747s, 5809356 matches, 11.93x
+  32t: ✅ 0.0588101s, 5809356 matches, 18.33x
+  64t: ✅ 0.0593607s, 5809356 matches, 18.16x
+
+Pattern: P5 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288421 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288424 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288427 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288430 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288433 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P6 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288440 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288443 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288446 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288449 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288452 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P7 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288459 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288462 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288465 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288468 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288471 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P8 (7x7)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288478 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288481 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288484 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288487 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1288490 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288506 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288509 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288512 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288515 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288518 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288534 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288537 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288540 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288543 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1288546 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_dense (pattern #1)
+  Pattern: 16v, 41e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 16v, 41e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+=========================================
+DATASET: lj
+=========================================
+
+--- Testing Original GraphMini Patterns (P1-P8) ---
+
+Pattern: P1 (4x4)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ✅ 37.3629s, 5216918441 matches, N/Ax
+  16t: ✅ 9.78034s, 5216918441 matches, N/Ax
+  32t: ✅ 5.20965s, 5216918441 matches, N/Ax
+  64t: ✅ 3.3s, 5216918441 matches, N/Ax
+
+Pattern: P2 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289124 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289127 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289130 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289133 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289136 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P3 (5x5)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289143 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289146 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289149 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289152 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1289155 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P4 (5x5)
+  1t: ❌ TIMEOUT_EXEC
+  4t: ❌ TIMEOUT_EXEC
+  16t: ❌ TIMEOUT_EXEC
+  32t: ❌ TIMEOUT_EXEC
+  64t: ✅ 108.054s, 246378629120 matches, N/Ax
+
+Pattern: P5 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290714 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290717 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290720 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290723 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290726 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P6 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290733 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290736 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290739 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290742 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290745 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P7 (6x6)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290752 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290755 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290758 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290761 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290764 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Pattern: P8 (7x7)
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290771 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290774 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290777 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290780 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 133: 1290783 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290799 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290802 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290805 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290808 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290811 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290827 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  4t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290830 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  16t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290833 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  32t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290836 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+  64t: /home/williamp/graphmini/comprehensive_graphmini_test.sh: line 221: 1290839 Floating point exceptiontimeout 10 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
+❌ FP_EXCEPTION
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_dense (pattern #1)
+  Pattern: 16v, 16e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: ❌ TIMEOUT_CODEGEN
+  32t: ❌ TIMEOUT_CODEGEN
+  64t: ❌ TIMEOUT_CODEGEN
+
+Testing: medium_sparse (pattern #1)
+  Pattern: 16v, 16e
+  1t: ❌ TIMEOUT_CODEGEN
+  4t: ❌ TIMEOUT_CODEGEN
+  16t: 
