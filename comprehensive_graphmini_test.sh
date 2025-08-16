@@ -10,36 +10,29 @@ QUERY_ROOT="/home/williamp/thesis_data/query_sets"
 
 cd "$PROJECT_ROOT/build" || exit 1
 
+# Create required directories for GraphMini
+mkdir -p "$PROJECT_ROOT/plan" "$PROJECT_ROOT/log" "$PROJECT_ROOT/profile"
+
 # All datasets
 DATASETS=("dblp" "youtube" "roadNet-CA" "enron" "lj" "wiki")
 
-# Results directory
-RESULTS_DIR="${PROJECT_ROOT}/results/comprehensive_$(date +%Y%m%d_%H%M%S)"
-mkdir -p "$RESULTS_DIR"
+# Main results directory with timestamp
+MAIN_TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+MAIN_RESULTS_DIR="${PROJECT_ROOT}/results/comprehensive_o_${MAIN_TIMESTAMP}"
+mkdir -p "$MAIN_RESULTS_DIR"
 
-# Log everything
-exec > >(tee -a "$RESULTS_DIR/full_log.txt")
+# Log everything to main log
+exec > >(tee -a "$MAIN_RESULTS_DIR/full_log.txt")
 exec 2>&1
 
 echo "=== Test Configuration ==="
+echo "Testing GraphMini"
 echo "Datasets: ${DATASETS[@]}"
-echo "Results directory: $RESULTS_DIR"
+echo "Main results directory: $MAIN_RESULTS_DIR"
 echo ""
 
-# CSV header
-echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$RESULTS_DIR/comprehensive_results.csv"
-
-# Original GraphMini patterns (P1-P8)
-declare -A GRAPHMINI_PATTERNS=(
-    ["P1"]="0111101111011110"  # 4-clique
-    ["P2"]="0110010111110110110001100"  # 5-vertex pattern
-    ["P3"]="0110010111110110110101110"  # 5-vertex pattern
-    ["P4"]="0111110111110111110111110"  # 5-clique
-    ["P5"]="011111101111110110111000111000110000"  # 6-vertex pattern
-    ["P6"]="011110101101110011110000101000011000"  # 6-vertex pattern
-    ["P7"]="011110101011110010100001111000010100"  # 6-vertex pattern
-    ["P8"]="0111111101111111011111110111111101111111001111100"  # 7-vertex pattern
-)
+# Main CSV header
+echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$MAIN_RESULTS_DIR/comprehensive_results.csv"
 
 # Function to get pattern size
 get_pattern_size() {
@@ -47,37 +40,13 @@ get_pattern_size() {
     echo "sqrt(${#binary})" | bc -l | cut -d'.' -f1
 }
 
-# Function to determine thread counts based on pattern size
-get_thread_counts() {
-    local pattern_size=$1
-    local pattern_name=$2
-
-    # For P8 and patterns >6 vertices, limit threads
-    if [[ "$pattern_name" == "P8" ]] || [[ $pattern_size -gt 6 ]]; then
-        echo "1 4 16"  # Stop at 16 threads for large patterns
-    else
-        echo "1 4 16 32 64"  # Full thread test for smaller patterns
-    fi
-}
-
-# Function to get timeout based on pattern size
-get_execution_timeout() {
-    local pattern_size=$1
-    local pattern_name=$2
-
-    if [[ "$pattern_name" == "P8" ]] || [[ $pattern_size -gt 6 ]]; then
-        echo "210"  # 3.5 minutes for large patterns
-    else
-        echo "300"  # 5 minutes for normal patterns
-    fi
-}
-
-# Function to load a real pattern from your generated files
+# Function to load a real pattern from generated files
 load_real_pattern() {
     local dataset=$1
     local category=$2
     local index=$3
 
+    # FIXED: Use wildcard to match correct vertex count
     local pattern_file="${QUERY_ROOT}/${dataset}/${category}/query_sample_*v_${index}.graph"
     pattern_file=$(ls $pattern_file 2>/dev/null | head -1)
 
@@ -86,10 +55,14 @@ load_real_pattern() {
         return
     fi
 
+    echo "Loading pattern from: $pattern_file" >&2
+
     # Parse the pattern file
     local header=$(head -1 "$pattern_file")
     local vertices=$(echo "$header" | awk '{print $2}')
     local edges=$(echo "$header" | awk '{print $3}')
+
+    echo "Pattern has $vertices vertices, $edges edges" >&2
 
     # Generate binary matrix
     local matrix=$(printf '0%.0s' $(seq 1 $((vertices * vertices))))
@@ -104,6 +77,8 @@ load_real_pattern() {
         fi
     done < "$pattern_file"
 
+    echo "Generated binary matrix: $matrix (length: ${#matrix})" >&2
+
     echo "${vertices}:${edges}:${matrix}"
 }
 
@@ -111,13 +86,19 @@ load_real_pattern() {
 declare -A baselines
 
 echo "========================================="
-echo "STARTING COMPREHENSIVE TEST"
+echo "STARTING COMPREHENSIVE TEST - GraphMini"
 echo "========================================="
 
 for dataset in "${DATASETS[@]}"; do
+    # Create per-dataset timestamped directory
+    DATASET_TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+    DATASET_RESULTS_DIR="${MAIN_RESULTS_DIR}/${dataset}_${DATASET_TIMESTAMP}"
+    mkdir -p "$DATASET_RESULTS_DIR"
+
     echo ""
     echo "========================================="
     echo "DATASET: $dataset"
+    echo "Results for $dataset: $DATASET_RESULTS_DIR"
     echo "========================================="
 
     # Check if dataset is preprocessed
@@ -127,195 +108,227 @@ for dataset in "${DATASETS[@]}"; do
     fi
 
     echo ""
-    echo "--- Testing Original GraphMini Patterns (P1-P8) ---"
+    echo "--- Testing Generated Patterns ---"
 
-    for pattern_name in P1 P2 P3 P4 P5 P6 P7 P8; do
-        pattern_binary="${GRAPHMINI_PATTERNS[$pattern_name]}"
-        pattern_size=$(get_pattern_size "$pattern_binary")
-
+    # Test ALL categories and ALL patterns
+    for category in "small_dense_4v" "small_sparse_4v" "small_dense_8v" "small_sparse_8v" "medium_dense" "medium_sparse" "large_dense" "large_sparse"; do
         echo ""
-        echo "Pattern: $pattern_name (${pattern_size}x${pattern_size})"
+        echo "--- Testing Category: $category ---"
 
-        # Get appropriate thread counts and timeout
-        thread_counts=$(get_thread_counts $pattern_size "$pattern_name")
-        exec_timeout=$(get_execution_timeout $pattern_size "$pattern_name")
+        # Find all pattern files in this category
+        pattern_files=($(ls "${QUERY_ROOT}/${dataset}/${category}"/query_sample_*v_*.graph 2>/dev/null | sort -V))
 
-        baseline_key="${dataset}_${pattern_name}"
-
-        for threads in $thread_counts; do
-            echo -n "  ${threads}t: "
-
-            export OMP_NUM_THREADS=$threads
-
-            # Generate code (30s timeout for code generation)
-            timeout 30 ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
-            run_exit=$?
-
-            if [ $run_exit -eq 124 ]; then
-                echo "❌ TIMEOUT_CODEGEN"
-                echo "$dataset,GraphMini_Original,$pattern_name,$pattern_size,N/A,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout (30s)" >> "$RESULTS_DIR/comprehensive_results.csv"
-                continue
-            fi
-
-            # Execute with appropriate timeout
-            log_file="$RESULTS_DIR/${dataset}_${pattern_name}_${threads}t.log"
-            timeout $exec_timeout /usr/bin/time -v ./bin/runner $threads "${DATA_ROOT}/${dataset}/" > "$log_file" 2>&1
-            exit_code=$?
-
-            if [ $exit_code -eq 124 ]; then
-                echo "❌ TIMEOUT_EXEC (${exec_timeout}s)"
-                echo "$dataset,GraphMini_Original,$pattern_name,$pattern_size,N/A,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (${exec_timeout}s)" >> "$RESULTS_DIR/comprehensive_results.csv"
-                continue
-            fi
-
-            # Parse results
-            load_time=$(grep "LoadTime" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
-            exec_time=$(grep "CODE_EXECUTION_TIME" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
-            result_count=$(grep "RESULT=" "$log_file" | grep -o '[0-9]*' | head -1)
-            peak_mem_kb=$(grep "Maximum resident set size" "$log_file" | grep -o '[0-9]*' | head -1)
-            peak_mem_mb=$(echo "scale=1; ${peak_mem_kb:-0} / 1024" | bc -l)
-
-            if [ -n "$exec_time" ] && [ -n "$result_count" ]; then
-                # Calculate speedup
-                if [ $threads -eq 1 ]; then
-                    baselines["$baseline_key"]="$exec_time"
-                    speedup="1.00"
-                    efficiency="100.0"
-                else
-                    baseline="${baselines[$baseline_key]}"
-                    if [ -n "$baseline" ]; then
-                        speedup=$(echo "scale=2; $baseline / $exec_time" | bc -l)
-                        efficiency=$(echo "scale=1; $speedup * 100 / $threads" | bc -l)
-                    else
-                        speedup="N/A"
-                        efficiency="N/A"
-                    fi
-                fi
-
-                echo "✅ ${exec_time}s, ${result_count} matches, ${speedup}x"
-                echo "$dataset,GraphMini_Original,$pattern_name,$pattern_size,N/A,$threads,$load_time,$exec_time,$result_count,$peak_mem_mb,$speedup,$efficiency,SUCCESS,Original pattern" >> "$RESULTS_DIR/comprehensive_results.csv"
-            else
-                echo "❌ FAILED"
-                echo "$dataset,GraphMini_Original,$pattern_name,$pattern_size,N/A,$threads,N/A,N/A,N/A,$peak_mem_mb,N/A,N/A,FAILED,Unknown error" >> "$RESULTS_DIR/comprehensive_results.csv"
-            fi
-        done
-    done
-
-    echo ""
-    echo "--- Testing Your Generated Patterns ---"
-
-    # Test selection of your patterns - SKIP large patterns
-    for test_case in "small_dense_4v:1" "small_sparse_4v:1" "small_dense_8v:1" "small_sparse_8v:1"; do
-        IFS=':' read -r category index <<< "$test_case"
-
-        echo ""
-        echo "Testing: $category (pattern #$index)"
-
-        # Load the pattern
-        pattern_info=$(load_real_pattern "$dataset" "$category" "$index")
-
-        if [ "$pattern_info" == "ERROR_NOT_FOUND" ]; then
-            echo "  Pattern file not found, skipping"
+        if [ ${#pattern_files[@]} -eq 0 ]; then
+            echo "  No pattern files found in $category, skipping"
             continue
         fi
 
-        IFS=':' read -r vertices edges pattern_binary <<< "$pattern_info"
-        pattern_name="${category}_${index}"
+        echo "  Found ${#pattern_files[@]} patterns in $category"
 
-        echo "  Pattern: ${vertices}v, ${edges}e"
-
-        # Determine thread counts based on vertices
-        if [ $vertices -ge 8 ]; then
-            thread_counts="1 4 16"  # Stop at 16 for 8v patterns
-            exec_timeout="210"  # 3.5 minutes
-            codegen_timeout="60"  # 1 minute for code generation
+        # Determine how many patterns to test based on category
+        if [[ "$category" == *"4v"* ]]; then
+            # Test all 20 patterns for 4-vertex (they work well)
+            pattern_indices=($(seq 1 20))
+            echo "  Testing all 20 patterns (4-vertex category)"
         else
-            thread_counts="1 4 16 32 64"
-            exec_timeout="300"  # 5 minutes
-            codegen_timeout="30"  # 30 seconds
+            # Test only 1 pattern for 8v+ (they crash, just verify the crash)
+            pattern_indices=(1)
+            echo "  Testing only 1 pattern (8v+ category - known issues)"
         fi
 
-        baseline_key="${dataset}_${pattern_name}"
+        # Test the determined patterns
+        for index in "${pattern_indices[@]}"; do
 
-        for threads in $thread_counts; do
-            echo -n "  ${threads}t: "
-
-            export OMP_NUM_THREADS=$threads
-
-            # Generate code
-            timeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 0 0 > /tmp/run.log 2>&1
-            run_exit=$?
-
-            if [ $run_exit -eq 124 ]; then
-                echo "❌ TIMEOUT_CODEGEN (${codegen_timeout}s)"
-                echo "$dataset,Your_Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout (${codegen_timeout}s)" >> "$RESULTS_DIR/comprehensive_results.csv"
-                # Skip remaining threads if code generation fails
-                break
-            fi
-
-            # Execute
-            log_file="$RESULTS_DIR/${dataset}_${pattern_name}_${threads}t.log"
-            timeout $exec_timeout /usr/bin/time -v ./bin/runner $threads "${DATA_ROOT}/${dataset}/" > "$log_file" 2>&1
-            exit_code=$?
-
-            if [ $exit_code -eq 124 ]; then
-                echo "❌ TIMEOUT_EXEC (${exec_timeout}s)"
-                echo "$dataset,Your_Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (${exec_timeout}s)" >> "$RESULTS_DIR/comprehensive_results.csv"
+            if [ -z "$index" ]; then
+                echo "  Could not extract index from pattern, skipping"
                 continue
             fi
 
-            # Parse results
-            load_time=$(grep "LoadTime" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
-            exec_time=$(grep "CODE_EXECUTION_TIME" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
-            result_count=$(grep "RESULT=" "$log_file" | grep -o '[0-9]*' | head -1)
-            peak_mem_kb=$(grep "Maximum resident set size" "$log_file" | grep -o '[0-9]*' | head -1)
-            peak_mem_mb=$(echo "scale=1; ${peak_mem_kb:-0} / 1024" | bc -l)
+            echo ""
+            echo "Testing: $category (pattern #$index)"
 
-            if [ -n "$exec_time" ] && [ -n "$result_count" ]; then
-                # Calculate speedup
-                if [ $threads -eq 1 ]; then
-                    baselines["$baseline_key"]="$exec_time"
-                    speedup="1.00"
-                    efficiency="100.0"
-                else
-                    baseline="${baselines[$baseline_key]}"
-                    if [ -n "$baseline" ]; then
-                        speedup=$(echo "scale=2; $baseline / $exec_time" | bc -l)
-                        efficiency=$(echo "scale=1; $speedup * 100 / $threads" | bc -l)
-                    else
-                        speedup="N/A"
-                        efficiency="N/A"
-                    fi
+            # Load the pattern
+            pattern_info=$(load_real_pattern "$dataset" "$category" "$index")
+
+            if [ "$pattern_info" == "ERROR_NOT_FOUND" ]; then
+                echo "  Pattern file not found, skipping"
+                continue
+            fi
+
+            IFS=':' read -r vertices edges pattern_binary <<< "$pattern_info"
+            pattern_name="${category}_${index}"
+
+            echo "  Pattern: ${vertices}v, ${edges}e"
+
+            # FIXED: Updated thread scaling logic
+            # Small/Medium patterns (≤8v): Full scaling 1,4,16,32,64
+            # Large patterns (>8v): Limited scaling 1,4,16
+            if [ $vertices -gt 8 ]; then
+                thread_counts="1 4 16"  # Large patterns: limit threads
+                exec_timeout="240"  # 4 minutes
+                codegen_timeout="60"  # 1 minute for code generation
+            else
+                thread_counts="1 4 16 32 64"  # Small/medium: full scaling
+                exec_timeout="240"  # 4 minutes
+                codegen_timeout="600"  # 3 minutes
+            fi
+
+            echo "  Thread counts: $thread_counts"
+            echo "  Timeouts: codegen=${codegen_timeout}s, exec=${exec_timeout}s"
+
+            baseline_key="${dataset}_${pattern_name}"
+
+            for threads in $thread_counts; do
+                echo -n "  ${threads}t: "
+
+                export OMP_NUM_THREADS=$threads
+
+                # Generate code with better error handling
+                echo "Generating code for pattern: $pattern_binary"
+                timeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 0 > /tmp/run.log 2>&1
+                run_exit=$?
+                if [ ! -f ./bin/runner ]; then
+                    make runner >/dev/null 2>&1
                 fi
 
-                echo "✅ ${exec_time}s, ${result_count} matches, ${speedup}x"
-                echo "$dataset,Your_Patterns,$pattern_name,$vertices,$edges,$threads,$load_time,$exec_time,$result_count,$peak_mem_mb,$speedup,$efficiency,SUCCESS,Your pattern worked!" >> "$RESULTS_DIR/comprehensive_results.csv"
-            else
-                echo "❌ FAILED"
-                echo "$dataset,Your_Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,$peak_mem_mb,N/A,N/A,FAILED,Execution failed" >> "$RESULTS_DIR/comprehensive_results.csv"
-            fi
-        done
-    done
-done
+                # Check for various failure modes
+                if [ $run_exit -eq 124 ]; then
+                    echo "❌ TIMEOUT_CODEGEN (${codegen_timeout}s)"
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout" >> "$MAIN_RESULTS_DIR/comprehensive_results.csv"
+
+                    # Create dataset CSV header if it doesn't exist
+                    if [ ! -f "$DATASET_RESULTS_DIR/${dataset}_results.csv" ]; then
+                        echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    fi
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout" >> "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    break
+                elif [ $run_exit -ne 0 ]; then
+                    echo "❌ CODEGEN_FAILED (exit code: $run_exit)"
+                    echo "Error log:"
+                    cat /tmp/run.log
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,CODEGEN_FAILED,Code generation crashed with exit code $run_exit" >> "$MAIN_RESULTS_DIR/comprehensive_results.csv"
+
+                    # Create dataset CSV header if it doesn't exist
+                    if [ ! -f "$DATASET_RESULTS_DIR/${dataset}_results.csv" ]; then
+                        echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    fi
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,CODEGEN_FAILED,Code generation crashed with exit code $run_exit" >> "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+
+                    # Skip to next category if this pattern type consistently fails
+                    if [[ "$category" != *"4v"* ]] && [[ $run_exit -ne 0 ]]; then
+                        echo "  ⚠️  Skipping remaining patterns in $category due to implementation issues"
+                        break 2  # Break out of both threads and pattern loops for this category
+                    fi
+                    break
+                fi
+
+                # Verify runner was built successfully
+                if [ ! -f ./bin/runner ]; then
+                    echo "❌ RUNNER_NOT_BUILT"
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,RUNNER_NOT_BUILT,Binary not generated" >> "$MAIN_RESULTS_DIR/comprehensive_results.csv"
+
+                    # Create dataset CSV header if it doesn't exist
+                    if [ ! -f "$DATASET_RESULTS_DIR/${dataset}_results.csv" ]; then
+                        echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    fi
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,RUNNER_NOT_BUILT,Binary not generated" >> "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    break
+                fi
+
+                # Execute
+                log_file="$DATASET_RESULTS_DIR/${dataset}_${pattern_name}_${threads}t.log"
+                timeout $exec_timeout /usr/bin/time -v ./bin/runner $threads "${DATA_ROOT}/${dataset}/" > "$log_file" 2>&1
+                exit_code=$?
+
+                if [ $exit_code -eq 124 ]; then
+                    echo "❌ TIMEOUT_EXEC (${exec_timeout}s)"
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (${exec_timeout}s)" >> "$MAIN_RESULTS_DIR/comprehensive_results.csv"
+
+                    # Create dataset CSV header if it doesn't exist
+                    if [ ! -f "$DATASET_RESULTS_DIR/${dataset}_results.csv" ]; then
+                        echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    fi
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (${exec_timeout}s)" >> "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    continue
+                fi
+
+                # Parse results
+                load_time=$(grep "LoadTime" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
+                exec_time=$(grep "CODE_EXECUTION_TIME" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
+                result_count=$(grep "RESULT=" "$log_file" | grep -o '[0-9]*' | head -1)
+                peak_mem_kb=$(grep "Maximum resident set size" "$log_file" | grep -o '[0-9]*' | head -1)
+                peak_mem_mb=$(echo "scale=1; ${peak_mem_kb:-0} / 1024" | bc -l)
+
+                if [ -n "$exec_time" ] && [ -n "$result_count" ]; then
+                    # Calculate speedup
+                    if [ $threads -eq 1 ]; then
+                        baselines["$baseline_key"]="$exec_time"
+                        speedup="1.00"
+                        efficiency="100.0"
+                    else
+                        baseline="${baselines[$baseline_key]}"
+                        if [ -n "$baseline" ]; then
+                            speedup=$(echo "scale=2; $baseline / $exec_time" | bc -l)
+                            efficiency=$(echo "scale=1; $speedup * 100 / $threads" | bc -l)
+                        else
+                            speedup="N/A"
+                            efficiency="N/A"
+                        fi
+                    fi
+
+                    echo "✅ ${exec_time}s, ${result_count} matches, ${speedup}x"
+                    # Write to both main and dataset-specific CSV
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,$load_time,$exec_time,$result_count,$peak_mem_mb,$speedup,$efficiency,SUCCESS,GraphMini pattern worked!" >> "$MAIN_RESULTS_DIR/comprehensive_results.csv"
+
+                    # Create dataset CSV header if it doesn't exist
+                    if [ ! -f "$DATASET_RESULTS_DIR/${dataset}_results.csv" ]; then
+                        echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    fi
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,$load_time,$exec_time,$result_count,$peak_mem_mb,$speedup,$efficiency,SUCCESS,GraphMini pattern worked!" >> "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                else
+                    echo "❌ FAILED"
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,$peak_mem_mb,N/A,N/A,FAILED,Execution failed" >> "$MAIN_RESULTS_DIR/comprehensive_results.csv"
+
+                    # Create dataset CSV header if it doesn't exist
+                    if [ ! -f "$DATASET_RESULTS_DIR/${dataset}_results.csv" ]; then
+                        echo "Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes" > "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                    fi
+                    echo "$dataset,Patterns,$pattern_name,$vertices,$edges,$threads,N/A,N/A,N/A,$peak_mem_mb,N/A,N/A,FAILED,Execution failed" >> "$DATASET_RESULTS_DIR/${dataset}_results.csv"
+                fi
+            done  # End of threads loop
+        done      # End of pattern index loop
+    done          # End of category loop
+done              # End of dataset loop
 
 echo ""
 echo "========================================="
-echo "COMPREHENSIVE TEST COMPLETE"
+echo "COMPREHENSIVE TEST COMPLETE - GraphMini"
 echo "========================================="
 echo "Ended at: $(date)"
 echo ""
 echo "=== SUMMARY ==="
-echo "Results CSV: $RESULTS_DIR/comprehensive_results.csv"
-echo "Full log: $RESULTS_DIR/full_log.txt"
+echo "Main results CSV: $MAIN_RESULTS_DIR/comprehensive_results.csv"
+echo "Full log: $MAIN_RESULTS_DIR/full_log.txt"
 echo ""
 
 # Quick summary
 echo "Test outcomes:"
-grep -c "SUCCESS" "$RESULTS_DIR/comprehensive_results.csv" | xargs echo "  Successful:"
-grep -c "TIMEOUT" "$RESULTS_DIR/comprehensive_results.csv" | xargs echo "  Timeouts:"
-grep -c "FAILED" "$RESULTS_DIR/comprehensive_results.csv" | xargs echo "  Failures:"
+grep -c "SUCCESS" "$MAIN_RESULTS_DIR/comprehensive_results.csv" | xargs echo "  Successful:"
+grep -c "TIMEOUT" "$MAIN_RESULTS_DIR/comprehensive_results.csv" | xargs echo "  Timeouts:"
+grep -c "FAILED" "$MAIN_RESULTS_DIR/comprehensive_results.csv" | xargs echo "  Failures:"
 
 echo ""
-echo "Full results saved to: $RESULTS_DIR/"
-EOF
+echo "Per-dataset results saved in:"
+for dataset in "${DATASETS[@]}"; do
+    dataset_dir=$(find "$MAIN_RESULTS_DIR" -name "${dataset}_*" -type d | head -1)
+    if [ -n "$dataset_dir" ]; then
+        echo "  $dataset: $dataset_dir"
+    fi
+done
 
+echo ""
+echo "=== GraphMinivVersion Info ==="
+cd "$PROJECT_ROOT"
+echo "Git branch: $(git branch --show-current 2>/dev/null || echo 'unknown')"
+echo "Git commit: $(git rev-parse --short HEAD 2>/dev/null || echo 'unknown')"
+echo "Test completed on: $(hostname)"
