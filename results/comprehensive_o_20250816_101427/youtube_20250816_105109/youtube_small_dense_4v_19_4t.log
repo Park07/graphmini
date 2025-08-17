@@ -1,0 +1,30 @@
+Threads=4
+LoadTime(s)=0.040727
+CODE_EXECUTION_TIME(s)=48.6309
+RESULT=12371157628
+Throughput=2.54389e+08
+VertexSetAllocated=5.52 MB
+MiniGraphAllocated=11.58 MB
+	Command being timed: "./bin/runner 4 /home/williamp/thesis_data/snap_format/youtube/"
+	User time (seconds): 146.73
+	System time (seconds): 0.08
+	Percent of CPU this job got: 301%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:48.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64948
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 58584
+	Voluntary context switches: 14
+	Involuntary context switches: 121
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

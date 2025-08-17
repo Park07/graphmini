@@ -1069,3 +1069,3989 @@ Generated binary matrix: 0100100100010110 (length: 16)
   1t: Generating code for pattern: 0100100100010110
 ❌ TIMEOUT_EXEC (240s)
   4t: Generating code for pattern: 0100100100010110
+✅ 231.656s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0100100100010110
+✅ 58.7058s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0100100100010110
+✅ 30.453s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0100100100010110
+✅ 28.0195s, 91488735459 matches, N/Ax
+
+Testing: small_dense_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0011000110001100
+✅ 231.446s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0011000110001100
+✅ 58.9809s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0011000110001100
+✅ 34.6413s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0011000110001100
+✅ 30.9598s, 91488735459 matches, N/Ax
+
+Testing: small_dense_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0101101001001000 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101101001001000
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0101101001001000
+✅ 231.473s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0101101001001000
+✅ 58.3769s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0101101001001000
+✅ 30.4432s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0101101001001000
+✅ 24.6835s, 91488735459 matches, N/Ax
+
+Testing: small_dense_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0001001101001100
+✅ 231.476s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0001001101001100
+✅ 58.2672s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0001001101001100
+✅ 30.4498s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0001001101001100
+✅ 28.8633s, 91488735459 matches, N/Ax
+
+Testing: small_dense_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0101101001001000 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101101001001000
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0101101001001000
+✅ 231.474s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0101101001001000
+✅ 58.9166s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0101101001001000
+✅ 30.482s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0101101001001000
+✅ 24.9285s, 91488735459 matches, N/Ax
+
+Testing: small_dense_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0101101001001000 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101101001001000
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0101101001001000
+✅ 237.605s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0101101001001000
+✅ 58.9155s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0101101001001000
+✅ 30.6224s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0101101001001000
+✅ 24.9277s, 91488735459 matches, N/Ax
+
+Testing: small_dense_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0001001101001100
+✅ 231.771s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0001001101001100
+✅ 58.2539s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0001001101001100
+✅ 30.486s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0001001101001100
+✅ 24.8174s, 91488735459 matches, N/Ax
+
+Testing: small_dense_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0110101111000100 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110101111000100
+✅ 145.535s, 12371157628 matches, 1.00x
+  4t: Generating code for pattern: 0110101111000100
+✅ 48.6309s, 12371157628 matches, 2.99x
+  16t: Generating code for pattern: 0110101111000100
+✅ 44.1704s, 12371157628 matches, 3.29x
+  32t: Generating code for pattern: 0110101111000100
+✅ 43.7612s, 12371157628 matches, 3.32x
+  64t: Generating code for pattern: 0110101111000100
+✅ 43.9438s, 12371157628 matches, 3.31x
+
+Testing: small_dense_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0110101111000100 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110101111000100
+✅ 145.872s, 12371157628 matches, 1.00x
+  4t: Generating code for pattern: 0110101111000100
+✅ 48.8125s, 12371157628 matches, 2.98x
+  16t: Generating code for pattern: 0110101111000100
+✅ 44.2623s, 12371157628 matches, 3.29x
+  32t: Generating code for pattern: 0110101111000100
+✅ 43.7794s, 12371157628 matches, 3.33x
+  64t: Generating code for pattern: 0110101111000100
+✅ 43.6336s, 12371157628 matches, 3.34x
+
+--- Testing Category: small_sparse_4v ---
+  Found 20 patterns in small_sparse_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001111000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010001111000100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0010001111000100
+✅ 232.478s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0010001111000100
+✅ 58.2366s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0010001111000100
+✅ 30.4648s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0010001111000100
+✅ 24.5737s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101101000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101000100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100101101000100
+❌ FAILED
+  16t: Generating code for pattern: 0100101101000100
+❌ FAILED
+  32t: Generating code for pattern: 0100101101000100
+❌ FAILED
+  64t: Generating code for pattern: 0100101101000100
+❌ FAILED
+
+Testing: small_sparse_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0010000110010110
+✅ 231.369s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0010000110010110
+✅ 58.28s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0010000110010110
+✅ 30.5104s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0010000110010110
+✅ 24.8859s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001011010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010001011010010
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0010001011010010
+❌ FAILED
+  16t: Generating code for pattern: 0010001011010010
+❌ FAILED
+  32t: Generating code for pattern: 0010001011010010
+❌ FAILED
+  64t: Generating code for pattern: 0010001011010010
+❌ FAILED
+
+Testing: small_sparse_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100010010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100010010010
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0110100010010010
+✅ 231.522s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0110100010010010
+✅ 58.2679s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0110100010010010
+✅ 30.4736s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0110100010010010
+✅ 25.1242s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0011000110001100
+✅ 231.836s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0011000110001100
+✅ 58.2503s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0011000110001100
+✅ 30.461s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0011000110001100
+✅ 25.0397s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0110101111000100 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110101111000100
+✅ 145.499s, 12371157628 matches, 1.00x
+  4t: Generating code for pattern: 0110101111000100
+✅ 48.7845s, 12371157628 matches, 2.98x
+  16t: Generating code for pattern: 0110101111000100
+✅ 44.1808s, 12371157628 matches, 3.29x
+  32t: Generating code for pattern: 0110101111000100
+✅ 43.7534s, 12371157628 matches, 3.32x
+  64t: Generating code for pattern: 0110101111000100
+✅ 44.5274s, 12371157628 matches, 3.26x
+
+Testing: small_sparse_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0111101011001000 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0111101011001000
+✅ 146.044s, 12371157628 matches, 1.00x
+  4t: Generating code for pattern: 0111101011001000
+✅ 48.9105s, 12371157628 matches, 2.98x
+  16t: Generating code for pattern: 0111101011001000
+✅ 44.5152s, 12371157628 matches, 3.28x
+  32t: Generating code for pattern: 0111101011001000
+✅ 43.7815s, 12371157628 matches, 3.33x
+  64t: Generating code for pattern: 0111101011001000
+✅ 44.4907s, 12371157628 matches, 3.28x
+
+Testing: small_sparse_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001000100011110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001000100011110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0001000100011110
+❌ FAILED
+  16t: Generating code for pattern: 0001000100011110
+❌ FAILED
+  32t: Generating code for pattern: 0001000100011110
+❌ FAILED
+  64t: Generating code for pattern: 0001000100011110
+❌ FAILED
+
+Testing: small_sparse_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0011000110001100
+✅ 231.776s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0011000110001100
+✅ 58.2518s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0011000110001100
+✅ 30.8359s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0011000110001100
+✅ 28.991s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0010000110010110
+✅ 231.385s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0010000110010110
+✅ 58.2606s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0010000110010110
+✅ 30.4672s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0010000110010110
+✅ 26.4108s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001000100011110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001000100011110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0001000100011110
+❌ FAILED
+  16t: Generating code for pattern: 0001000100011110
+❌ FAILED
+  32t: Generating code for pattern: 0001000100011110
+❌ FAILED
+  64t: Generating code for pattern: 0001000100011110
+❌ FAILED
+
+Testing: small_sparse_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0001001101001100
+✅ 231.45s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0001001101001100
+✅ 58.3296s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0001001101001100
+✅ 30.4278s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0001001101001100
+✅ 28.8941s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0101101001001000 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101101001001000
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0101101001001000
+✅ 231.976s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0101101001001000
+✅ 58.3479s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0101101001001000
+✅ 30.4787s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0101101001001000
+✅ 27.2907s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001011010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010001011010010
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0010001011010010
+❌ FAILED
+  16t: Generating code for pattern: 0010001011010010
+❌ FAILED
+  32t: Generating code for pattern: 0010001011010010
+❌ FAILED
+  64t: Generating code for pattern: 0010001011010010
+❌ FAILED
+
+Testing: small_sparse_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0011000110011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110011110
+✅ 145.415s, 12371157628 matches, 1.00x
+  4t: Generating code for pattern: 0011000110011110
+✅ 48.9012s, 12371157628 matches, 2.97x
+  16t: Generating code for pattern: 0011000110011110
+✅ 44.3941s, 12371157628 matches, 3.27x
+  32t: Generating code for pattern: 0011000110011110
+✅ 43.7042s, 12371157628 matches, 3.32x
+  64t: Generating code for pattern: 0011000110011110
+✅ 43.6769s, 12371157628 matches, 3.32x
+
+Testing: small_sparse_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0011000110001100
+✅ 232.849s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0011000110001100
+✅ 59.4509s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0011000110001100
+✅ 35.1843s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0011000110001100
+✅ 29.4694s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011001011001000 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011001011001000
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0011001011001000
+✅ 231.454s, 91488735459 matches, N/Ax
+  16t: Generating code for pattern: 0011001011001000
+✅ 58.3699s, 91488735459 matches, N/Ax
+  32t: Generating code for pattern: 0011001011001000
+✅ 30.5092s, 91488735459 matches, N/Ax
+  64t: Generating code for pattern: 0011001011001000
+✅ 28.3049s, 91488735459 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101101000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101000100
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100101101000100
+❌ FAILED
+  16t: Generating code for pattern: 0100101101000100
+❌ FAILED
+  32t: Generating code for pattern: 0100101101000100
+❌ FAILED
+  64t: Generating code for pattern: 0100101101000100
+❌ FAILED
+
+Testing: small_sparse_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0001001101011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101011110
+✅ 146.439s, 12371157628 matches, 1.00x
+  4t: Generating code for pattern: 0001001101011110
+✅ 49.3156s, 12371157628 matches, 2.96x
+  16t: Generating code for pattern: 0001001101011110
+✅ 44.7072s, 12371157628 matches, 3.27x
+  32t: Generating code for pattern: 0001001101011110
+✅ 44.5959s, 12371157628 matches, 3.28x
+  64t: Generating code for pattern: 0001001101011110
+✅ 44.5939s, 12371157628 matches, 3.28x
+
+--- Testing Category: small_dense_8v ---
+  Found 20 patterns in small_dense_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 7 edges
+Generated binary matrix: 0010000000001000100100000010010101000010000100100000110000010000 (length: 64)
+  Pattern: 8v, 7e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000000001000100100000010010101000010000100100000110000010000
+./comprehensive_graphmini_test.sh: line 181: 1687004 Aborted                 timeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 0 > /tmp/run.log 2>&1
+❌ CODEGEN_FAILED (exit code: 134)
+Error log:
+PATTERN_SIZE=8
+ADJ_MATRIX=01100100 10010000 10000010 01001000 00010001 10000000 00100000 00001000 
+RESTRICTS=
+IEP Number	3
+IEP Redundency	1
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=90.226
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector<bool>::_M_range_check: __n (which is 1573363360) >= this->size() (which is 5)
+timeout: the monitored command dumped core
+located=0.00 Bytes
+
+  ⚠️  Skipping remaining patterns in small_dense_8v due to implementation issues
+
+--- Testing Category: small_sparse_8v ---
+  Found 20 patterns in small_sparse_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 7 edges
+Generated binary matrix: 0001100000100100010000011000001010000000010000000001000100100010 (length: 64)
+  Pattern: 8v, 7e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001100000100100010000011000001010000000010000000001000100100010
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0001100000100100010000011000001010000000010000000001000100100010
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0001100000100100010000011000001010000000010000000001000100100010
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0001100000100100010000011000001010000000010000000001000100100010
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0001100000100100010000011000001010000000010000000001000100100010
+❌ TIMEOUT_EXEC (240s)
+
+--- Testing Category: medium_dense ---
+  Found 20 patterns in medium_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/medium_dense/query_sample_15v_1.graph
+Pattern has 15 vertices, 16 edges
+Generated binary matrix: 000000001001010000000000100001000001000001000000000001000100000000000000001001000000000000000000000010100000000000000001100100000000110010000000010000000000100100000101000000000000000100101000000100000001000000010010010000000 (length: 225)
+  Pattern: 15v, 16e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 000000001001010000000000100001000001000001000000000001000100000000000000001001000000000000000000000010100000000000000001100100000000110010000000010000000000100100000101000000000000000100101000000100000001000000010010010000000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: medium_sparse ---
+  Found 20 patterns in medium_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/medium_sparse/query_sample_15v_1.graph
+Pattern has 15 vertices, 14 edges
+Generated binary matrix: 010010000000000100000100000000000000001000100000000000100010100000000001000000000010000000010000011000000000001100000000001000100000000000100000000001000000000001000000010000010000001000000000001000100000000000000000000100100 (length: 225)
+  Pattern: 15v, 14e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 010010000000000100000100000000000000001000100000000000100010100000000001000000000010000000010000011000000000001100000000001000100000000000100000000001000000000001000000010000010000001000000000001000100000000000000000000100100
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_dense ---
+  Found 10 patterns in large_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/large_dense/query_sample_25v_1.graph
+Pattern has 25 vertices, 28 edges
+Generated binary matrix: 0000000000001010000001001000000000001000100000000000000001000010010000000000000000000001000000000001000000001000000001000000000000000000000001100000000000000000000000100000000001000000000000100000000000001000010000000000000000000000010010000000000000000000000000000000001000001000000010000000000100101011000000000000000000000000000000000001000010010010000000000001000000000000110000100000000000000000000001100000000001000000000001100000000001000000000000000000000000000001000000000000000010000000000000000000001100000000000001000000000000000001000000000000000000010000000000100000000000100000000000001001000000000000000000100 (length: 625)
+  Pattern: 25v, 28e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0000000000001010000001001000000000001000100000000000000001000010010000000000000000000001000000000001000000001000000001000000000000000000000001100000000000000000000000100000000001000000000000100000000000001000010000000000000000000000010010000000000000000000000000000000001000001000000010000000000100101011000000000000000000000000000000000001000010010010000000000001000000000000110000100000000000000000000001100000000001000000000001100000000001000000000000000000000000000001000000000000000010000000000000000000001100000000000001000000000000000001000000000000000000010000000000100000000000100000000000001001000000000000000000100
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_sparse ---
+  Found 10 patterns in large_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/large_sparse/query_sample_25v_1.graph
+Pattern has 25 vertices, 27 edges
+Generated binary matrix: 0000000010000000000000010000000100000101000000000000000000000010000000000000000000000000000010100000000001100000000000100000000001000000000000000000000100100000000010000000000000000000001000000010000010000000000100000000000000000000000000001000000000000000000000000100100010000000001100000000001000000110000000000000010000000000000000000000010001101001000010000000000100000010000000001100000000000000000000000000010000000000000010000000010100000000000000100000100000000000000000100010001000000000000000000000000001000000000000000000000000100000000000000000000010000000000000010000000000001000000000000000000000000010000000000 (length: 625)
+  Pattern: 25v, 27e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0000000010000000000000010000000100000101000000000000000000000010000000000000000000000000000010100000000001100000000000100000000001000000000000000000000100100000000010000000000000000000001000000010000010000000000100000000000000000000000000001000000000000000000000000100100010000000001100000000001000000110000000000000010000000000000000000000010001101001000010000000000100000010000000001100000000000000000000000000010000000000000010000000010100000000000000100000100000000000000000100010001000000000000000000000000001000000000000000000000000100000000000000000000010000000000000010000000000001000000000000000000000000010000000000
+❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+DATASET: roadNet-CA
+Results for roadNet-CA: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/roadNet-CA_20250816_164923
+=========================================
+
+--- Testing Generated Patterns ---
+
+--- Testing Category: small_dense_4v ---
+  Found 20 patterns in small_dense_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+✅ 1.59776s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.442733s, 10746270 matches, 3.60x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.15296s, 10746270 matches, 10.44x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.116554s, 10746270 matches, 13.70x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.102736s, 10746270 matches, 15.55x
+
+Testing: small_dense_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100110000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100110000100
+✅ 1.59324s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0110100110000100
+✅ 0.446473s, 10746270 matches, 3.56x
+  16t: Generating code for pattern: 0110100110000100
+✅ 0.150672s, 10746270 matches, 10.57x
+  32t: Generating code for pattern: 0110100110000100
+✅ 0.130012s, 10746270 matches, 12.25x
+  64t: Generating code for pattern: 0110100110000100
+✅ 0.101695s, 10746270 matches, 15.66x
+
+Testing: small_dense_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+✅ 1.59499s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.439998s, 10746270 matches, 3.62x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.144993s, 10746270 matches, 11.00x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.129909s, 10746270 matches, 12.27x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.109236s, 10746270 matches, 14.60x
+
+Testing: small_dense_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001001011010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001001011010
+✅ 1.60522s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001001011010
+✅ 0.439833s, 10746270 matches, 3.64x
+  16t: Generating code for pattern: 0001001001011010
+✅ 0.155708s, 10746270 matches, 10.30x
+  32t: Generating code for pattern: 0001001001011010
+✅ 0.118345s, 10746270 matches, 13.56x
+  64t: Generating code for pattern: 0001001001011010
+✅ 0.114669s, 10746270 matches, 13.99x
+
+Testing: small_dense_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100010010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100010010010
+✅ 1.59441s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0110100010010010
+✅ 0.442178s, 10746270 matches, 3.60x
+  16t: Generating code for pattern: 0110100010010010
+✅ 0.153029s, 10746270 matches, 10.41x
+  32t: Generating code for pattern: 0110100010010010
+✅ 0.114809s, 10746270 matches, 13.88x
+  64t: Generating code for pattern: 0110100010010010
+✅ 0.113958s, 10746270 matches, 13.99x
+
+Testing: small_dense_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001111000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010001111000100
+✅ 1.60581s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0010001111000100
+✅ 0.42451s, 10746270 matches, 3.78x
+  16t: Generating code for pattern: 0010001111000100
+✅ 0.152208s, 10746270 matches, 10.55x
+  32t: Generating code for pattern: 0010001111000100
+✅ 0.127097s, 10746270 matches, 12.63x
+  64t: Generating code for pattern: 0010001111000100
+✅ 0.105644s, 10746270 matches, 15.20x
+
+Testing: small_dense_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0110100110010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100110010110
+✅ 0.920857s, 249596 matches, 1.00x
+  4t: Generating code for pattern: 0110100110010110
+✅ 0.271149s, 249596 matches, 3.39x
+  16t: Generating code for pattern: 0110100110010110
+✅ 0.129979s, 249596 matches, 7.08x
+  32t: Generating code for pattern: 0110100110010110
+✅ 0.12854s, 249596 matches, 7.16x
+  64t: Generating code for pattern: 0110100110010110
+✅ 0.10821s, 249596 matches, 8.50x
+
+Testing: small_dense_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0101101001011010 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101101001011010
+✅ 0.921752s, 249596 matches, 1.00x
+  4t: Generating code for pattern: 0101101001011010
+✅ 0.276672s, 249596 matches, 3.33x
+  16t: Generating code for pattern: 0101101001011010
+✅ 0.134401s, 249596 matches, 6.85x
+  32t: Generating code for pattern: 0101101001011010
+✅ 0.114093s, 249596 matches, 8.07x
+  64t: Generating code for pattern: 0101101001011010
+✅ 0.105904s, 249596 matches, 8.70x
+
+Testing: small_dense_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0001001101011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101011110
+✅ 3.29197s, 521326 matches, 1.00x
+  4t: Generating code for pattern: 0001001101011110
+✅ 0.87291s, 521326 matches, 3.77x
+  16t: Generating code for pattern: 0001001101011110
+✅ 0.25526s, 521326 matches, 12.89x
+  32t: Generating code for pattern: 0001001101011110
+✅ 0.150817s, 521326 matches, 21.82x
+  64t: Generating code for pattern: 0001001101011110
+✅ 0.1161s, 521326 matches, 28.35x
+
+Testing: small_dense_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001011010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010001011010010
+✅ 3.05939s, 2952147 matches, 1.00x
+  4t: Generating code for pattern: 0010001011010010
+✅ 0.818558s, 2952147 matches, 3.73x
+  16t: Generating code for pattern: 0010001011010010
+✅ 0.239664s, 2952147 matches, 12.76x
+  32t: Generating code for pattern: 0010001011010010
+✅ 0.147845s, 2952147 matches, 20.69x
+  64t: Generating code for pattern: 0010001011010010
+✅ 0.125111s, 2952147 matches, 24.45x
+
+Testing: small_dense_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+✅ 1.59492s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0011000110001100
+✅ 0.443103s, 10746270 matches, 3.59x
+  16t: Generating code for pattern: 0011000110001100
+✅ 0.156198s, 10746270 matches, 10.21x
+  32t: Generating code for pattern: 0011000110001100
+✅ 0.133047s, 10746270 matches, 11.98x
+  64t: Generating code for pattern: 0011000110001100
+✅ 0.109485s, 10746270 matches, 14.56x
+
+Testing: small_dense_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101001010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101001010010
+✅ 1.6033s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0100101001010010
+✅ 0.445284s, 10746270 matches, 3.60x
+  16t: Generating code for pattern: 0100101001010010
+✅ 0.151077s, 10746270 matches, 10.61x
+  32t: Generating code for pattern: 0100101001010010
+✅ 0.117389s, 10746270 matches, 13.65x
+  64t: Generating code for pattern: 0100101001010010
+✅ 0.0928567s, 10746270 matches, 17.26x
+
+Testing: small_dense_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+✅ 1.59536s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.442458s, 10746270 matches, 3.60x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.156442s, 10746270 matches, 10.19x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.112601s, 10746270 matches, 14.16x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.116363s, 10746270 matches, 13.71x
+
+Testing: small_dense_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101101000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101000100
+✅ 3.18157s, 2952147 matches, 1.00x
+  4t: Generating code for pattern: 0100101101000100
+✅ 0.824981s, 2952147 matches, 3.85x
+  16t: Generating code for pattern: 0100101101000100
+✅ 0.238833s, 2952147 matches, 13.32x
+  32t: Generating code for pattern: 0100101101000100
+✅ 0.144069s, 2952147 matches, 22.08x
+  64t: Generating code for pattern: 0100101101000100
+✅ 0.123256s, 2952147 matches, 25.81x
+
+Testing: small_dense_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101001010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101001010010
+✅ 1.59497s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0100101001010010
+✅ 0.419706s, 10746270 matches, 3.80x
+  16t: Generating code for pattern: 0100101001010010
+✅ 0.15527s, 10746270 matches, 10.27x
+  32t: Generating code for pattern: 0100101001010010
+✅ 0.131667s, 10746270 matches, 12.11x
+  64t: Generating code for pattern: 0100101001010010
+✅ 0.103422s, 10746270 matches, 15.42x
+
+Testing: small_dense_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0011001111001100 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011001111001100
+✅ 0.92164s, 249596 matches, 1.00x
+  4t: Generating code for pattern: 0011001111001100
+✅ 0.273863s, 249596 matches, 3.36x
+  16t: Generating code for pattern: 0011001111001100
+✅ 0.128439s, 249596 matches, 7.17x
+  32t: Generating code for pattern: 0011001111001100
+✅ 0.103202s, 249596 matches, 8.93x
+  64t: Generating code for pattern: 0011001111001100
+✅ 0.103979s, 249596 matches, 8.86x
+
+Testing: small_dense_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+✅ 1.59734s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.451631s, 10746270 matches, 3.53x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.154314s, 10746270 matches, 10.35x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.130396s, 10746270 matches, 12.24x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.112577s, 10746270 matches, 14.18x
+
+Testing: small_dense_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+✅ 1.59537s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.439164s, 10746270 matches, 3.63x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.157873s, 10746270 matches, 10.10x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.13106s, 10746270 matches, 12.17x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.103113s, 10746270 matches, 15.47x
+
+Testing: small_dense_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+✅ 1.59443s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0011000110001100
+✅ 0.454347s, 10746270 matches, 3.50x
+  16t: Generating code for pattern: 0011000110001100
+✅ 0.157105s, 10746270 matches, 10.14x
+  32t: Generating code for pattern: 0011000110001100
+✅ 0.121118s, 10746270 matches, 13.16x
+  64t: Generating code for pattern: 0011000110001100
+✅ 0.110645s, 10746270 matches, 14.41x
+
+Testing: small_dense_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100010010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100010010010
+✅ 1.59399s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0110100010010010
+✅ 0.445595s, 10746270 matches, 3.57x
+  16t: Generating code for pattern: 0110100010010010
+✅ 0.151497s, 10746270 matches, 10.52x
+  32t: Generating code for pattern: 0110100010010010
+✅ 0.117724s, 10746270 matches, 13.54x
+  64t: Generating code for pattern: 0110100010010010
+✅ 0.10416s, 10746270 matches, 15.30x
+
+--- Testing Category: small_sparse_4v ---
+  Found 20 patterns in small_sparse_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 1.59428s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 0.420201s, 10746270 matches, 3.79x
+  16t: Generating code for pattern: 0010000110010110
+✅ 0.15462s, 10746270 matches, 10.31x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.127386s, 10746270 matches, 12.51x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.101145s, 10746270 matches, 15.76x
+
+Testing: small_sparse_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+✅ 1.5955s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0011000110001100
+✅ 0.44841s, 10746270 matches, 3.55x
+  16t: Generating code for pattern: 0011000110001100
+✅ 0.153915s, 10746270 matches, 10.36x
+  32t: Generating code for pattern: 0011000110001100
+✅ 0.127215s, 10746270 matches, 12.54x
+  64t: Generating code for pattern: 0011000110001100
+✅ 0.0940083s, 10746270 matches, 16.97x
+
+Testing: small_sparse_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 1.59446s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 0.471203s, 10746270 matches, 3.38x
+  16t: Generating code for pattern: 0010000110010110
+✅ 0.150759s, 10746270 matches, 10.57x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.12791s, 10746270 matches, 12.46x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.112843s, 10746270 matches, 14.12x
+
+Testing: small_sparse_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001000100011110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001000100011110
+✅ 3.26152s, 2952147 matches, 1.00x
+  4t: Generating code for pattern: 0001000100011110
+✅ 0.792085s, 2952147 matches, 4.11x
+  16t: Generating code for pattern: 0001000100011110
+✅ 0.245409s, 2952147 matches, 13.29x
+  32t: Generating code for pattern: 0001000100011110
+✅ 0.147123s, 2952147 matches, 22.16x
+  64t: Generating code for pattern: 0001000100011110
+✅ 0.118216s, 2952147 matches, 27.58x
+
+Testing: small_sparse_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100010010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100010010010
+✅ 1.59808s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0110100010010010
+✅ 0.448628s, 10746270 matches, 3.56x
+  16t: Generating code for pattern: 0110100010010010
+✅ 0.156265s, 10746270 matches, 10.22x
+  32t: Generating code for pattern: 0110100010010010
+✅ 0.128202s, 10746270 matches, 12.46x
+  64t: Generating code for pattern: 0110100010010010
+✅ 0.104529s, 10746270 matches, 15.28x
+
+Testing: small_sparse_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001000100011110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001000100011110
+✅ 3.18729s, 2952147 matches, 1.00x
+  4t: Generating code for pattern: 0001000100011110
+✅ 0.836332s, 2952147 matches, 3.81x
+  16t: Generating code for pattern: 0001000100011110
+✅ 0.241872s, 2952147 matches, 13.17x
+  32t: Generating code for pattern: 0001000100011110
+✅ 0.151225s, 2952147 matches, 21.07x
+  64t: Generating code for pattern: 0001000100011110
+✅ 0.124934s, 2952147 matches, 25.51x
+
+Testing: small_sparse_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+✅ 1.6018s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0011000110001100
+✅ 0.456306s, 10746270 matches, 3.51x
+  16t: Generating code for pattern: 0011000110001100
+✅ 0.156638s, 10746270 matches, 10.22x
+  32t: Generating code for pattern: 0011000110001100
+✅ 0.12955s, 10746270 matches, 12.36x
+  64t: Generating code for pattern: 0011000110001100
+✅ 0.101319s, 10746270 matches, 15.80x
+
+Testing: small_sparse_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0110100110010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100110010110
+✅ 0.918632s, 249596 matches, 1.00x
+  4t: Generating code for pattern: 0110100110010110
+✅ 0.271501s, 249596 matches, 3.38x
+  16t: Generating code for pattern: 0110100110010110
+✅ 0.133435s, 249596 matches, 6.88x
+  32t: Generating code for pattern: 0110100110010110
+✅ 0.116774s, 249596 matches, 7.86x
+  64t: Generating code for pattern: 0110100110010110
+✅ 0.0972969s, 249596 matches, 9.44x
+
+Testing: small_sparse_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+✅ 1.60097s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.444759s, 10746270 matches, 3.59x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.153485s, 10746270 matches, 10.43x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.120039s, 10746270 matches, 13.33x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.103484s, 10746270 matches, 15.47x
+
+Testing: small_sparse_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101001010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101001010010
+✅ 1.60292s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0100101001010010
+✅ 0.445419s, 10746270 matches, 3.59x
+  16t: Generating code for pattern: 0100101001010010
+✅ 0.156169s, 10746270 matches, 10.26x
+  32t: Generating code for pattern: 0100101001010010
+✅ 0.121832s, 10746270 matches, 13.15x
+  64t: Generating code for pattern: 0100101001010010
+✅ 0.102896s, 10746270 matches, 15.57x
+
+Testing: small_sparse_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001000100011110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001000100011110
+✅ 3.06854s, 2952147 matches, 1.00x
+  4t: Generating code for pattern: 0001000100011110
+✅ 0.836768s, 2952147 matches, 3.66x
+  16t: Generating code for pattern: 0001000100011110
+✅ 0.245927s, 2952147 matches, 12.47x
+  32t: Generating code for pattern: 0001000100011110
+✅ 0.147124s, 2952147 matches, 20.85x
+  64t: Generating code for pattern: 0001000100011110
+✅ 0.118443s, 2952147 matches, 25.90x
+
+Testing: small_sparse_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100110000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100110000100
+✅ 1.60202s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0110100110000100
+✅ 0.44836s, 10746270 matches, 3.57x
+  16t: Generating code for pattern: 0110100110000100
+✅ 0.157479s, 10746270 matches, 10.17x
+  32t: Generating code for pattern: 0110100110000100
+✅ 0.118733s, 10746270 matches, 13.49x
+  64t: Generating code for pattern: 0110100110000100
+✅ 0.110962s, 10746270 matches, 14.43x
+
+Testing: small_sparse_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101001010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101001010010
+✅ 1.59394s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0100101001010010
+✅ 0.444802s, 10746270 matches, 3.58x
+  16t: Generating code for pattern: 0100101001010010
+✅ 0.154738s, 10746270 matches, 10.30x
+  32t: Generating code for pattern: 0100101001010010
+✅ 0.118407s, 10746270 matches, 13.46x
+  64t: Generating code for pattern: 0100101001010010
+✅ 0.108945s, 10746270 matches, 14.63x
+
+Testing: small_sparse_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+✅ 1.59413s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0011000110001100
+✅ 0.41216s, 10746270 matches, 3.86x
+  16t: Generating code for pattern: 0011000110001100
+✅ 0.153758s, 10746270 matches, 10.36x
+  32t: Generating code for pattern: 0011000110001100
+✅ 0.128143s, 10746270 matches, 12.44x
+  64t: Generating code for pattern: 0011000110001100
+✅ 0.0947141s, 10746270 matches, 16.83x
+
+Testing: small_sparse_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101001100
+✅ 1.59575s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.417717s, 10746270 matches, 3.82x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.155664s, 10746270 matches, 10.25x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.116174s, 10746270 matches, 13.73x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.0995469s, 10746270 matches, 16.03x
+
+Testing: small_sparse_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 1.59519s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 0.421986s, 10746270 matches, 3.78x
+  16t: Generating code for pattern: 0010000110010110
+✅ 0.150912s, 10746270 matches, 10.57x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.117331s, 10746270 matches, 13.59x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.102095s, 10746270 matches, 15.62x
+
+Testing: small_sparse_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 1.59647s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 0.44343s, 10746270 matches, 3.60x
+  16t: Generating code for pattern: 0010000110010110
+✅ 0.15236s, 10746270 matches, 10.47x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.134947s, 10746270 matches, 11.83x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.114188s, 10746270 matches, 13.98x
+
+Testing: small_sparse_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+✅ 1.59323s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0011000110001100
+✅ 0.447613s, 10746270 matches, 3.55x
+  16t: Generating code for pattern: 0011000110001100
+✅ 0.1526s, 10746270 matches, 10.44x
+  32t: Generating code for pattern: 0011000110001100
+✅ 0.13011s, 10746270 matches, 12.24x
+  64t: Generating code for pattern: 0011000110001100
+✅ 0.113568s, 10746270 matches, 14.02x
+
+Testing: small_sparse_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0101100000011010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101100000011010
+✅ 1.59277s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0101100000011010
+✅ 0.442739s, 10746270 matches, 3.59x
+  16t: Generating code for pattern: 0101100000011010
+✅ 0.151512s, 10746270 matches, 10.51x
+  32t: Generating code for pattern: 0101100000011010
+✅ 0.11923s, 10746270 matches, 13.35x
+  64t: Generating code for pattern: 0101100000011010
+✅ 0.114102s, 10746270 matches, 13.95x
+
+Testing: small_sparse_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0011001011011010 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011001011011010
+✅ 3.35708s, 521326 matches, 1.00x
+  4t: Generating code for pattern: 0011001011011010
+✅ 0.87156s, 521326 matches, 3.85x
+  16t: Generating code for pattern: 0011001011011010
+✅ 0.25473s, 521326 matches, 13.17x
+  32t: Generating code for pattern: 0011001011011010
+✅ 0.152339s, 521326 matches, 22.03x
+  64t: Generating code for pattern: 0011001011011010
+✅ 0.122987s, 521326 matches, 27.29x
+
+--- Testing Category: small_dense_8v ---
+  Found 20 patterns in small_dense_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 10 edges
+Generated binary matrix: 0110000010010000100100100110010000000110000110100010110100000010 (length: 64)
+  Pattern: 8v, 10e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110000010010000100100100110010000000110000110100010110100000010
+✅ 32.088s, 19463 matches, 1.00x
+  4t: Generating code for pattern: 0110000010010000100100100110010000000110000110100010110100000010
+✅ 8.24067s, 19076 matches, 3.89x
+  16t: Generating code for pattern: 0110000010010000100100100110010000000110000110100010110100000010
+✅ 2.37643s, 19097 matches, 13.50x
+  32t: Generating code for pattern: 0110000010010000100100100110010000000110000110100010110100000010
+✅ 1.27305s, 19140 matches, 25.20x
+  64t: Generating code for pattern: 0110000010010000100100100110010000000110000110100010110100000010
+✅ 0.840023s, 19137 matches, 38.19x
+
+--- Testing Category: small_sparse_8v ---
+  Found 20 patterns in small_sparse_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 9 edges
+Generated binary matrix: 0000011000110000010000000100100000010110100010111000110000000100 (length: 64)
+  Pattern: 8v, 9e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0000011000110000010000000100100000010110100010111000110000000100
+./comprehensive_graphmini_test.sh: line 181: 1749092 Aborted                 timeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 0 > /tmp/run.log 2>&1
+❌ CODEGEN_FAILED (exit code: 134)
+Error log:
+PATTERN_SIZE=8
+ADJ_MATRIX=01110000 10100110 11000100 10001000 00010001 01100000 01000000 00001000 
+RESTRICTS=
+IEP Number	3
+IEP Redundency	1
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=104.088
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector<bool>::_M_range_check: __n (which is 16) >= this->size() (which is 6)
+timeout: the monitored command dumped core
+iGraphAllocated=566.79 KB
+
+  ⚠️  Skipping remaining patterns in small_sparse_8v due to implementation issues
+
+--- Testing Category: medium_dense ---
+  Found 20 patterns in medium_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/medium_dense/query_sample_15v_1.graph
+Pattern has 15 vertices, 17 edges
+Generated binary matrix: 011000000000000100000000010000100000000100000000010001000100000100001000100000000110000000000001001010000000001000000001000110100000000001000000001000010000100000000000000000100010000110000000000000000000001001000000010000010 (length: 225)
+  Pattern: 15v, 17e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 011000000000000100000000010000100000000100000000010001000100000100001000100000000110000000000001001010000000001000000001000110100000000001000000001000010000100000000000000000100010000110000000000000000000001001000000010000010
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: medium_sparse ---
+  Found 20 patterns in medium_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/medium_sparse/query_sample_15v_1.graph
+Pattern has 15 vertices, 15 edges
+Generated binary matrix: 001000010000001000100000000000100100000000000011000000000000000000001010000000000001000000000000010000010100000100001000000011000000000000000000001100000010000000010000000010100001000000000100000000000100010000100000000001000 (length: 225)
+  Pattern: 15v, 15e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 001000010000001000100000000000100100000000000011000000000000000000001010000000000001000000000000010000010100000100001000000011000000000000000000001100000010000000010000000010100001000000000100000000000100010000100000000001000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_dense ---
+  Found 10 patterns in large_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/large_dense/query_sample_25v_1.graph
+Pattern has 25 vertices, 26 edges
+Generated binary matrix: 0110000000000000000000000100000001000000000000000010000000100000000000000100000000000010000000000001000001000000000000000000000001010000000000000000000000010100000000000001000000000100000000000001000001100000010000000000000000000000010000000000000000000000000000100000001000000010000000000000100000000000000000100011000000000000000000000000010101000000000000000010001000000000000000000001000000000000000000000000011000010000000000000000100000000001000000000000000100000000100000000000000000010000000000000001001001000000000000000001000000000000000000000000000000000001100000000100000000000000000000010001000000000000000000010 (length: 625)
+  Pattern: 25v, 26e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0110000000000000000000000100000001000000000000000010000000100000000000000100000000000010000000000001000001000000000000000000000001010000000000000000000000010100000000000001000000000100000000000001000001100000010000000000000000000000010000000000000000000000000000100000001000000010000000000000100000000000000000100011000000000000000000000000010101000000000000000010001000000000000000000001000000000000000000000000011000010000000000000000100000000001000000000000000100000000100000000000000000010000000000000001001001000000000000000001000000000000000000000000000000000001100000000100000000000000000000010001000000000000000000010
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_sparse ---
+  Found 10 patterns in large_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/large_sparse/query_sample_25v_1.graph
+Pattern has 25 vertices, 27 edges
+Generated binary matrix: 0011100000000000000000000000000000000001000000010010000000000000010000000001000000000000000000000000100000100000000000100000000000001000000010000000000000100000000000000000001000001001010000000000000000000001010000000000000000000000010100000000000000000000010101000000000100000000000001010000000000000000000000010000000001000000000000000000000000001001000000000000000000000100010010000000000000000000000000000000000000110000000000000000000000001000000000100000000000100000001000000000000000011000000000000000000000000000011000000000000101000000010000010000000000000000001000000000000000001100000000000000001000000000001000000 (length: 625)
+  Pattern: 25v, 27e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0011100000000000000000000000000000000001000000010010000000000000010000000001000000000000000000000000100000100000000000100000000000001000000010000000000000100000000000000000001000001001010000000000000000000001010000000000000000000000010100000000000000000000010101000000000100000000000001010000000000000000000000010000000001000000000000000000000000001001000000000000000000000100010010000000000000000000000000000000000000110000000000000000000000001000000000100000000000100000001000000000000000011000000000000000000000000000011000000000000101000000010000010000000000000000001000000000000000001100000000000000001000000000001000000
+❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+DATASET: enron
+Results for enron: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/enron_20250816_171522
+=========================================
+
+--- Testing Generated Patterns ---
+
+--- Testing Category: small_dense_4v ---
+  Found 18 patterns in small_dense_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 18.6834s, 1371828020 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 4.87144s, 1371828020 matches, 3.83x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.37216s, 1371828020 matches, 13.61x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.728957s, 1371828020 matches, 25.63x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.556407s, 1371828020 matches, 33.57x
+
+Testing: small_dense_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0011001011011010 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011001011011010
+✅ 5.80434s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0011001011011010
+✅ 1.63102s, 375691411 matches, 3.55x
+  16t: Generating code for pattern: 0011001011011010
+✅ 0.464215s, 375691411 matches, 12.50x
+  32t: Generating code for pattern: 0011001011011010
+✅ 0.268787s, 375691411 matches, 21.59x
+  64t: Generating code for pattern: 0011001011011010
+✅ 0.29327s, 375691411 matches, 19.79x
+
+Testing: small_dense_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0111100110001100 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0111100110001100
+✅ 6.25502s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0111100110001100
+✅ 1.71969s, 375691411 matches, 3.63x
+  16t: Generating code for pattern: 0111100110001100
+✅ 0.463703s, 375691411 matches, 13.48x
+  32t: Generating code for pattern: 0111100110001100
+✅ 0.252431s, 375691411 matches, 24.77x
+  64t: Generating code for pattern: 0111100110001100
+✅ 0.282573s, 375691411 matches, 22.13x
+
+Testing: small_dense_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100010010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100010010010
+✅ 18.3087s, 1371828020 matches, 1.00x
+  4t: Generating code for pattern: 0110100010010010
+✅ 4.89898s, 1371828020 matches, 3.73x
+  16t: Generating code for pattern: 0110100010010010
+✅ 1.37188s, 1371828020 matches, 13.34x
+  32t: Generating code for pattern: 0110100010010010
+✅ 0.726655s, 1371828020 matches, 25.19x
+  64t: Generating code for pattern: 0110100010010010
+✅ 0.567704s, 1371828020 matches, 32.25x
+
+Testing: small_dense_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80246s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.82873s, 375691411 matches, 3.17x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.463173s, 375691411 matches, 12.52x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.271772s, 375691411 matches, 21.35x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.289929s, 375691411 matches, 20.01x
+
+Testing: small_dense_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0011000110001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0011000110001100
+✅ 18.7993s, 1371828020 matches, 1.00x
+  4t: Generating code for pattern: 0011000110001100
+✅ 4.90307s, 1371828020 matches, 3.83x
+  16t: Generating code for pattern: 0011000110001100
+✅ 1.37156s, 1371828020 matches, 13.70x
+  32t: Generating code for pattern: 0011000110001100
+✅ 0.73028s, 1371828020 matches, 25.74x
+  64t: Generating code for pattern: 0011000110001100
+✅ 0.670595s, 1371828020 matches, 28.03x
+
+Testing: small_dense_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001011010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010001011010010
+✅ 16.8644s, 4909606844 matches, 1.00x
+  4t: Generating code for pattern: 0010001011010010
+✅ 4.40507s, 4909606844 matches, 3.82x
+  16t: Generating code for pattern: 0010001011010010
+✅ 2.08438s, 4909606844 matches, 8.09x
+  32t: Generating code for pattern: 0010001011010010
+✅ 1.83572s, 4909606844 matches, 9.18x
+  64t: Generating code for pattern: 0010001011010010
+✅ 1.76942s, 4909606844 matches, 9.53x
+
+Testing: small_dense_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 18.6715s, 1371828020 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 4.8723s, 1371828020 matches, 3.83x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.41109s, 1371828020 matches, 13.23x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.717735s, 1371828020 matches, 26.01x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.650787s, 1371828020 matches, 28.69x
+
+Testing: small_dense_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0101101001001000 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101101001001000
+✅ 18.7393s, 1371828020 matches, 1.00x
+  4t: Generating code for pattern: 0101101001001000
+✅ 4.86001s, 1371828020 matches, 3.85x
+  16t: Generating code for pattern: 0101101001001000
+✅ 1.39303s, 1371828020 matches, 13.45x
+  32t: Generating code for pattern: 0101101001001000
+✅ 0.728951s, 1371828020 matches, 25.70x
+  64t: Generating code for pattern: 0101101001001000
+✅ 0.532737s, 1371828020 matches, 35.17x
+
+Testing: small_dense_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101101000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101000100
+✅ 16.8615s, 4909606844 matches, 1.00x
+  4t: Generating code for pattern: 0100101101000100
+✅ 4.48807s, 4909606844 matches, 3.75x
+  16t: Generating code for pattern: 0100101101000100
+✅ 1.84054s, 4909606844 matches, 9.16x
+  32t: Generating code for pattern: 0100101101000100
+✅ 1.8515s, 4909606844 matches, 9.10x
+  64t: Generating code for pattern: 0100101101000100
+✅ 1.85623s, 4909606844 matches, 9.08x
+
+Testing: small_dense_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001000100011110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001000100011110
+✅ 16.8854s, 4909606844 matches, 1.00x
+  4t: Generating code for pattern: 0001000100011110
+✅ 4.40655s, 4909606844 matches, 3.83x
+  16t: Generating code for pattern: 0001000100011110
+✅ 2.10745s, 4909606844 matches, 8.01x
+  32t: Generating code for pattern: 0001000100011110
+✅ 1.86606s, 4909606844 matches, 9.04x
+  64t: Generating code for pattern: 0001000100011110
+✅ 1.78162s, 4909606844 matches, 9.47x
+
+Testing: small_dense_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0001001101011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0001001101011110
+✅ 5.80174s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0001001101011110
+✅ 1.82001s, 375691411 matches, 3.18x
+  16t: Generating code for pattern: 0001001101011110
+✅ 0.451053s, 375691411 matches, 12.86x
+  32t: Generating code for pattern: 0001001101011110
+✅ 0.250626s, 375691411 matches, 23.14x
+  64t: Generating code for pattern: 0001001101011110
+✅ 0.301807s, 375691411 matches, 19.22x
+
+Testing: small_dense_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100110000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0110100110000100
+✅ 18.9503s, 1371828020 matches, 1.00x
+  4t: Generating code for pattern: 0110100110000100
+✅ 4.87661s, 1371828020 matches, 3.88x
+  16t: Generating code for pattern: 0110100110000100
+✅ 1.37362s, 1371828020 matches, 13.79x
+  32t: Generating code for pattern: 0110100110000100
+✅ 0.727521s, 1371828020 matches, 26.04x
+  64t: Generating code for pattern: 0110100110000100
+✅ 0.587333s, 1371828020 matches, 32.26x
+
+Testing: small_dense_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0111100010011010 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0111100010011010
+✅ 5.80508s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0111100010011010
+✅ 1.72265s, 375691411 matches, 3.36x
+  16t: Generating code for pattern: 0111100010011010
+✅ 0.459487s, 375691411 matches, 12.63x
+  32t: Generating code for pattern: 0111100010011010
+✅ 0.271252s, 375691411 matches, 21.40x
+  64t: Generating code for pattern: 0111100010011010
+✅ 0.285393s, 375691411 matches, 20.34x
+
+Testing: small_dense_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0101100100011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0101100100011110
+✅ 6.24652s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0101100100011110
+✅ 1.829s, 375691411 matches, 3.41x
+  16t: Generating code for pattern: 0101100100011110
+✅ 0.468505s, 375691411 matches, 13.33x
+  32t: Generating code for pattern: 0101100100011110
+✅ 0.271451s, 375691411 matches, 23.01x
+  64t: Generating code for pattern: 0101100100011110
+✅ 0.26068s, 375691411 matches, 23.96x
+
+Testing: small_dense_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.2847s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72369s, 375691411 matches, 3.64x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.469667s, 375691411 matches, 13.38x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.270615s, 375691411 matches, 23.22x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.283435s, 375691411 matches, 22.17x
+
+Testing: small_dense_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001011010010 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010001011010010
+✅ 16.9261s, 4909606844 matches, 1.00x
+  4t: Generating code for pattern: 0010001011010010
+✅ 4.41326s, 4909606844 matches, 3.83x
+  16t: Generating code for pattern: 0010001011010010
+✅ 1.81877s, 4909606844 matches, 9.30x
+  32t: Generating code for pattern: 0010001011010010
+✅ 1.80841s, 4909606844 matches, 9.35x
+  64t: Generating code for pattern: 0010001011010010
+✅ 1.77236s, 4909606844 matches, 9.55x
+
+Testing: small_dense_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.28762s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.71317s, 375691411 matches, 3.67x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.457792s, 375691411 matches, 13.73x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.251055s, 375691411 matches, 25.04x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.290319s, 375691411 matches, 21.65x
+
+Testing: small_dense_4v (pattern #19)
+  Pattern file not found, skipping
+
+Testing: small_dense_4v (pattern #20)
+  Pattern file not found, skipping
+
+--- Testing Category: small_sparse_4v ---
+  Found 20 patterns in small_sparse_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.28626s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72224s, 375691411 matches, 3.65x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.457903s, 375691411 matches, 13.72x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.25382s, 375691411 matches, 24.76x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.289443s, 375691411 matches, 21.71x
+
+Testing: small_sparse_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80338s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.66495s, 375691411 matches, 3.48x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.468667s, 375691411 matches, 12.38x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.271379s, 375691411 matches, 21.38x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.288129s, 375691411 matches, 20.14x
+
+Testing: small_sparse_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.2023s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72102s, 375691411 matches, 3.60x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.469461s, 375691411 matches, 13.21x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.270494s, 375691411 matches, 22.92x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.287884s, 375691411 matches, 21.54x
+
+Testing: small_sparse_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.81213s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.815s, 375691411 matches, 3.20x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.469962s, 375691411 matches, 12.36x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.268033s, 375691411 matches, 21.68x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.308235s, 375691411 matches, 18.85x
+
+Testing: small_sparse_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80242s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.62978s, 375691411 matches, 3.56x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.476293s, 375691411 matches, 12.18x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.27057s, 375691411 matches, 21.44x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.33454s, 375691411 matches, 17.34x
+
+Testing: small_sparse_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.2746s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72816s, 375691411 matches, 3.63x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.468885s, 375691411 matches, 13.38x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.269648s, 375691411 matches, 23.26x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.293535s, 375691411 matches, 21.37x
+
+Testing: small_sparse_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80299s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.82746s, 375691411 matches, 3.17x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.469594s, 375691411 matches, 12.35x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.27063s, 375691411 matches, 21.44x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.283327s, 375691411 matches, 20.48x
+
+Testing: small_sparse_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.26174s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72143s, 375691411 matches, 3.63x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.470103s, 375691411 matches, 13.31x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.270506s, 375691411 matches, 23.14x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.285269s, 375691411 matches, 21.95x
+
+Testing: small_sparse_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80581s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72178s, 375691411 matches, 3.37x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.468392s, 375691411 matches, 12.39x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.277944s, 375691411 matches, 20.88x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.291474s, 375691411 matches, 19.91x
+
+Testing: small_sparse_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.35245s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72275s, 375691411 matches, 3.68x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.468971s, 375691411 matches, 13.54x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.269374s, 375691411 matches, 23.58x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.289415s, 375691411 matches, 21.94x
+
+Testing: small_sparse_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.79813s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72301s, 375691411 matches, 3.36x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.469593s, 375691411 matches, 12.34x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.270876s, 375691411 matches, 21.40x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.284362s, 375691411 matches, 20.38x
+
+Testing: small_sparse_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80345s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.7173s, 375691411 matches, 3.37x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.456216s, 375691411 matches, 12.72x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.266965s, 375691411 matches, 21.73x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.286985s, 375691411 matches, 20.22x
+
+Testing: small_sparse_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80236s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.63054s, 375691411 matches, 3.55x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.464051s, 375691411 matches, 12.50x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.271604s, 375691411 matches, 21.36x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.284944s, 375691411 matches, 20.36x
+
+Testing: small_sparse_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 5.80214s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72294s, 375691411 matches, 3.36x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.475286s, 375691411 matches, 12.20x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.270219s, 375691411 matches, 21.47x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.291268s, 375691411 matches, 19.92x
+
+Testing: small_sparse_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.29992s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72902s, 375691411 matches, 3.64x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.476727s, 375691411 matches, 13.21x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.270753s, 375691411 matches, 23.26x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.291033s, 375691411 matches, 21.64x
+
+Testing: small_sparse_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.45876s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72847s, 375691411 matches, 3.73x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.470374s, 375691411 matches, 13.73x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.271014s, 375691411 matches, 23.83x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.317125s, 375691411 matches, 20.36x
+
+Testing: small_sparse_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.36669s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72967s, 375691411 matches, 3.68x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.469303s, 375691411 matches, 13.56x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.271271s, 375691411 matches, 23.46x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.241559s, 375691411 matches, 26.35x
+
+Testing: small_sparse_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.33667s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.72887s, 375691411 matches, 3.66x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.476955s, 375691411 matches, 13.28x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.270931s, 375691411 matches, 23.38x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.290622s, 375691411 matches, 21.80x
+
+Testing: small_sparse_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.41698s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.80586s, 375691411 matches, 3.55x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.469556s, 375691411 matches, 13.66x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.271612s, 375691411 matches, 23.62x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.28976s, 375691411 matches, 22.14x
+
+Testing: small_sparse_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.3842s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.83689s, 375691411 matches, 3.47x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.477293s, 375691411 matches, 13.37x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.271071s, 375691411 matches, 23.55x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.283516s, 375691411 matches, 22.51x
+
+--- Testing Category: small_dense_8v ---
+  Found 20 patterns in small_dense_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 15 edges
+Generated binary matrix: 0000010000111110010011100100010001100111111110100110110100001010 (length: 64)
+  Pattern: 8v, 15e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0000010000111110010011100100010001100111111110100110110100001010
+❌ CODEGEN_FAILED (exit code: 1)
+Error log:
+PATTERN_SIZE=8
+ADJ_MATRIX=01111100 10111100 11011011 11101010 11110000 11000000 00110000 00100000 
+RESTRICTS=(0,1)
+IEP Number	4
+IEP Redundency	1
+IEP Val	1 -1 -1 -1 -1 2 1 -1 1 2 -1 2 1 2 -6 
+IEP Group	[(0),(1),(2),(3)] | [(0 3),(1),(2)] | [(0),(1 3),(2)] | [(0),(1),(2 3)] | [(0 2),(1),(3)] | [(0 2 3),(1)] | [(0 2),(1 3)] | [(0),(1 2),(3)] | [(0 3),(1 2)] | [(0),(1 2 3)] | [(0 1),(2),(3)] | [(0 1 3),(2)] | [(0 1),(2 3)] | [(0 1 2),(3)] | [(0 1 2 3)] | SCHEDULING_TIME(s)=43.1134
+ParallelType=OpenMP
+[2025-08-16 17:28:57.848050: /home/williamp/graphmini/src/codegen/codegen.cpp:937] (info) Code Generation Time: 0.000333239s
+Code is written to: "/home/williamp/graphmini/src/codegen_output/plan.cpp"
+CODE_GENERATION_TIME(s)=43.114
+  ⚠️  Skipping remaining patterns in small_dense_8v due to implementation issues
+
+--- Testing Category: small_sparse_8v ---
+  Found 20 patterns in small_sparse_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 15 edges
+Generated binary matrix: 0000010000111110010011100100010001100111111110100110110100001010 (length: 64)
+  Pattern: 8v, 15e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0000010000111110010011100100010001100111111110100110110100001010
+❌ CODEGEN_FAILED (exit code: 1)
+Error log:
+PATTERN_SIZE=8
+ADJ_MATRIX=01111100 10111100 11011011 11101010 11110000 11000000 00110000 00100000 
+RESTRICTS=(0,1)
+IEP Number	4
+IEP Redundency	1
+IEP Val	1 -1 -1 -1 -1 2 1 -1 1 2 -1 2 1 2 -6 
+IEP Group	[(0),(1),(2),(3)] | [(0 3),(1),(2)] | [(0),(1 3),(2)] | [(0),(1),(2 3)] | [(0 2),(1),(3)] | [(0 2 3),(1)] | [(0 2),(1 3)] | [(0),(1 2),(3)] | [(0 3),(1 2)] | [(0),(1 2 3)] | [(0 1),(2),(3)] | [(0 1 3),(2)] | [(0 1),(2 3)] | [(0 1 2),(3)] | [(0 1 2 3)] | SCHEDULING_TIME(s)=42.7093
+ParallelType=OpenMP
+[2025-08-16 17:29:43.154235: /home/williamp/graphmini/src/codegen/codegen.cpp:937] (info) Code Generation Time: 0.000323416s
+Code is written to: "/home/williamp/graphmini/src/codegen_output/plan.cpp"
+CODE_GENERATION_TIME(s)=42.71
+  ⚠️  Skipping remaining patterns in small_sparse_8v due to implementation issues
+
+--- Testing Category: medium_dense ---
+  Found 20 patterns in medium_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/medium_dense/query_sample_16v_1.graph
+Pattern has 16 vertices, 41 edges
+Generated binary matrix: 0000000000100000001100011011000001000100001000000100000110110001000001010011000000101011101100010000010000100001010111000111010101010100001100000000000100010010111111111001000101011101111001010000000000000011000000010001000000000000010010000001011100111000 (length: 256)
+  Pattern: 16v, 41e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0000000000100000001100011011000001000100001000000100000110110001000001010011000000101011101100010000010000100001010111000111010101010100001100000000000100010010111111111001000101011101111001010000000000000011000000010001000000000000010010000001011100111000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: medium_sparse ---
+  Found 20 patterns in medium_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/medium_sparse/query_sample_16v_1.graph
+Pattern has 16 vertices, 41 edges
+Generated binary matrix: 0000000000100000001100011011000001000100001000000100000110110001000001010011000000101011101100010000010000100001010111000111010101010100001100000000000100010010111111111001000101011101111001010000000000000011000000010001000000000000010010000001011100111000 (length: 256)
+  Pattern: 16v, 41e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0000000000100000001100011011000001000100001000000100000110110001000001010011000000101011101100010000010000100001010111000111010101010100001100000000000100010010111111111001000101011101111001010000000000000011000000010001000000000000010010000001011100111000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_dense ---
+  Found 20 patterns in large_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/large_dense/query_sample_24v_1.graph
+Pattern has 24 vertices, 61 edges
+Generated binary matrix: 000000000000000010000000000101000101010110000000000001000001000010000000010000001101011010000000000000000100000100000010011000000000001010000000000000001001000000000000000000000000001010000001000100100001000010100000010110000011011110001001000000000100000100000000011100101100010111110000000000000000000000100100010100000101000110000001000101010100000110001001010010000111011010001001111101011101011100001001000000000001000000000011000000001001100000000000000000000001000000000000000000000100001110000000000000000000100000000000000010000000000001000000000000010100011111000000 (length: 576)
+  Pattern: 24v, 61e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 000000000000000010000000000101000101010110000000000001000001000010000000010000001101011010000000000000000100000100000010011000000000001010000000000000001001000000000000000000000000001010000001000100100001000010100000010110000011011110001001000000000100000100000000011100101100010111110000000000000000000000100100010100000101000110000001000101010100000110001001010010000111011010001001111101011101011100001001000000000001000000000011000000001001100000000000000000000001000000000000000000000100001110000000000000000000100000000000000010000000000001000000000000010100011111000000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_sparse ---
+  Found 20 patterns in large_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/large_sparse/query_sample_24v_1.graph
+Pattern has 24 vertices, 61 edges
+Generated binary matrix: 000000000000000010000000000101000101010110000000000001000001000010000000010000001101011010000000000000000100000100000010011000000000001010000000000000001001000000000000000000000000001010000001000100100001000010100000010110000011011110001001000000000100000100000000011100101100010111110000000000000000000000100100010100000101000110000001000101010100000110001001010010000111011010001001111101011101011100001001000000000001000000000011000000001001100000000000000000000001000000000000000000000100001110000000000000000000100000000000000010000000000001000000000000010100011111000000 (length: 576)
+  Pattern: 24v, 61e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 000000000000000010000000000101000101010110000000000001000001000010000000010000001101011010000000000000000100000100000010011000000000001010000000000000001001000000000000000000000000001010000001000100100001000010100000010110000011011110001001000000000100000100000000011100101100010111110000000000000000000000100100010100000101000110000001000101010100000110001001010010000111011010001001111101011101011100001001000000000001000000000011000000001001100000000000000000000001000000000000000000000100001110000000000000000000100000000000000010000000000001000000000000010100011111000000
+❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+DATASET: lj
+Results for lj: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/lj_20250816_173346
+=========================================
+
+--- Testing Generated Patterns ---
+
+--- Testing Category: small_dense_4v ---
+  Found 20 patterns in small_dense_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.046s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.045s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.554s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.847s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.761s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.154s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.04s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.535s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.435s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.788s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 192.256s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.951s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 192.094s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.089s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 192.303s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.027s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.745s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.754s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.413s, 542683013686 matches, N/Ax
+
+Testing: small_dense_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.885s, 542683013686 matches, N/Ax
+
+--- Testing Category: small_sparse_4v ---
+  Found 20 patterns in small_sparse_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.101s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 196.6s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 197.814s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 199.07s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 192.484s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.009s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.922s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.869s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.076s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 192.341s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 191.962s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 195.471s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.217s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 190.898s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 190.658s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 193.99s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 194.829s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 195.434s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 192.437s, 542683013686 matches, N/Ax
+
+Testing: small_sparse_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0100100100010110
+✅ 203.038s, 542683013686 matches, N/Ax
+
+--- Testing Category: small_dense_8v ---
+  Found 20 patterns in small_dense_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 7 edges
+Generated binary matrix: 0000101000010001000100100110000010000100000010001010000001000000 (length: 64)
+  Pattern: 8v, 7e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+
+--- Testing Category: small_sparse_8v ---
+  Found 20 patterns in small_sparse_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 7 edges
+Generated binary matrix: 0000101000010001000100100110000010000100000010001010000001000000 (length: 64)
+  Pattern: 8v, 7e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  4t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  16t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  32t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+  64t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000
+❌ TIMEOUT_EXEC (240s)
+
+--- Testing Category: medium_dense ---
+  Found 20 patterns in medium_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/medium_dense/query_sample_16v_1.graph
+Pattern has 16 vertices, 16 edges
+Generated binary matrix: 0000010000000010000010000000000100000001000100000000100000000010010100000000000010000000100000000000000101000000001000100100000000000100001000000000001100100000000000001100000000100000000010000000000000010100000000000000100010010000000000000100000000000000 (length: 256)
+  Pattern: 16v, 16e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0000010000000010000010000000000100000001000100000000100000000010010100000000000010000000100000000000000101000000001000100100000000000100001000000000001100100000000000001100000000100000000010000000000000010100000000000000100010010000000000000100000000000000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: medium_sparse ---
+  Found 20 patterns in medium_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/medium_sparse/query_sample_16v_1.graph
+Pattern has 16 vertices, 16 edges
+Generated binary matrix: 0000010000000010000010000000000100000001000100000000100000000010010100000000000010000000100000000000000101000000001000100100000000000100001000000000001100100000000000001100000000100000000010000000000000010100000000000000100010010000000000000100000000000000 (length: 256)
+  Pattern: 16v, 16e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0000010000000010000010000000000100000001000100000000100000000010010100000000000010000000100000000000000101000000001000100100000000000100001000000000001100100000000000001100000000100000000010000000000000010100000000000000100010010000000000000100000000000000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_dense ---
+  Found 20 patterns in large_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/large_dense/query_sample_24v_1.graph
+Pattern has 24 vertices, 26 edges
+Generated binary matrix: 000100000000000000001000000000100000000000000000000100000010000000000000101000000000000000000000000000000000001010000000000000000000100001000000010000000000000000010000000000000000000001100011000000000000000110000000000000000001000100000000001000000001000000000000000000000110000000000000000001000000001000000000000000000000000000010100000010000000100010000000000000001100000000000000000010001000001000000000000001010000000000100000000000010000000001000001000000100000010000000000100000000000000000000000000000000000010000000010000000010000000000000100000000010000000000100000 (length: 576)
+  Pattern: 24v, 26e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 000100000000000000001000000000100000000000000000000100000010000000000000101000000000000000000000000000000000001010000000000000000000100001000000010000000000000000010000000000000000000001100011000000000000000110000000000000000001000100000000001000000001000000000000000000000110000000000000000001000000001000000000000000000000000000010100000010000000100010000000000000001100000000000000000010001000001000000000000001010000000000100000000000010000000001000001000000100000010000000000100000000000000000000000000000000000010000000010000000010000000000000100000000010000000000100000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_sparse ---
+  Found 20 patterns in large_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/large_sparse/query_sample_24v_1.graph
+Pattern has 24 vertices, 26 edges
+Generated binary matrix: 000100000000000000001000000000100000000000000000000100000010000000000000101000000000000000000000000000000000001010000000000000000000100001000000010000000000000000010000000000000000000001100011000000000000000110000000000000000001000100000000001000000001000000000000000000000110000000000000000001000000001000000000000000000000000000010100000010000000100010000000000000001100000000000000000010001000001000000000000001010000000000100000000000010000000001000001000000100000010000000000100000000000000000000000000000000000010000000010000000010000000000000100000000010000000000100000 (length: 576)
+  Pattern: 24v, 26e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 000100000000000000001000000000100000000000000000000100000010000000000000101000000000000000000000000000000000001010000000000000000000100001000000010000000000000000010000000000000000000001100011000000000000000110000000000000000001000100000000001000000001000000000000000000000110000000000000000001000000001000000000000000000000000000010100000010000000100010000000000000001100000000000000000010001000001000000000000001010000000000100000000000010000000001000001000000100000010000000000100000000000000000000000000000000000010000000010000000010000000000000100000000010000000000100000
+❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+DATASET: wiki
+Results for wiki: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/wiki_20250817_071551
+=========================================
+
+--- Testing Generated Patterns ---
+
+--- Testing Category: small_dense_4v ---
+  Found 20 patterns in small_dense_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.5985s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.30034s, 1048807458 matches, 3.74x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.76985s, 1048807458 matches, 13.33x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.05152s, 1048807458 matches, 22.44x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.01692s, 1048807458 matches, 23.20x
+
+Testing: small_dense_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2172s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.20184s, 1048807458 matches, 3.74x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.7484s, 1048807458 matches, 13.27x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.1833s, 1048807458 matches, 19.62x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.978473s, 1048807458 matches, 23.72x
+
+Testing: small_dense_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 25.364s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 7.47348s, 1048807458 matches, 3.39x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.85918s, 1048807458 matches, 13.64x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.19701s, 1048807458 matches, 21.18x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.955754s, 1048807458 matches, 26.53x
+
+Testing: small_dense_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 24.3654s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 7.64395s, 1048807458 matches, 3.18x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.88867s, 1048807458 matches, 12.90x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.19302s, 1048807458 matches, 20.42x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.961918s, 1048807458 matches, 25.33x
+
+Testing: small_dense_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.693s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.34841s, 1048807458 matches, 3.73x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.7817s, 1048807458 matches, 13.29x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.0723s, 1048807458 matches, 22.09x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.950518s, 1048807458 matches, 24.92x
+
+Testing: small_dense_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.7802s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.16044s, 1048807458 matches, 3.86x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.76881s, 1048807458 matches, 13.44x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.16849s, 1048807458 matches, 20.35x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.979248s, 1048807458 matches, 24.28x
+
+Testing: small_dense_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2909s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.18425s, 1048807458 matches, 3.76x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.76602s, 1048807458 matches, 13.18x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.35405s, 1048807458 matches, 17.20x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.917108s, 1048807458 matches, 25.39x
+
+Testing: small_dense_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 27.9281s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 7.08536s, 1048807458 matches, 3.94x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.91787s, 1048807458 matches, 14.56x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.2484s, 1048807458 matches, 22.37x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.944852s, 1048807458 matches, 29.55x
+
+Testing: small_dense_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 24.163s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.21798s, 1048807458 matches, 3.88x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.74977s, 1048807458 matches, 13.80x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17648s, 1048807458 matches, 20.53x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.936743s, 1048807458 matches, 25.79x
+
+Testing: small_dense_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 27.4473s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.70157s, 1048807458 matches, 4.09x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.79575s, 1048807458 matches, 15.28x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.06176s, 1048807458 matches, 25.85x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.936414s, 1048807458 matches, 29.31x
+
+Testing: small_dense_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 24.0261s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.11457s, 1048807458 matches, 3.92x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.80427s, 1048807458 matches, 13.31x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17686s, 1048807458 matches, 20.41x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.998568s, 1048807458 matches, 24.06x
+
+Testing: small_dense_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2494s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.19916s, 1048807458 matches, 3.75x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.78042s, 1048807458 matches, 13.05x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17033s, 1048807458 matches, 19.86x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.00129s, 1048807458 matches, 23.21x
+
+Testing: small_dense_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2338s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.11942s, 1048807458 matches, 3.79x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75815s, 1048807458 matches, 13.21x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17924s, 1048807458 matches, 19.70x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.942378s, 1048807458 matches, 24.65x
+
+Testing: small_dense_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6025s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.11899s, 1048807458 matches, 3.85x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.84393s, 1048807458 matches, 12.80x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.0661s, 1048807458 matches, 22.13x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.935012s, 1048807458 matches, 25.24x
+
+Testing: small_dense_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6643s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.12813s, 1048807458 matches, 3.86x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75596s, 1048807458 matches, 13.47x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.18372s, 1048807458 matches, 19.99x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.934305s, 1048807458 matches, 25.32x
+
+Testing: small_dense_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2573s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.09689s, 1048807458 matches, 3.81x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.76745s, 1048807458 matches, 13.15x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.15266s, 1048807458 matches, 20.17x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.926443s, 1048807458 matches, 25.10x
+
+Testing: small_dense_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2331s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.10497s, 1048807458 matches, 3.80x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75762s, 1048807458 matches, 13.21x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.16777s, 1048807458 matches, 19.89x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.935636s, 1048807458 matches, 24.83x
+
+Testing: small_dense_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2206s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.11171s, 1048807458 matches, 3.79x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.74562s, 1048807458 matches, 13.30x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.1572s, 1048807458 matches, 20.06x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.928284s, 1048807458 matches, 25.01x
+
+Testing: small_dense_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6023s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.10827s, 1048807458 matches, 3.86x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75684s, 1048807458 matches, 13.43x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17109s, 1048807458 matches, 20.15x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.932019s, 1048807458 matches, 25.32x
+
+Testing: small_dense_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2638s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.21416s, 1048807458 matches, 3.74x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.78237s, 1048807458 matches, 13.05x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17345s, 1048807458 matches, 19.82x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.00333s, 1048807458 matches, 23.18x
+
+--- Testing Category: small_sparse_4v ---
+  Found 20 patterns in small_sparse_4v
+  Testing all 20 patterns (4-vertex category)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6557s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.11688s, 1048807458 matches, 3.86x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.7815s, 1048807458 matches, 13.27x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17132s, 1048807458 matches, 20.19x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.93224s, 1048807458 matches, 25.37x
+
+Testing: small_sparse_4v (pattern #2)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_2.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.717s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.11646s, 1048807458 matches, 3.87x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.7807s, 1048807458 matches, 13.31x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.05661s, 1048807458 matches, 22.44x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.00319s, 1048807458 matches, 23.64x
+
+Testing: small_sparse_4v (pattern #3)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_3.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6323s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.21097s, 1048807458 matches, 3.80x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.71132s, 1048807458 matches, 13.80x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17466s, 1048807458 matches, 20.11x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.932824s, 1048807458 matches, 25.33x
+
+Testing: small_sparse_4v (pattern #4)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_4.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 27.5491s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.24243s, 1048807458 matches, 4.41x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.80871s, 1048807458 matches, 15.23x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17217s, 1048807458 matches, 23.50x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.900022s, 1048807458 matches, 30.60x
+
+Testing: small_sparse_4v (pattern #5)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_5.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 27.8445s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.64726s, 1048807458 matches, 4.18x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.73447s, 1048807458 matches, 16.05x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.20952s, 1048807458 matches, 23.02x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.950837s, 1048807458 matches, 29.28x
+
+Testing: small_sparse_4v (pattern #6)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_6.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 25.665s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 7.49094s, 1048807458 matches, 3.42x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.88849s, 1048807458 matches, 13.59x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.19786s, 1048807458 matches, 21.42x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.01804s, 1048807458 matches, 25.21x
+
+Testing: small_sparse_4v (pattern #7)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_7.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6711s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.21584s, 1048807458 matches, 3.80x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.72092s, 1048807458 matches, 13.75x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.16103s, 1048807458 matches, 20.38x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.0225s, 1048807458 matches, 23.15x
+
+Testing: small_sparse_4v (pattern #8)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_8.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.7502s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.28966s, 1048807458 matches, 3.77x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75758s, 1048807458 matches, 13.51x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.06958s, 1048807458 matches, 22.20x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.842879s, 1048807458 matches, 28.17x
+
+Testing: small_sparse_4v (pattern #9)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_9.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.7396s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.1589s, 1048807458 matches, 3.85x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.74386s, 1048807458 matches, 13.61x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.19233s, 1048807458 matches, 19.91x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.937631s, 1048807458 matches, 25.31x
+
+Testing: small_sparse_4v (pattern #10)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_10.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6157s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.14712s, 1048807458 matches, 3.84x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.74157s, 1048807458 matches, 13.56x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.04529s, 1048807458 matches, 22.59x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.932478s, 1048807458 matches, 25.32x
+
+Testing: small_sparse_4v (pattern #11)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_11.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2398s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.4273s, 1048807458 matches, 3.61x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75406s, 1048807458 matches, 13.24x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.17617s, 1048807458 matches, 19.75x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.00373s, 1048807458 matches, 23.15x
+
+Testing: small_sparse_4v (pattern #12)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_12.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.7395s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.20598s, 1048807458 matches, 3.82x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.74986s, 1048807458 matches, 13.56x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.06034s, 1048807458 matches, 22.38x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.93713s, 1048807458 matches, 25.33x
+
+Testing: small_sparse_4v (pattern #13)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_13.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6672s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.12311s, 1048807458 matches, 3.86x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75569s, 1048807458 matches, 13.48x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.06736s, 1048807458 matches, 22.17x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.940182s, 1048807458 matches, 25.17x
+
+Testing: small_sparse_4v (pattern #14)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_14.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.249s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.50014s, 1048807458 matches, 3.57x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.82211s, 1048807458 matches, 12.75x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.09125s, 1048807458 matches, 21.30x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.07918s, 1048807458 matches, 21.54x
+
+Testing: small_sparse_4v (pattern #15)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_15.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.5581s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.35128s, 1048807458 matches, 3.70x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.65792s, 1048807458 matches, 14.20x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.15103s, 1048807458 matches, 20.46x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.0571s, 1048807458 matches, 22.28x
+
+Testing: small_sparse_4v (pattern #16)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_16.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.7077s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.33081s, 1048807458 matches, 3.74x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.75649s, 1048807458 matches, 13.49x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.16523s, 1048807458 matches, 20.34x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.948445s, 1048807458 matches, 24.99x
+
+Testing: small_sparse_4v (pattern #17)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_17.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6283s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.13062s, 1048807458 matches, 3.85x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.74318s, 1048807458 matches, 13.55x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.04828s, 1048807458 matches, 22.54x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.941748s, 1048807458 matches, 25.08x
+
+Testing: small_sparse_4v (pattern #18)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_18.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.2652s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.09819s, 1048807458 matches, 3.81x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.76757s, 1048807458 matches, 13.16x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.04453s, 1048807458 matches, 22.27x
+  64t: Generating code for pattern: 0010000110010110
+✅ 1.0043s, 1048807458 matches, 23.16x
+
+Testing: small_sparse_4v (pattern #19)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_19.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.6468s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.18758s, 1048807458 matches, 3.82x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.80428s, 1048807458 matches, 13.10x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.16129s, 1048807458 matches, 20.36x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.942059s, 1048807458 matches, 25.10x
+
+Testing: small_sparse_4v (pattern #20)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_4v/query_sample_4v_20.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010000110010110
+✅ 23.5406s, 1048807458 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 6.08981s, 1048807458 matches, 3.86x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.80381s, 1048807458 matches, 13.05x
+  32t: Generating code for pattern: 0010000110010110
+✅ 1.06098s, 1048807458 matches, 22.18x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.843332s, 1048807458 matches, 27.91x
+
+--- Testing Category: small_dense_8v ---
+  Found 20 patterns in small_dense_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 9 edges
+Generated binary matrix: 0010010000100110110010010000001000100001110000000101000000101000 (length: 64)
+  Pattern: 8v, 9e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010010000100110110010010000001000100001110000000101000000101000
+./comprehensive_graphmini_test.sh: line 181: 1921199 Aborted                 timeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 0 > /tmp/run.log 2>&1
+❌ CODEGEN_FAILED (exit code: 134)
+Error log:
+PATTERN_SIZE=8
+ADJ_MATRIX=01110100 10000100 10001010 10000010 00100001 11000000 00110000 00001000 
+RESTRICTS=(1,5)
+IEP Number	3
+IEP Redundency	1
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=52.4477
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector<bool>::_M_range_check: __n (which is 1834181696) >= this->size() (which is 7)
+timeout: the monitored command dumped core
+  ⚠️  Skipping remaining patterns in small_dense_8v due to implementation issues
+
+--- Testing Category: small_sparse_8v ---
+  Found 20 patterns in small_sparse_8v
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 9 edges
+Generated binary matrix: 0010010000100110110010010000001000100001110000000101000000101000 (length: 64)
+  Pattern: 8v, 9e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=600s, exec=240s
+  1t: Generating code for pattern: 0010010000100110110010010000001000100001110000000101000000101000
+./comprehensive_graphmini_test.sh: line 181: 1921304 Aborted                 timeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 0 > /tmp/run.log 2>&1
+❌ CODEGEN_FAILED (exit code: 134)
+Error log:
+PATTERN_SIZE=8
+ADJ_MATRIX=01110100 10000100 10001010 10000010 00100001 11000000 00110000 00001000 
+RESTRICTS=(1,5)
+IEP Number	3
+IEP Redundency	1
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=52.26
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector<bool>::_M_range_check: __n (which is 738718784) >= this->size() (which is 7)
+timeout: the monitored command dumped core
+  ⚠️  Skipping remaining patterns in small_sparse_8v due to implementation issues
+
+--- Testing Category: medium_dense ---
+  Found 20 patterns in medium_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/medium_dense/query_sample_16v_1.graph
+Pattern has 16 vertices, 26 edges
+Generated binary matrix: 0110100110010000100010001000000110000010100001000000000010010000110000001000000100000000100110000010000100000000100000100000000011111100001000010000000000001000000000001000001110010100000000000000010001000000001000000000001000000000001001000100100010100000 (length: 256)
+  Pattern: 16v, 26e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0110100110010000100010001000000110000010100001000000000010010000110000001000000100000000100110000010000100000000100000100000000011111100001000010000000000001000000000001000001110010100000000000000010001000000001000000000001000000000001001000100100010100000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: medium_sparse ---
+  Found 20 patterns in medium_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: medium_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/medium_sparse/query_sample_16v_1.graph
+Pattern has 16 vertices, 26 edges
+Generated binary matrix: 0110100110010000100010001000000110000010100001000000000010010000110000001000000100000000100110000010000100000000100000100000000011111100001000010000000000001000000000001000001110010100000000000000010001000000001000000000001000000000001001000100100010100000 (length: 256)
+  Pattern: 16v, 26e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 0110100110010000100010001000000110000010100001000000000010010000110000001000000100000000100110000010000100000000100000100000000011111100001000010000000000001000000000001000001110010100000000000000010001000000001000000000001000000000001001000100100010100000
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_dense ---
+  Found 20 patterns in large_dense
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_dense (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/large_dense/query_sample_24v_1.graph
+Pattern has 24 vertices, 55 edges
+Generated binary matrix: 000000000000000010001000000000100010000000010010000100001000010001010100001000000100010000010100000000010001010110010000000000000000100000000000010000010000011000000000000010100101010111100000001000000000010000000000000100010000010100000000010000000000110010010100000010010000010110010000000001000010000000000000001110111111000011100101000000100000000010100000000010010101000000000000100010010011011001000000001000010000010010001000000000010000011000000000011110000011000000000000100000000000000001000000001100000010010000000001010000000000000000000000000000000000010000000100 (length: 576)
+  Pattern: 24v, 55e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 000000000000000010001000000000100010000000010010000100001000010001010100001000000100010000010100000000010001010110010000000000000000100000000000010000010000011000000000000010100101010111100000001000000000010000000000000100010000010100000000010000000000110010010100000010010000010110010000000001000010000000000000001110111111000011100101000000100000000010100000000010010101000000000000100010010011011001000000001000010000010010001000000000010000011000000000011110000011000000000000100000000000000001000000001100000010010000000001010000000000000000000000000000000000010000000100
+❌ TIMEOUT_CODEGEN (60s)
+
+--- Testing Category: large_sparse ---
+  Found 20 patterns in large_sparse
+  Testing only 1 pattern (8v+ category - known issues)
+
+Testing: large_sparse (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/wiki/large_sparse/query_sample_24v_1.graph
+Pattern has 24 vertices, 55 edges
+Generated binary matrix: 000000000000000010001000000000100010000000010010000100001000010001010100001000000100010000010100000000010001010110010000000000000000100000000000010000010000011000000000000010100101010111100000001000000000010000000000000100010000010100000000010000000000110010010100000010010000010110010000000001000010000000000000001110111111000011100101000000100000000010100000000010010101000000000000100010010011011001000000001000010000010010001000000000010000011000000000011110000011000000000000100000000000000001000000001100000010010000000001010000000000000000000000000000000000010000000100 (length: 576)
+  Pattern: 24v, 55e
+  Thread counts: 1 4 16
+  Timeouts: codegen=60s, exec=240s
+  1t: Generating code for pattern: 000000000000000010001000000000100010000000010010000100001000010001010100001000000100010000010100000000010001010110010000000000000000100000000000010000010000011000000000000010100101010111100000001000000000010000000000000100010000010100000000010000000000110010010100000010010000010110010000000001000010000000000000001110111111000011100101000000100000000010100000000010010101000000000000100010010011011001000000001000010000010010001000000000010000011000000000011110000011000000000000100000000000000001000000001100000010010000000001010000000000000000000000000000000000010000000100
+❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+COMPREHENSIVE TEST COMPLETE - GraphMini
+=========================================
+Ended at: Sun Aug 17 07:48:45 AM UTC 2025
+
+=== SUMMARY ===
+Main results CSV: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/comprehensive_results.csv
+Full log: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/full_log.txt
+
+Test outcomes:
+  Successful: 962
+  Timeouts: 234
+  Failures: 50
+
+Per-dataset results saved in:
+  dblp: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/dblp_20250816_101427
+  youtube: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/youtube_20250816_105109
+  roadNet-CA: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/roadNet-CA_20250816_164923
+  enron: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/enron_20250816_171522
+  lj: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/lj_20250816_173346
+  wiki: /home/williamp/graphmini/results/comprehensive_o_20250816_101427/wiki_20250817_071551
+
+=== GraphMinivVersion Info ===
+Git branch: main
+Git commit: d7a6d32
+Test completed on: radonduo
